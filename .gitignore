@@ -17,6 +17,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# local-only agent logs
+.ignored/
+
 # macOS-specific files
 .DS_Store
 
