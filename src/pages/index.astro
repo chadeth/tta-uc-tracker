@@ -1,0 +1,617 @@
+---
+import { getCollection } from 'astro:content';
+import { render as renderEntry } from 'astro:content';
+import catalog from '../data/catalog.json';
+
+const allArticles = await getCollection('articles');
+const latestArticle = allArticles.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+)[0];
+
+// In Astro v6 with glob loaders
+const { Content } = await renderEntry(latestArticle);
+
+// Category display names
+const categoryNames: Record<string, string> = {
+  'fundamental-mechanism': 'Fundamental Mechanism',
+  'materials-design': 'Materials Design',
+  'application': 'Application',
+  'review-perspective': 'Review & Perspective',
+  'review': 'Review',
+  'computational': 'Computational'
+};
+
+// Get unique categories and counts
+const categoryCounts: Record<string, number> = {};
+catalog.forEach(paper => {
+  const displayCat = categoryNames[paper.category] || paper.category;
+  categoryCounts[displayCat] = (categoryCounts[displayCat] || 0) + 1;
+});
+
+// Date range
+const dates = catalog.map(p => new Date(p.date)).sort((a, b) => a.getTime() - b.getTime());
+const dateRange = `${dates[0].toLocaleDateString()} - ${dates[dates.length - 1].toLocaleDateString()}`;
+
+// Group papers by category
+const papersByCategory: Record<string, typeof catalog> = {};
+catalog.forEach(paper => {
+  const dc = categoryNames[paper.category] || paper.category;
+  if (!papersByCategory[dc]) papersByCategory[dc] = [];
+  papersByCategory[dc].push(paper);
+});
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTA Upconversion Research Tracker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #f0f6fc;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .stat-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: #58a6ff;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+      color: #58a6ff;
+      font-weight: 700;
+    }
+
+    .stat-value-small {
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+    /* Discussion Article Styles */
+    .discussion-section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    .discussion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #21262d;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .discussion-title {
+      font-size: 1.8rem;
+      color: #f0f6fc;
+      font-weight: 700;
+    }
+
+    .discussion-date {
+      color: #8b949e;
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .discussion-edition {
+      color: #58a6ff;
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      font-style: italic;
+    }
+
+    .discussion-section h2 {
+      font-size: 1.4rem;
+      color: #58a6ff;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .discussion-section p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #c9d1d9;
+    }
+
+    .discussion-section strong {
+      color: #f0f6fc;
+    }
+
+    .discussion-footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #21262d;
+      color: #8b949e;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    /* Controls */
+    .controls {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .search-box, .category-filter {
+      padding: 12px 16px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #c9d1d9;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .search-box:focus, .category-filter:focus {
+      outline: none;
+      border-color: #58a6ff;
+    }
+
+    .category-filter {
+      min-width: 200px;
+    }
+
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 40px 0 30px 0;
+    }
+
+    .section-divider h2 {
+      font-size: 1.8rem;
+      color: #f0f6fc;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .section-divider .line {
+      flex: 1;
+      height: 1px;
+      background: #21262d;
+    }
+
+    .category-section {
+      margin-bottom: 50px;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #21262d;
+    }
+
+    .category-title {
+      font-size: 1.5rem;
+      color: #f0f6fc;
+      font-weight: 600;
+    }
+
+    .category-count {
+      background: #21262d;
+      color: #8b949e;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .paper-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .paper-card:hover {
+      transform: translateY(-2px);
+      border-color: #58a6ff;
+      box-shadow: 0 8px 24px rgba(88, 166, 255, 0.1);
+    }
+
+    .paper-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 15px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .paper-title {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .paper-title a {
+      font-size: 1.4rem;
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .paper-title a:hover {
+      color: #79c0ff;
+      text-decoration: underline;
+    }
+
+    .paper-meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .badge-fundamental-mechanism { background: #58a6ff; color: #fff; }
+    .badge-materials-design { background: #bf4b8a; color: #fff; }
+    .badge-application { background: #3fb950; color: #fff; }
+    .badge-review-perspective { background: #d29922; color: #fff; }
+    .badge-review { background: #d29922; color: #fff; }
+    .badge-computational { background: #8957e5; color: #fff; }
+    .badge-default { background: #30363d; color: #c9d1d9; }
+
+    .significance-high, .significance-very-high {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .significance-very-high { background: #f85149; color: #fff; }
+    .significance-high { background: #f0883e; color: #fff; }
+
+    .date {
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+
+    .journal {
+      color: #79c0ff;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .authors {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .summary {
+      background: #0d1117;
+      border-left: 3px solid #30363d;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .summary-text {
+      color: #c9d1d9;
+      line-height: 1.7;
+    }
+
+    .promising {
+      background: linear-gradient(135deg, #1f2428 0%, #161b22 100%);
+      border: 1px solid #238636;
+      border-radius: 6px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
+    .promising-label {
+      color: #3fb950;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .promising-text {
+      color: #adbac7;
+      line-height: 1.7;
+    }
+
+    .tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: #21262d;
+      color: #8b949e;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      color: #8b949e;
+      font-size: 1.2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .stats { grid-template-columns: 1fr; }
+      .controls { flex-direction: column; }
+      .search-box, .category-filter { width: 100%; }
+      .paper-title a { font-size: 1.2rem; }
+      .paper-header { flex-direction: column; }
+      .discussion-section { padding: 20px; }
+      .discussion-title { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TTA Upconversion Research Tracker</h1>
+      <p class="subtitle">Curated collection of cutting-edge research on Triplet-Triplet Annihilation Upconversion and its applications</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-label">Total Papers</div>
+        <div class="stat-value">{catalog.length}</div>
+      </div>
+      {Object.entries(categoryCounts).map(([cat, count]) => (
+        <div class="stat-card">
+          <div class="stat-label">{cat}</div>
+          <div class="stat-value">{count}</div>
+        </div>
+      ))}
+      <div class="stat-card">
+        <div class="stat-label">Date Range</div>
+        <div class="stat-value stat-value-small">{dateRange}</div>
+      </div>
+    </div>
+
+    <!-- Discussion Article -->
+    <div class="discussion-section">
+      <div class="discussion-header">
+        <span class="discussion-title">{latestArticle.data.title}</span>
+        <span class="discussion-date">{new Date(latestArticle.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+      </div>
+      {latestArticle.data.edition && (
+        <p class="discussion-edition">{latestArticle.data.edition}</p>
+      )}
+      <Content />
+    </div>
+
+    <!-- Paper Catalog -->
+    <div class="section-divider">
+      <h2>Paper Catalog</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="controls">
+      <input type="text" class="search-box" id="searchBox" placeholder="Search papers by title, authors, or keywords...">
+      <select class="category-filter" id="categoryFilter">
+        <option value="all">All Categories</option>
+        {Object.keys(categoryCounts).sort().map(cat => (
+          <option value={cat}>{cat} ({categoryCounts[cat]})</option>
+        ))}
+      </select>
+    </div>
+
+    <div id="papersContainer">
+      {Object.keys(papersByCategory).sort().map(category => {
+        const papers = papersByCategory[category].sort((a, b) => 
+          new Date(b.date).getTime() - new Date(a.date).getTime()
+        );
+        return (
+          <div class="category-section" data-category={category}>
+            <div class="category-header">
+              <h2 class="category-title">{category}</h2>
+              <span class="category-count">{papers.length} paper{papers.length !== 1 ? 's' : ''}</span>
+            </div>
+            {papers.map(paper => (
+              <div class="paper-card" data-paper={JSON.stringify(paper)}>
+                <div class="paper-header">
+                  <div class="paper-title">
+                    <a href={paper.url || '#'} target="_blank" rel="noopener">{paper.title}</a>
+                  </div>
+                  <div class="paper-meta">
+                    <span class={`badge badge-${paper.category}`}>{categoryNames[paper.category] || paper.category}</span>
+                    {paper.significance === 'very-high' && <span class="significance-very-high">Top Result</span>}
+                    {paper.significance === 'high' && <span class="significance-high">Notable</span>}
+                    <span class="date">{new Date(paper.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+                  </div>
+                </div>
+                <div class="authors">
+                  {paper.authors.join(', ')}
+                  {paper.journal && <span class="journal"> · {paper.journal}</span>}
+                </div>
+                <div class="summary">
+                  <div class="summary-text">{paper.abstract_summary}</div>
+                </div>
+                <div class="promising">
+                  <div class="promising-label">Significance</div>
+                  <div class="promising-text">{paper.significance_notes}</div>
+                </div>
+                {paper.tags && paper.tags.length > 0 && (
+                  <div class="tags">
+                    {paper.tags.map(tag => <span class="tag">{tag}</span>)}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+    <div id="noResults" class="no-results hidden">No papers found matching your search.</div>
+  </div>
+
+  <script is:inline define:vars={{ catalog, categoryNames }}>
+    
+    function filterPapers() {
+      const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+      const selectedCategory = document.getElementById('categoryFilter').value;
+      
+      let filtered = catalog;
+      
+      if (selectedCategory !== 'all') {
+        filtered = filtered.filter(p => (categoryNames[p.category] || p.category) === selectedCategory);
+      }
+      
+      if (searchTerm) {
+        filtered = filtered.filter(p =>
+          p.title.toLowerCase().includes(searchTerm) ||
+          p.authors.some(a => a.toLowerCase().includes(searchTerm)) ||
+          p.abstract_summary.toLowerCase().includes(searchTerm) ||
+          (p.significance_notes || '').toLowerCase().includes(searchTerm) ||
+          (p.journal || '').toLowerCase().includes(searchTerm) ||
+          (p.tags || []).some(t => t.toLowerCase().includes(searchTerm))
+        );
+      }
+      
+      // Show/hide category sections and papers
+      const categorySections = document.querySelectorAll('.category-section');
+      const paperCards = document.querySelectorAll('.paper-card');
+      
+      let visibleCount = 0;
+      
+      categorySections.forEach(section => {
+        const category = section.getAttribute('data-category');
+        const papers = Array.from(section.querySelectorAll('.paper-card'));
+        
+        papers.forEach(card => {
+          const paperData = JSON.parse(card.getAttribute('data-paper') || '{}');
+          const displayCat = categoryNames[paperData.category] || paperData.category;
+          
+          const matchesCategory = selectedCategory === 'all' || displayCat === selectedCategory;
+          const matchesSearch = !searchTerm || 
+            paperData.title.toLowerCase().includes(searchTerm) ||
+            paperData.authors.some(a => a.toLowerCase().includes(searchTerm)) ||
+            paperData.abstract_summary.toLowerCase().includes(searchTerm) ||
+            (paperData.significance_notes || '').toLowerCase().includes(searchTerm) ||
+            (paperData.journal || '').toLowerCase().includes(searchTerm) ||
+            (paperData.tags || []).some(t => t.toLowerCase().includes(searchTerm));
+          
+          if (matchesCategory && matchesSearch) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        
+        // Hide category section if no papers visible
+        const visiblePapers = papers.filter(p => !p.classList.contains('hidden'));
+        if (visiblePapers.length === 0) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+        }
+      });
+      
+      // Show/hide no results message
+      const noResults = document.getElementById('noResults');
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+    
+    document.getElementById('searchBox').addEventListener('input', filterPapers);
+    document.getElementById('categoryFilter').addEventListener('change', filterPapers);
+  </script>
+</body>
+</html>
