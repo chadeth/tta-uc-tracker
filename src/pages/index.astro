@@ -39,7 +39,7 @@ catalog.forEach(paper => {
 });
 
 // Date range
-const dates = catalog.map(p => new Date(p.date)).sort((a, b) => a.getTime() - b.getTime());
+const dates = catalog.map(p => new Date(p.date + 'T12:00:00')).sort((a, b) => a.getTime() - b.getTime());
 const oldestDate = dates[0].toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 const newestDate = dates[dates.length - 1].toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 
@@ -142,7 +142,7 @@ const highImpact = catalog.filter(p => p.significance === 'high' || p.significan
               )}
             </div>
             <time class="text-sm text-[var(--color-text-tertiary)] whitespace-nowrap pt-1">
-              {new Date(latestArticle.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              {new Date(latestArticle.data.date + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </time>
           </div>
         </div>
@@ -262,7 +262,7 @@ const highImpact = catalog.filter(p => p.significance === 'high' || p.significan
                     )}
                     <span class="text-[var(--color-border-default)]">/</span>
                     <time class="text-[var(--color-text-tertiary)] text-xs tabular-nums">
-                      {new Date(paper.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+                      {new Date(paper.date + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
                     </time>
                   </div>
 

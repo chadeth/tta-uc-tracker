@@ -2,14 +2,21 @@
   {
     "id": "wang_2026_natmater_proton_shuttle",
     "title": "Proton shuttle-assisted triplet energy transfer",
-    "authors": ["Zhaolong Wang", "Jingyi Zhu", "Kaifeng Wu"],
+    "authors": [
+      "Zhaolong Wang",
+      "Jingyi Zhu",
+      "Kaifeng Wu"
+    ],
     "journal": "Nature Materials",
     "date": "2026-03-09",
     "doi": "10.1038/s41563-026-02535-4",
     "url": "https://www.nature.com/articles/s41563-026-02535-4",
     "category": "fundamental-mechanism",
     "subcategory": "triplet-energy-transfer",
-    "application_areas": ["solar", "photocatalysis"],
+    "application_areas": [
+      "solar",
+      "photocatalysis"
+    ],
     "abstract_summary": "Demonstrates a new proton shuttle-assisted mechanism for spin-triplet migration from photoexcited colloidal quantum dots to surface-anchored molecular moieties. Establishes a previously unknown pathway for triplet energy transfer mediated by proton-coupled processes, directly relevant to nanocrystal-sensitized TTA-UC systems where QD-to-molecule triplet transfer is the efficiency-limiting step.",
     "significance": "high",
     "significance_notes": "First demonstration of proton-coupled triplet energy transfer. Published in Nature Materials. Could open new design strategies for QD-sensitized TTA-UC by leveraging proton shuttling at the nanocrystal-molecule interface.",
@@ -17,19 +24,32 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["quantum-dots", "triplet-energy-transfer", "proton-coupled", "nanocrystal-sensitized", "mechanism"]
+    "tags": [
+      "quantum-dots",
+      "triplet-energy-transfer",
+      "proton-coupled",
+      "nanocrystal-sensitized",
+      "mechanism"
+    ]
   },
   {
     "id": "isokuortti_2026_chemsci_solid_state_annihilator",
     "title": "Controlling the fate of two triplet states: solid-state annihilator design for photon upconversion",
-    "authors": ["J. Isokuortti", "L. Nienhaus"],
+    "authors": [
+      "J. Isokuortti",
+      "L. Nienhaus"
+    ],
     "journal": "Chemical Science",
     "date": "2026-02-24",
     "doi": "10.1039/D6SC00399K",
     "url": "https://pubs.rsc.org/en/content/articlelanding/2026/sc/d6sc00399k",
     "category": "review-perspective",
     "subcategory": "solid-state-design",
-    "application_areas": ["energy-conversion", "optoelectronics", "OLEDs"],
+    "application_areas": [
+      "energy-conversion",
+      "optoelectronics",
+      "OLEDs"
+    ],
     "abstract_summary": "Perspective article examining molecular design principles for solid-state TTA-UC annihilators. Proposes a unified excitonic framework linking upconversion with OLEDs and singlet fission. Discusses controlling triplet exciton diffusion, maximizing singlet formation, and suppressing loss channels (excimer/trap states). Advocates for data-driven machine learning + phonon engineering to surpass the solution-first approach.",
     "significance": "high",
     "significance_notes": "Key perspective from Rice University (Nienhaus group). Bridges TTA-UC with OLED and singlet fission communities. Proposes ML-driven design as next frontier for solid-state upconversion.",
@@ -37,19 +57,36 @@
     "pdf_filename": "isokuortti_2026_solid_state_annihilator_design_ChemSci.pdf",
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["solid-state", "annihilator-design", "perspective", "machine-learning", "phonon-engineering", "open-access"]
+    "tags": [
+      "solid-state",
+      "annihilator-design",
+      "perspective",
+      "machine-learning",
+      "phonon-engineering",
+      "open-access"
+    ]
   },
   {
     "id": "luo_2026_jpcl_alloyed_qd_tta_uc",
     "title": "Alloyed Quantum Dots with Tuned Exciton Wave Function Delocalization for Enhanced Energy Transfer",
-    "authors": ["J. Luo", "Y. Fan", "Y. Zhao", "J. Wu", "Y. Gu", "H. Song"],
+    "authors": [
+      "J. Luo",
+      "Y. Fan",
+      "Y. Zhao",
+      "J. Wu",
+      "Y. Gu",
+      "H. Song"
+    ],
     "journal": "The Journal of Physical Chemistry Letters",
     "date": "2026-02-24",
     "doi": "10.1021/acs.jpclett.5c04114",
     "url": "https://pubs.acs.org/doi/10.1021/acs.jpclett.5c04114",
     "category": "fundamental-mechanism",
     "subcategory": "sensitizer-engineering",
-    "application_areas": ["solar", "optoelectronics"],
+    "application_areas": [
+      "solar",
+      "optoelectronics"
+    ],
     "abstract_summary": "Uses QD-sensitized TTA-UC as a testing platform to show that Te doping in alloyed quantum dots enhances exciton wave function delocalization, which boosts triplet energy transfer and upconversion efficiency. Demonstrates that tuning QD composition (alloying) is a viable strategy for improving nanocrystal-sensitized upconversion.",
     "significance": "medium-high",
     "significance_notes": "Direct TTA-UC application study. Demonstrates composition-tunable QD sensitizers for improved TTA-UC. Practical route to better nanocrystal sensitizers.",
@@ -57,19 +94,36 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["quantum-dots", "alloyed-QD", "Te-doping", "sensitizer", "energy-transfer"]
+    "tags": [
+      "quantum-dots",
+      "alloyed-QD",
+      "Te-doping",
+      "sensitizer",
+      "energy-transfer"
+    ]
   },
   {
     "id": "gou_2026_jppa_singlet_back_transfer",
     "title": "Triplet-triplet annihilation Upconversion efficiency enhancement via suppressing singlet energy back transfer",
-    "authors": ["T. Gou", "S. Liu", "C. Chen", "B. Cui", "H. Liu", "D. Li", "Y. Nie"],
+    "authors": [
+      "T. Gou",
+      "S. Liu",
+      "C. Chen",
+      "B. Cui",
+      "H. Liu",
+      "D. Li",
+      "Y. Nie"
+    ],
     "journal": "Journal of Photochemistry and Photobiology A: Chemistry",
     "date": "2026-02-23",
     "doi": null,
     "url": "https://www.sciencedirect.com/science/article/pii/S1010603026001206",
     "category": "fundamental-mechanism",
     "subcategory": "efficiency-optimization",
-    "application_areas": ["energy-conversion", "optoelectronics"],
+    "application_areas": [
+      "energy-conversion",
+      "optoelectronics"
+    ],
     "abstract_summary": "Addresses a key loss mechanism in solid-state TTA-UC: singlet energy back transfer from the annihilator back to the sensitizer. Demonstrates strategies to suppress this parasitic channel, improving overall upconversion efficiency in solid-state materials.",
     "significance": "medium",
     "significance_notes": "Tackles a well-known but underexplored loss channel. Practical implications for solid-state TTA-UC device optimization.",
@@ -77,19 +131,32 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["solid-state", "efficiency", "singlet-back-transfer", "loss-mechanism"]
+    "tags": [
+      "solid-state",
+      "efficiency",
+      "singlet-back-transfer",
+      "loss-mechanism"
+    ]
   },
   {
     "id": "sun_2026_jphysmater_temperature_sensing",
     "title": "Triplet-triplet annihilation upconversion based photoluminescence temperature sensing",
-    "authors": ["S. Sun", "C. Ma", "D. He", "Y. Gao", "P. Zhao"],
+    "authors": [
+      "S. Sun",
+      "C. Ma",
+      "D. He",
+      "Y. Gao",
+      "P. Zhao"
+    ],
     "journal": "Journal of Physics: Materials",
     "date": "2026-02-19",
     "doi": "10.1088/2515-7639/ae477e",
     "url": "https://iopscience.iop.org/article/10.1088/2515-7639/ae477e/meta",
     "category": "application",
     "subcategory": "optical-sensing",
-    "application_areas": ["temperature-sensing"],
+    "application_areas": [
+      "temperature-sensing"
+    ],
     "abstract_summary": "Develops TTA-UC based photoluminescence temperature sensing. Exploits the temperature dependence of triplet diffusion and annihilation dynamics to create optical thermometers. Demonstrates the utility of TTA-UC beyond energy conversion in sensing applications.",
     "significance": "medium",
     "significance_notes": "Sensing is an important application niche for TTA-UC. Temperature sensing via TTA-UC dynamics is a creative use of the intrinsic temperature sensitivity of triplet processes.",
@@ -97,19 +164,31 @@
     "pdf_filename": "sun_2026_TTA_UC_temperature_sensing_JPhysMater.pdf",
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["temperature-sensing", "optical-sensing", "photoluminescence", "open-access"]
+    "tags": [
+      "temperature-sensing",
+      "optical-sensing",
+      "photoluminescence",
+      "open-access"
+    ]
   },
   {
     "id": "kishimoto_2026_chemcomm_zeolite_tta_uc",
     "title": "Click chemistry-driven heteromolecular integration into layered zeolite frameworks for photochemical upconversion applications",
-    "authors": ["F. Kishimoto", "K. Hisano", "T. Wakihara"],
+    "authors": [
+      "F. Kishimoto",
+      "K. Hisano",
+      "T. Wakihara"
+    ],
     "journal": "Chemical Communications",
     "date": "2026-02-19",
     "doi": "10.1039/D5CC06270E",
     "url": "https://pubs.rsc.org/en/content/articlehtml/2026/cc/d5cc06270e",
     "category": "materials-design",
     "subcategory": "host-materials",
-    "application_areas": ["energy-conversion", "photocatalysis"],
+    "application_areas": [
+      "energy-conversion",
+      "photocatalysis"
+    ],
     "abstract_summary": "Develops organic-inorganic hybrid layered porous materials for TTA-UC by integrating anthracene-based emitters into zeolite frameworks using click chemistry. Demonstrates a new approach to confining TTA-UC chromophores in ordered porous hosts, potentially improving oxygen tolerance and structural control.",
     "significance": "medium",
     "significance_notes": "Novel host material approach for TTA-UC. Click chemistry enables precise molecular placement in zeolite interlayers. Addresses the challenge of bringing solution-phase TTA-UC into solid-state ordered frameworks.",
@@ -117,19 +196,38 @@
     "pdf_filename": "kishimoto_2026_zeolite_TTA_UC_ChemComm.pdf",
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["zeolite", "click-chemistry", "host-material", "solid-state", "anthracene", "open-access"]
+    "tags": [
+      "zeolite",
+      "click-chemistry",
+      "host-material",
+      "solid-state",
+      "anthracene",
+      "open-access"
+    ]
   },
   {
     "id": "zhang_2026_chem_cof_tta_uc",
     "title": "Triplet-triplet annihilation upconversion in covalent organic frameworks via interface and bulk exciton tunability",
-    "authors": ["M.Y. Zhang", "L.H. Jiang", "J.Y. Li", "H.J. Feng", "Z. Huang", "A.X. Ma"],
+    "authors": [
+      "M.Y. Zhang",
+      "L.H. Jiang",
+      "J.Y. Li",
+      "H.J. Feng",
+      "Z. Huang",
+      "A.X. Ma"
+    ],
     "journal": "Chem (Cell Press)",
     "date": "2026-02-10",
     "doi": null,
     "url": "https://www.cell.com/chem/abstract/S2451-9294(25)00477-2",
     "category": "materials-design",
     "subcategory": "covalent-organic-frameworks",
-    "application_areas": ["photovoltaics", "photocatalysis", "bioimaging", "anti-counterfeiting"],
+    "application_areas": [
+      "photovoltaics",
+      "photocatalysis",
+      "bioimaging",
+      "anti-counterfeiting"
+    ],
     "abstract_summary": "Demonstrates TTA-UC in covalent organic frameworks (COFs) with tunability of both interface and bulk exciton dynamics. COFs provide highly ordered, porous scaffolds that can organize sensitizer-annihilator pairs at the molecular level, offering a materials platform with applications across photovoltaics, photocatalysis, bioimaging, and anti-counterfeiting.",
     "significance": "high",
     "significance_notes": "Published in Cell Press's Chem. COFs are a hot materials class, and achieving tunable TTA-UC within them is significant. The interface vs bulk exciton tunability is a new design handle for solid-state TTA-UC.",
@@ -137,19 +235,32 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["COF", "covalent-organic-framework", "exciton-tunability", "solid-state", "multi-application"]
+    "tags": [
+      "COF",
+      "covalent-organic-framework",
+      "exciton-tunability",
+      "solid-state",
+      "multi-application"
+    ]
   },
   {
     "id": "hubner_2026_advoptmater_red_blue_polymerization",
     "title": "Red-to-Blue Upconversion Nanoparticles Catalyze Aqueous Radical Polymerization",
-    "authors": ["D. Hubner", "C.M.Q. Le", "A. Spangenberg"],
+    "authors": [
+      "D. Hubner",
+      "C.M.Q. Le",
+      "A. Spangenberg"
+    ],
     "journal": "Advanced Optical Materials",
     "date": "2026-02-09",
     "doi": "10.1002/adom.202503291",
     "url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adom.202503291",
     "category": "application",
     "subcategory": "photoredox-catalysis",
-    "application_areas": ["photocatalysis", "polymerization"],
+    "application_areas": [
+      "photocatalysis",
+      "polymerization"
+    ],
     "abstract_summary": "Uses sensitized TTA-UC nanoparticles to convert red light into blue light, which then drives aqueous radical polymerization. Demonstrates that TTA-UC can be coupled to photoredox catalysis using low-energy NIR/red excitation, enabling polymerization reactions under biologically benign light conditions.",
     "significance": "medium-high",
     "significance_notes": "Important application demonstration. Aqueous radical polymerization driven by red-to-blue TTA-UC bridges the gap between upconversion photophysics and synthetic polymer chemistry.",
@@ -157,19 +268,30 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["photoredox", "polymerization", "nanoparticles", "red-to-blue", "aqueous"]
+    "tags": [
+      "photoredox",
+      "polymerization",
+      "nanoparticles",
+      "red-to-blue",
+      "aqueous"
+    ]
   },
   {
     "id": "vitillo_2026_acsaem_telecom_band",
     "title": "Breaking the 1250 nm Barrier: A Computational Approach to Light Upconversion via Triplet-Triplet Annihilation in the Silica Telecom Band",
-    "authors": ["J.G. Vitillo"],
+    "authors": [
+      "J.G. Vitillo"
+    ],
     "journal": "ACS Applied Energy Materials",
     "date": "2026-02-12",
     "doi": "10.1021/acsaem.5c04014",
     "url": "https://pubs.acs.org/doi/abs/10.1021/acsaem.5c04014",
     "category": "computational",
     "subcategory": "molecular-design",
-    "application_areas": ["solar", "telecommunications"],
+    "application_areas": [
+      "solar",
+      "telecommunications"
+    ],
     "abstract_summary": "Computational study pushing the frontier of TTA-UC into the silica telecom band (beyond 1250 nm). Identifies molecular candidates that could enable upconversion of deeply NIR photons relevant to both solar energy harvesting and optical communications.",
     "significance": "medium",
     "significance_notes": "Extends TTA-UC into previously unexplored spectral territory. Computational predictions for telecom-band upconversion could bridge photovoltaics and telecommunications applications.",
@@ -177,19 +299,34 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["computational", "NIR", "telecom-band", "molecular-design", "deep-NIR"]
+    "tags": [
+      "computational",
+      "NIR",
+      "telecom-band",
+      "molecular-design",
+      "deep-NIR"
+    ]
   },
   {
     "id": "jin_2026_acscatal_iron_sensitizer",
     "title": "Beyond the Diffusion Limit: Preassociation Enhanced Photon Upconversion and Photocatalysis Sensitized by Iron Complex",
-    "authors": ["P. Jin", "X. Xu", "D. Hubner", "Y. Yan", "C. Wang"],
+    "authors": [
+      "P. Jin",
+      "X. Xu",
+      "D. Hubner",
+      "Y. Yan",
+      "C. Wang"
+    ],
     "journal": "ACS Catalysis",
     "date": "2026-02-04",
     "doi": "10.1021/acscatal.6c00039",
     "url": "https://pubs.acs.org/doi/abs/10.1021/acscatal.6c00039",
     "category": "application",
     "subcategory": "photocatalysis",
-    "application_areas": ["photocatalysis", "solar"],
+    "application_areas": [
+      "photocatalysis",
+      "solar"
+    ],
     "abstract_summary": "Demonstrates TTA-UC sensitized by an earth-abundant iron complex, overcoming the diffusion limit through preassociation of the sensitizer-annihilator pair. Couples the upconverted photons to drive photocatalytic reactions. Addresses the sustainability challenge of replacing precious metal sensitizers (Pd, Pt, Ru, Ir) with iron.",
     "significance": "high",
     "significance_notes": "Iron-based sensitizers for TTA-UC are extremely rare and highly sought after. Overcoming the diffusion limit via preassociation is a clever strategy. Already cited by 1 paper within a month. Major sustainability advance for TTA-UC photocatalysis.",
@@ -197,19 +334,32 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["iron-sensitizer", "earth-abundant", "photocatalysis", "preassociation", "diffusion-limit", "sustainability"]
+    "tags": [
+      "iron-sensitizer",
+      "earth-abundant",
+      "photocatalysis",
+      "preassociation",
+      "diffusion-limit",
+      "sustainability"
+    ]
   },
   {
     "id": "wagner_2026_jacsau_superreductant",
     "title": "Long-Lived Terphenyl Radical Anion Super-Reductant for Photocatalysis Formed via Blue-to-UV Upconversion with Fully Resolved Mechanism",
-    "authors": ["D.S. Wagner", "O.S. Wenger"],
+    "authors": [
+      "D.S. Wagner",
+      "O.S. Wenger"
+    ],
     "journal": "JACS Au",
     "date": "2026-02-01",
     "doi": "10.1021/jacsau.5c01599",
     "url": "https://pubs.acs.org/doi/abs/10.1021/jacsau.5c01599",
     "category": "application",
     "subcategory": "photoredox-catalysis",
-    "application_areas": ["photocatalysis", "photoredox-chemistry"],
+    "application_areas": [
+      "photocatalysis",
+      "photoredox-chemistry"
+    ],
     "abstract_summary": "Generates a powerful p-terphenyl radical anion super-reductant through sensitized blue-to-UV TTA upconversion. The super-reductant is long-lived and drives challenging reductive photocatalytic transformations. Full mechanistic resolution of the TTA-UC-to-photocatalysis coupling provided.",
     "significance": "high",
     "significance_notes": "From the Wenger group (Basel), leaders in TTA-UC photocatalysis. Generating super-reductants via TTA-UC extends the accessible redox window for photocatalysis far beyond what direct visible-light excitation can achieve. Already cited.",
@@ -217,19 +367,31 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["super-reductant", "radical-anion", "blue-to-UV", "photocatalysis", "mechanism", "Wenger-group"]
+    "tags": [
+      "super-reductant",
+      "radical-anion",
+      "blue-to-UV",
+      "photocatalysis",
+      "mechanism",
+      "Wenger-group"
+    ]
   },
   {
     "id": "brzezinski_2026_angew_aminal_cof",
     "title": "Aminal-linked Covalent Organic Frameworks for Light Energy Upconversion",
-    "authors": ["M. Brzezinski", "A. Tyszka-Gumkowska"],
+    "authors": [
+      "M. Brzezinski",
+      "A. Tyszka-Gumkowska"
+    ],
     "journal": "Angewandte Chemie International Edition",
     "date": "2026-02-03",
     "doi": "10.1002/anie.202522521",
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202522521",
     "category": "materials-design",
     "subcategory": "covalent-organic-frameworks",
-    "application_areas": ["energy-conversion"],
+    "application_areas": [
+      "energy-conversion"
+    ],
     "abstract_summary": "Reports aminal-linked covalent organic frameworks as robust solid-state platforms for TTA-UC. Addresses the challenge of translating solution-phase TTA-UC into practical solid-state materials using COFs with aminal linkages that provide structural stability and appropriate chromophore spacing.",
     "significance": "medium-high",
     "significance_notes": "Published in Angewandte. Aminal linkages are a new COF chemistry for TTA-UC (complementary to the Zhang et al. Chem paper on COFs). Solution-to-solid translation is a key challenge in the field.",
@@ -237,19 +399,30 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["COF", "aminal-linkage", "solid-state", "Angewandte"]
+    "tags": [
+      "COF",
+      "aminal-linkage",
+      "solid-state",
+      "Angewandte"
+    ]
   },
   {
     "id": "mitsui_2026_angew_au42_rubrene",
     "title": "Au42(PET)32 Nanocluster Sensitizer Unlocks the Annihilator Potential of Rubrene, Enabling High-Performance NIR-to-Visible Photon Upconversion",
-    "authors": ["Masaaki Mitsui", "Shinjiro"],
+    "authors": [
+      "Masaaki Mitsui",
+      "Shinjiro"
+    ],
     "journal": "Angewandte Chemie International Edition",
     "date": "2026-02-01",
     "doi": "10.1002/anie.202523868",
     "url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202523868",
     "category": "fundamental-mechanism",
     "subcategory": "sensitizer-engineering",
-    "application_areas": ["solar", "bioimaging"],
+    "application_areas": [
+      "solar",
+      "bioimaging"
+    ],
     "abstract_summary": "A needle-shaped gold nanocluster Au42(PET)32 serves as a powerful triplet sensitizer, enabling rubrene to fully express its intrinsic annihilator capability (spin statistical factor f = 0.58). Achieves record-high upconversion internal quantum yields of 21.4% (808 nm excitation) and 15.0% (936 nm excitation), showcasing gold nanoclusters as a new class of TTA-UC sensitizers.",
     "significance": "very-high",
     "significance_notes": "Record quantum yields for NIR-to-visible TTA-UC. Gold nanoclusters as sensitizers is a nascent paradigm. The 936 nm excitation at 15% QY is remarkable for approaching the tissue transparency window. Published in Angewandte.",
@@ -257,19 +430,39 @@
     "pdf_filename": null,
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["gold-nanocluster", "Au42", "rubrene", "record-QY", "NIR-to-visible", "808nm", "936nm", "sensitizer"]
+    "tags": [
+      "gold-nanocluster",
+      "Au42",
+      "rubrene",
+      "record-QY",
+      "NIR-to-visible",
+      "808nm",
+      "936nm",
+      "sensitizer"
+    ]
   },
   {
     "id": "magazov_2026_rscadv_solar_water_splitting",
     "title": "Upconversion materials: a new frontier in solar water-splitting",
-    "authors": ["Y. Magazov", "A. Aliyev", "N. Zhumabay", "Z. Taubaldiyeva", "G. Zhigerbayeva", "N. Nuraje"],
+    "authors": [
+      "Y. Magazov",
+      "A. Aliyev",
+      "N. Zhumabay",
+      "Z. Taubaldiyeva",
+      "G. Zhigerbayeva",
+      "N. Nuraje"
+    ],
     "journal": "RSC Advances",
     "date": "2026-01-06",
     "doi": "10.1039/D5RA07342A",
     "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ra/d5ra07342a",
     "category": "review",
     "subcategory": "solar-water-splitting",
-    "application_areas": ["solar", "photocatalysis", "hydrogen-production"],
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "hydrogen-production"
+    ],
     "abstract_summary": "Review comparing lanthanide-based and TTA-based upconversion strategies for solar hydrogen generation via water splitting. Discusses how TTA-UC molecular sensitizer-emitter pairs can achieve efficient upconversion at solar intensities, and summarizes recent demonstrations of TTA systems boosting H2 production and enabling overall water splitting under visible light.",
     "significance": "medium",
     "significance_notes": "Comprehensive review covering both lanthanide and TTA approaches to solar water splitting. Useful reference for application-oriented researchers. Highlights recent TTA-UC demonstrations in H2 production.",
@@ -277,19 +470,33 @@
     "pdf_filename": "magazov_2026_solar_water_splitting_RSCAdv.pdf",
     "added_by": "job2-journal-scout",
     "added_date": "2026-03-12",
-    "tags": ["review", "water-splitting", "hydrogen", "lanthanide-vs-TTA", "solar", "open-access"]
+    "tags": [
+      "review",
+      "water-splitting",
+      "hydrogen",
+      "lanthanide-vs-TTA",
+      "solar",
+      "open-access"
+    ]
   },
   {
     "id": "zhao_2026_natchem_nanohoops_singlet_fission",
     "title": "Controlling chromophore assembly and coupling via carbon nanohoops enables singlet fission at interchromophore distances up to 16 A",
-    "authors": ["J. Zhao", "J. Xu", "S. Peng"],
+    "authors": [
+      "J. Zhao",
+      "J. Xu",
+      "S. Peng"
+    ],
     "journal": "Nature Chemistry",
     "date": "2026-02-23",
     "doi": "10.1038/s41557-026-02076-y",
     "url": "https://www.nature.com/articles/s41557-026-02076-y",
     "category": "adjacent-field",
     "subcategory": "singlet-fission",
-    "application_areas": ["solar", "photovoltaics"],
+    "application_areas": [
+      "solar",
+      "photovoltaics"
+    ],
     "abstract_summary": "Demonstrates ultrafast singlet fission at interchromophore distances up to 16 A (previous limit was ~5.6 A) by using nitrogen-doped carbon nanohoops to co-optimize through-bond and through-space charge-transfer interactions. SF occurs in under 4 picoseconds. Shows that strong electronic coupling can be achieved without dense molecular packing, overturning assumptions about van der Waals proximity requirements for SF.",
     "significance": "high",
     "significance_notes": "Published in Nature Chemistry. Singlet fission is the reverse of TTA - materials that undergo efficient SF are prime candidates as TTA annihilators. The ability to achieve SF at 16 A via through-bond coupling in nanohoops could inspire new organized TTA-UC annihilator arrays with controlled spacing. Paradigm shift for chromophore assembly design.",
@@ -297,19 +504,33 @@
     "pdf_filename": null,
     "added_by": "job3-adjacent-fields",
     "added_date": "2026-03-12",
-    "tags": ["singlet-fission", "carbon-nanohoops", "through-bond-coupling", "chromophore-assembly", "ultrafast", "Nature-Chemistry"]
+    "tags": [
+      "singlet-fission",
+      "carbon-nanohoops",
+      "through-bond-coupling",
+      "chromophore-assembly",
+      "ultrafast",
+      "Nature-Chemistry"
+    ]
   },
   {
     "id": "declercq_2026_acsenerglett_chirality_sf_tf",
     "title": "The Impact of Chirality on Singlet Fission and Triplet Fusion: A Molecular Twist for Photon Management",
-    "authors": ["D.M. de Clercq", "S. Feldmann"],
+    "authors": [
+      "D.M. de Clercq",
+      "S. Feldmann"
+    ],
     "journal": "ACS Energy Letters",
     "date": "2026-02-25",
     "doi": "10.1021/acsenergylett.6c00073",
     "url": "https://pubs.acs.org/doi/10.1021/acsenergylett.6c00073",
     "category": "adjacent-field",
     "subcategory": "singlet-fission-triplet-fusion",
-    "application_areas": ["solar", "photon-management", "circularly-polarized-luminescence"],
+    "application_areas": [
+      "solar",
+      "photon-management",
+      "circularly-polarized-luminescence"
+    ],
     "abstract_summary": "Review examining how molecular chirality impacts both singlet fission (SF) and triplet fusion (TF, i.e., TTA). Covers dendrimers with pentacene coronas (for SF) and anthracene coronas (for TTA-UC). Reports 50-fold enhanced dissymmetry factor for UV circularly polarized luminescence (UVCPL) realized via triplet energy transfer followed by TTA-UC. Discusses how chiral packing and spin-orbit coupling modulation affect triplet pair dynamics.",
     "significance": "high",
     "significance_notes": "Directly covers triplet fusion (= TTA) as one of its two main topics. Chirality as a design handle for modulating TTA yield is underexplored. The 50x enhanced CPL dissymmetry via TTA-UC is a striking result. Dendrimers with anthracene TTA coronas are novel annihilator architectures. Published in ACS Energy Letters.",
@@ -317,19 +538,37 @@
     "pdf_filename": null,
     "added_by": "job3-adjacent-fields",
     "added_date": "2026-03-12",
-    "tags": ["chirality", "singlet-fission", "triplet-fusion", "TTA", "dendrimers", "CPL", "photon-management", "ACS-Energy-Letters"]
+    "tags": [
+      "chirality",
+      "singlet-fission",
+      "triplet-fusion",
+      "TTA",
+      "dendrimers",
+      "CPL",
+      "photon-management",
+      "ACS-Energy-Letters"
+    ]
   },
   {
     "id": "kozlowski_2026_chemcomm_computational_ttet",
     "title": "Computational modeling of triplet energy transfer processes: progress and future challenges",
-    "authors": ["L.M. Thompson", "M.J. Mackintosh", "S. Saha", "P.M. Kozlowski"],
+    "authors": [
+      "L.M. Thompson",
+      "M.J. Mackintosh",
+      "S. Saha",
+      "P.M. Kozlowski"
+    ],
     "journal": "Chemical Communications",
     "date": "2026-02-10",
     "doi": "10.1039/D5CC07132A",
     "url": "https://pubs.rsc.org/en/content/articlehtml/2026/cc/d5cc07132a",
     "category": "adjacent-field",
     "subcategory": "triplet-energy-transfer-theory",
-    "application_areas": ["photocatalysis", "materials-design", "photochemistry"],
+    "application_areas": [
+      "photocatalysis",
+      "materials-design",
+      "photochemistry"
+    ],
     "abstract_summary": "Feature article reviewing computational approaches for modeling triplet energy transfer (TEnT) processes. Covers diabatic state methods, the two-state and four-state models for TEnT, and the challenge of properly including charge-transfer states. Discusses applications to biological systems, photocatalysis, and materials design. Highlights future directions including reliable and computationally efficient prediction of TEnT kinetics.",
     "significance": "medium",
     "significance_notes": "Triplet energy transfer from sensitizer to annihilator is the first key step in TTA-UC. Better computational tools for predicting TEnT rates and mechanisms directly enable rational design of TTA-UC sensitizer-annihilator pairs. Feature article in Chem. Commun. from University of Louisville.",
@@ -337,19 +576,32 @@
     "pdf_filename": null,
     "added_by": "job3-adjacent-fields",
     "added_date": "2026-03-12",
-    "tags": ["computational", "triplet-energy-transfer", "diabatic-states", "theory", "feature-article"]
+    "tags": [
+      "computational",
+      "triplet-energy-transfer",
+      "diabatic-states",
+      "theory",
+      "feature-article"
+    ]
   },
   {
     "id": "uji_2026_jppc_tadf_sensitizers_review",
     "title": "Photon Upconversion Based on Triplet-Triplet Annihilation Using Thermally Activated Delayed Fluorescence Sensitizers",
-    "authors": ["M. Uji", "N. Yanai"],
+    "authors": [
+      "M. Uji",
+      "N. Yanai"
+    ],
     "journal": "Journal of Photochemistry and Photobiology C: Photochemistry Reviews",
     "date": "2026-01-01",
     "doi": "10.1016/j.jphotochemrev.2025.100741",
     "url": "https://www.sciencedirect.com/journal/journal-of-photochemistry-and-photobiology-c-photochemistry-reviews",
     "category": "review",
     "subcategory": "TADF-sensitizers",
-    "application_areas": ["energy-conversion", "bioimaging", "photocatalysis"],
+    "application_areas": [
+      "energy-conversion",
+      "bioimaging",
+      "photocatalysis"
+    ],
     "abstract_summary": "Comprehensive review of TADF molecules as heavy-atom-free sensitizers for TTA-UC. TADF emitters can serve as sensitizers because they exhibit efficient ISC with minimal energy loss (small singlet-triplet gap), long triplet lifetimes, and avoid the cost and toxicity of precious metal complexes. Covers boron difluoride curcuminoids, carbazolyl dicyanobenzenes, MR-TADF sensitizers, and osmium(II) complexes in the TTA-UC context.",
     "significance": "high",
     "significance_notes": "From the Yanai group (Kyushu University), a world leader in TTA-UC research. TADF sensitizers are one of the most promising paths to heavy-atom-free, low-cost TTA-UC. This review consolidates the rapidly growing subfield. Published in J. Photochem. Photobiol. C (volume 87, 2026).",
@@ -357,19 +609,35 @@
     "pdf_filename": null,
     "added_by": "job3-adjacent-fields",
     "added_date": "2026-03-12",
-    "tags": ["TADF", "heavy-atom-free", "sensitizer", "review", "Yanai-group", "Kyushu", "curcuminoid", "MR-TADF"]
+    "tags": [
+      "TADF",
+      "heavy-atom-free",
+      "sensitizer",
+      "review",
+      "Yanai-group",
+      "Kyushu",
+      "curcuminoid",
+      "MR-TADF"
+    ]
   },
   {
     "id": "sloane_2026_advoptmater_2d_perovskite_spacer",
     "title": "Mitigating Singlet Exciton Back-Transfer using 2D Spacer Layers for Perovskite-Sensitised Upconversion",
-    "authors": ["N.P. Sloane", "D.M. de Clercq", "M.A. Mahmud"],
+    "authors": [
+      "N.P. Sloane",
+      "D.M. de Clercq",
+      "M.A. Mahmud"
+    ],
     "journal": "Advanced Optical Materials",
     "date": "2026-01-28",
     "doi": "10.1002/adom.202503211",
     "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202503211",
     "category": "fundamental-mechanism",
     "subcategory": "perovskite-sensitized",
-    "application_areas": ["photovoltaics", "solar"],
+    "application_areas": [
+      "photovoltaics",
+      "solar"
+    ],
     "abstract_summary": "Introduces a 2D perovskite spacer layer between a bulk 3D perovskite sensitizer and a rubrene emitter to mitigate singlet exciton back-transfer via FRET. Reveals the balance between efficient triplet transfer across the interface and suppression of near-field singlet back-transfer. The spacer layer enhances relative upconversion efficiency at lower excitation power densities and sustains performance over longer timescales.",
     "significance": "medium-high",
     "significance_notes": "Directly addresses the singlet back-transfer loss channel in perovskite-sensitized TTA-UC (complementary to the Gou et al. solution-phase study). The 2D perovskite spacer is an elegant engineering solution. Enhancing low-power performance is critical for solar applications. Published in Adv. Opt. Mater. (vol. 14, no. 6, 2026). Also on arXiv: 2505.05801.",
@@ -377,6 +645,34 @@
     "pdf_filename": null,
     "added_by": "job3-adjacent-fields",
     "added_date": "2026-03-12",
-    "tags": ["perovskite-sensitized", "2D-perovskite", "spacer-layer", "singlet-back-transfer", "rubrene", "FRET", "solid-state"]
+    "tags": [
+      "perovskite-sensitized",
+      "2D-perovskite",
+      "spacer-layer",
+      "singlet-back-transfer",
+      "rubrene",
+      "FRET",
+      "solid-state"
+    ]
+  },
+  {
+    "title": "Direct Laser Writing of Ferromagnetic Nickel Utilizing the Principle of Sensitized Triplet-Triplet Annihilation Upconversion",
+    "authors": [
+      "Kristin E. J. Kuhl",
+      "Katharina Rediger",
+      "Nikhita Khera",
+      "Ephraim Spindler",
+      "Gereon Niedner-Schatteburg",
+      "Elke Neu",
+      "Mathias Weiler",
+      "Georg von Freymann"
+    ],
+    "arxiv_id": "2603.09871",
+    "url": "https://arxiv.org/abs/2603.09871",
+    "pdf_path": "papers/2603.09871v1.pdf",
+    "category": "Materials & Matrices",
+    "date": "2026-03-10",
+    "one_paragraph_summary": "This paper demonstrates a novel application of sensitized TTA-UC for direct laser writing of ferromagnetic nickel microstructures under ambient conditions. The authors designed a photoresist system that combines three photochemical processes: (1) in-situ photochemical deoxygenation to address oxygen quenching, (2) sensitized triplet-triplet annihilation upconversion to generate higher-energy photons from lower-energy excitation, and (3) photoreduction of Ni2+ ions to metallic nickel. SEM and EDX confirm spatially confined nickel deposition, while vibrating sample magnetometry and scanning NV magnetometry verify ferromagnetic behavior of the printed structures.",
+    "why_its_promising": "This represents a genuinely new application domain for TTA-UC - additive manufacturing of metallic and ferromagnetic materials. The in-situ deoxygenation strategy is particularly interesting because oxygen quenching of triplet states is one of the central challenges in TTA-UC. By building oxygen scavenging directly into the photoresist formulation, the authors solve two problems at once: enabling TTA-UC under ambient conditions and creating a reducing environment for metal deposition. This could inspire new approaches to oxygen-tolerant TTA-UC systems beyond the direct laser writing context."
   }
 ]
