@@ -1,0 +1,330 @@
+---
+import Layout from '../layouts/Base.astro';
+import catalog from '../data/catalog.json';
+
+// Category display names
+const categoryNames = {
+  'fundamental-mechanism': 'Fundamental Mechanism',
+  'materials-design': 'Materials Design',
+  'application': 'Application',
+  'review-perspective': 'Review & Perspective',
+  'review': 'Review',
+  'computational': 'Computational',
+};
+
+// Category icons
+const categoryIcons = {
+  'Fundamental Mechanism': '🔬',
+  'Materials Design': '🧪',
+  'Application': '⚡',
+  'Review & Perspective': '📖',
+  'Review': '📖',
+  'Computational': '💻',
+};
+
+// Get unique categories and counts
+const categoryCounts = {} as Record<string, number>;
+catalog.forEach(paper => {
+  const displayCat = categoryNames[paper.category] || paper.category;
+  categoryCounts[displayCat] = (categoryCounts[displayCat] || 0) + 1;
+});
+
+// Date range
+const dates = catalog.map(p => new Date(p.date + 'T12:00:00')).sort((a, b) => a.getTime() - b.getTime());
+const oldestDate = dates[0].toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+const newestDate = dates[dates.length - 1].toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+
+// Group papers by category
+const papersByCategory = {} as Record<string, typeof catalog>;
+catalog.forEach(paper => {
+  const dc = categoryNames[paper.category] || paper.category;
+  if (!papersByCategory[dc]) papersByCategory[dc] = [];
+  papersByCategory[dc].push(paper);
+});
+
+// Count journals
+const journals = new Set(catalog.map(p => p.journal).filter(Boolean));
+const highImpact = catalog.filter(p => p.significance === 'high' || p.significance === 'very-high').length;
+---
+
+<Layout
+  title="Research Catalog"
+  description={`Browse ${catalog.length} curated papers on Triplet-Triplet Annihilation Upconversion, spanning ${Object.keys(categoryCounts).length} research categories and ${journals.size} journals.`}
+  currentPath="/catalog"
+>
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Header -->
+    <section class="pt-16 sm:pt-20 pb-12 animate-fade-in">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-px w-12 bg-[var(--color-accent)]"></div>
+        <span class="text-xs font-semibold text-[var(--color-accent-hover)] uppercase tracking-widest">Database</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-4">
+        Research Catalog
+      </h1>
+      <p class="text-[var(--color-text-tertiary)] leading-relaxed max-w-2xl mb-8">
+        {catalog.length} curated publications spanning {oldestDate} to {newestDate}, across {Object.keys(categoryCounts).length} categories and {journals.size} journals.
+      </p>
+
+      <!-- Quick Stats -->
+      <div class="flex flex-wrap gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></div>
+          <span class="text-[var(--color-text-tertiary)]"><span class="text-[var(--color-text-primary)] font-semibold tabular-nums">{catalog.length}</span> papers</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-[var(--color-amber)]"></div>
+          <span class="text-[var(--color-text-tertiary)]"><span class="text-[var(--color-text-primary)] font-semibold tabular-nums">{highImpact}</span> high impact</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-[var(--color-green)]"></div>
+          <span class="text-[var(--color-text-tertiary)]"><span class="text-[var(--color-text-primary)] font-semibold tabular-nums">{journals.size}</span> journals</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="pb-6 animate-fade-in" style="animation-delay: 0.1s">
+      <div class="flex flex-col sm:flex-row gap-3 mb-8">
+        <div class="relative flex-1">
+          <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+          <input
+            type="text"
+            id="searchBox"
+            placeholder="Search papers by title, author, journal, or keyword..."
+            class="w-full pl-11 pr-4 py-3 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-xl text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)] transition-all duration-200"
+          />
+        </div>
+        <select
+          id="categoryFilter"
+          class="px-4 py-3 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-xl text-sm text-[var(--color-text-secondary)] appearance-none cursor-pointer min-w-[200px] transition-all duration-200"
+        >
+          <option value="all">All Categories</option>
+          {Object.keys(categoryCounts).sort().map(cat => (
+            <option value={cat}>{cat} ({categoryCounts[cat]})</option>
+          ))}
+        </select>
+      </div>
+
+      <!-- Category Pills -->
+      <div class="flex flex-wrap gap-2 mb-10">
+        {Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]).map(([cat, count]) => (
+          <button
+            class="category-pill flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] text-[var(--color-text-tertiary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-all duration-200 cursor-pointer"
+            data-category={cat}
+          >
+            <span>{categoryIcons[cat] || '📄'}</span>
+            <span>{cat}</span>
+            <span class="text-[10px] opacity-60">{count}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <!-- Papers -->
+    <section class="pb-24 animate-fade-in" style="animation-delay: 0.15s">
+      <div id="papersContainer" class="space-y-4">
+        {Object.keys(papersByCategory).sort().map(category => {
+          const papers = papersByCategory[category].sort((a, b) =>
+            new Date(b.date + 'T12:00:00').getTime() - new Date(a.date + 'T12:00:00').getTime()
+          );
+          return (
+            <div class="category-section" data-category={category}>
+              <!-- Category Header -->
+              <div class="flex items-center gap-3 mb-4 mt-8 first:mt-0">
+                <span class="text-lg">{categoryIcons[category] || '📄'}</span>
+                <h3 class="text-base font-semibold text-[var(--color-text-primary)]">{category}</h3>
+                <span class="text-xs text-[var(--color-text-tertiary)] tabular-nums">{papers.length}</span>
+                <div class="flex-1 h-px bg-[var(--color-border-subtle)]"></div>
+              </div>
+
+              {papers.map(paper => (
+                <div
+                  class="paper-card group rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6 mb-3 transition-lift hover:border-[var(--color-border-default)]"
+                  data-paper={JSON.stringify(paper)}
+                >
+                  <!-- Top Row: Title + Badges -->
+                  <div class="flex items-start justify-between gap-4 mb-3">
+                    <a
+                      href={paper.url || '#'}
+                      target="_blank"
+                      rel="noopener"
+                      class="text-base font-semibold text-[var(--color-text-primary)] leading-snug hover:text-[var(--color-accent-hover)] transition-colors duration-200 flex-1"
+                    >
+                      {paper.title}
+                      <svg class="inline-block w-3.5 h-3.5 ml-1.5 opacity-0 group-hover:opacity-50 transition-opacity duration-200 -translate-y-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <div class="flex items-center gap-2 shrink-0">
+                      {paper.significance === 'very-high' && (
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[var(--color-rose)]/15 text-[var(--color-rose)] border border-[var(--color-rose)]/20">
+                          Top
+                        </span>
+                      )}
+                      {paper.significance === 'high' && (
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[var(--color-amber)]/15 text-[var(--color-amber)] border border-[var(--color-amber)]/20">
+                          Notable
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  <!-- Meta Row -->
+                  <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm mb-4">
+                    <span class="text-[var(--color-text-tertiary)] truncate max-w-md">
+                      {paper.authors.slice(0, 3).join(', ')}{paper.authors.length > 3 ? ` +${paper.authors.length - 3}` : ''}
+                    </span>
+                    {paper.journal && (
+                      <>
+                        <span class="text-[var(--color-border-default)]">/</span>
+                        <span class="text-[var(--color-accent-hover)] font-medium text-xs">{paper.journal}</span>
+                      </>
+                    )}
+                    <span class="text-[var(--color-border-default)]">/</span>
+                    <time class="text-[var(--color-text-tertiary)] text-xs tabular-nums">
+                      {new Date(paper.date + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+                    </time>
+                  </div>
+
+                  <!-- Summary -->
+                  <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">
+                    {paper.abstract_summary}
+                  </p>
+
+                  <!-- Significance Note -->
+                  <div class="rounded-lg bg-[var(--color-surface-0)] border border-[var(--color-border-subtle)] px-4 py-3 mb-3">
+                    <div class="flex items-center gap-2 mb-1.5">
+                      <div class="w-1 h-1 rounded-full bg-[var(--color-accent)]"></div>
+                      <span class="text-[10px] font-semibold uppercase tracking-wider text-[var(--color-text-tertiary)]">Significance</span>
+                    </div>
+                    <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">{paper.significance_notes}</p>
+                  </div>
+
+                  <!-- Tags -->
+                  {paper.tags && paper.tags.length > 0 && (
+                    <div class="flex flex-wrap gap-1.5">
+                      {paper.tags.map(tag => (
+                        <span class="px-2 py-0.5 rounded-md text-[11px] text-[var(--color-text-tertiary)] bg-[var(--color-surface-2)] border border-[var(--color-border-subtle)]">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- No Results -->
+      <div id="noResults" class="hidden text-center py-20">
+        <div class="text-4xl mb-4">🔍</div>
+        <p class="text-[var(--color-text-tertiary)] text-lg">No papers found matching your search.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script is:inline define:vars={{ catalog, categoryNames }}>
+    const searchBox = document.getElementById('searchBox');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const pills = document.querySelectorAll('.category-pill');
+
+    // Check URL params for initial category filter
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCategory = urlParams.get('category');
+    if (initialCategory) {
+      categoryFilter.value = initialCategory;
+      pills.forEach(p => {
+        if (p.getAttribute('data-category') === initialCategory) {
+          p.classList.add('!border-indigo-500', '!text-indigo-400');
+        }
+      });
+      filterPapers();
+    }
+
+    // Category pill click handler
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const cat = pill.getAttribute('data-category');
+        const current = categoryFilter.value;
+
+        if (current === cat) {
+          categoryFilter.value = 'all';
+          pill.classList.remove('border-[var(--color-accent)]', 'text-[var(--color-accent-hover)]');
+        } else {
+          categoryFilter.value = cat;
+          pills.forEach(p => p.classList.remove('border-[var(--color-accent)]', 'text-[var(--color-accent-hover)]', '!border-indigo-500', '!text-indigo-400'));
+          pill.classList.add('!border-indigo-500', '!text-indigo-400');
+        }
+        filterPapers();
+      });
+    });
+
+    function filterPapers() {
+      const searchTerm = searchBox.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+
+      const categorySections = document.querySelectorAll('.category-section');
+      let visibleCount = 0;
+
+      categorySections.forEach(section => {
+        const papers = Array.from(section.querySelectorAll('.paper-card'));
+
+        papers.forEach(card => {
+          const paperData = JSON.parse(card.getAttribute('data-paper') || '{}');
+          const displayCat = categoryNames[paperData.category] || paperData.category;
+
+          const matchesCategory = selectedCategory === 'all' || displayCat === selectedCategory;
+          const matchesSearch = !searchTerm ||
+            paperData.title.toLowerCase().includes(searchTerm) ||
+            paperData.authors.some(a => a.toLowerCase().includes(searchTerm)) ||
+            paperData.abstract_summary.toLowerCase().includes(searchTerm) ||
+            (paperData.significance_notes || '').toLowerCase().includes(searchTerm) ||
+            (paperData.journal || '').toLowerCase().includes(searchTerm) ||
+            (paperData.tags || []).some(t => t.toLowerCase().includes(searchTerm));
+
+          if (matchesCategory && matchesSearch) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        const visiblePapers = papers.filter(p => !p.classList.contains('hidden'));
+        if (visiblePapers.length === 0) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+        }
+      });
+
+      const noResults = document.getElementById('noResults');
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    searchBox.addEventListener('input', filterPapers);
+    categoryFilter.addEventListener('change', () => {
+      const val = categoryFilter.value;
+      pills.forEach(p => {
+        p.classList.remove('!border-indigo-500', '!text-indigo-400');
+        if (p.getAttribute('data-category') === val) {
+          p.classList.add('!border-indigo-500', '!text-indigo-400');
+        }
+      });
+      filterPapers();
+    });
+  </script>
+</Layout>
