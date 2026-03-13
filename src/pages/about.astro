@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 const allArticles = await getCollection('articles');
 const journals = new Set(catalog.map(p => p.journal).filter(Boolean));
 
-const categoryNames = {
+const categoryNames: Record<string, string> = {
   'fundamental-mechanism': 'Fundamental Mechanism',
   'materials-design': 'Materials Design',
   'application': 'Application',
@@ -19,216 +19,84 @@ const categories = new Set(catalog.map(p => categoryNames[p.category] || p.categ
 
 <Layout
   title="About"
-  description="About the TTA-UC Research Tracker. Our mission, methodology, and approach to providing expert-level research intelligence on Triplet-Triplet Annihilation Upconversion."
+  description="About the TTA-UC Research Tracker. Mission, methodology, and coverage."
   currentPath="/about"
 >
 
-  <div class="max-w-7xl mx-auto px-6">
+  <div class="max-w-3xl mx-auto px-6">
 
-    <!-- Header -->
-    <section class="pt-16 sm:pt-20 pb-16 animate-fade-in">
-      <div class="flex items-center gap-3 mb-6">
-        <div class="h-px w-12 bg-[var(--color-accent)]"></div>
-        <span class="text-xs font-semibold text-[var(--color-accent-hover)] uppercase tracking-widest">About</span>
-      </div>
-
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-6 max-w-4xl">
-        Research intelligence for the TTA-UC community
+    <section class="pt-16 sm:pt-20 pb-10">
+      <h1 class="text-3xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-6">
+        About
       </h1>
-      <p class="text-lg text-[var(--color-text-tertiary)] leading-relaxed max-w-3xl">
-        We track and analyze emerging research in Triplet-Triplet Annihilation Upconversion, providing expert-level commentary for researchers and industry professionals.
+      <p class="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+        The TTA-UC Research Tracker monitors and analyzes research on Triplet-Triplet Annihilation Upconversion, providing a curated catalog and expert commentary for researchers and industry professionals.
       </p>
     </section>
 
-    <!-- Mission -->
-    <section class="pb-20 animate-fade-in" style="animation-delay: 0.1s">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-        <div>
-          <h2 class="text-xl font-semibold text-[var(--color-text-primary)] tracking-tight mb-6">Our Mission</h2>
-          <div class="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
-            <p>
-              Triplet-Triplet Annihilation Upconversion sits at the intersection of photochemistry, materials science, and optoelectronics. The field moves fast, publications are scattered across dozens of journals, and critical developments often appear without the context needed to evaluate their true significance.
-            </p>
-            <p>
-              The TTA-UC Research Tracker exists to solve this problem. We systematically monitor the literature, curate significant publications, and provide structured analysis that helps researchers and industry professionals stay current without spending hours on literature searches.
-            </p>
-            <p>
-              Every paper in our catalog is evaluated for scientific significance, placed in context relative to the broader field, and annotated with expert commentary on why it matters and what it means for the trajectory of TTA-UC research.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold text-[var(--color-text-primary)] tracking-tight mb-6">What We Provide</h2>
-          <div class="space-y-4">
-            <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-              <div class="flex items-center gap-3 mb-3">
-                <span class="text-lg">📊</span>
-                <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Curated Research Catalog</h3>
-              </div>
-              <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-                A searchable database of TTA-UC publications, each with structured metadata, significance ratings, and expert annotations. Filterable by category, journal, impact level, and keyword.
-              </p>
-            </div>
-
-            <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-              <div class="flex items-center gap-3 mb-3">
-                <span class="text-lg">💬</span>
-                <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Expert Discussion</h3>
-              </div>
-              <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-                Periodic in-depth commentary on the state of TTA-UC research. Each discussion edition covers recent publications, identifies convergent trends, evaluates industrial implications, and highlights the most impactful advances.
-              </p>
-            </div>
-
-            <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-              <div class="flex items-center gap-3 mb-3">
-                <span class="text-lg">🎯</span>
-                <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Significance Analysis</h3>
-              </div>
-              <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-                Every tracked paper receives a significance assessment that goes beyond citation metrics. We evaluate novelty, potential for field advancement, reproducibility indicators, and relevance to both academic and industrial applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Methodology -->
-    <section class="pb-20 animate-fade-in" style="animation-delay: 0.15s">
-      <div class="flex items-center gap-4 mb-10">
-        <h2 class="text-xl font-semibold text-[var(--color-text-primary)] tracking-tight">Methodology</h2>
-        <div class="flex-1 h-px bg-[var(--color-border-subtle)]"></div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-[var(--color-surface-2)] border border-[var(--color-border-subtle)] flex items-center justify-center text-xs font-bold text-[var(--color-accent-hover)]">1</div>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Monitoring</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Continuous monitoring of major chemistry, materials science, and photonics journals. We track publications across Nature, Science, ACS, RSC, Wiley, and Elsevier imprints, as well as preprint servers and conference proceedings.
-          </p>
-        </div>
-
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-[var(--color-surface-2)] border border-[var(--color-border-subtle)] flex items-center justify-center text-xs font-bold text-[var(--color-accent-hover)]">2</div>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Curation</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Papers are screened for relevance and quality. Those that advance the field, introduce novel materials or mechanisms, or provide significant review coverage are selected for the catalog. Each receives structured metadata and categorization.
-          </p>
-        </div>
-
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-[var(--color-surface-2)] border border-[var(--color-border-subtle)] flex items-center justify-center text-xs font-bold text-[var(--color-accent-hover)]">3</div>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Analysis</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Expert-level assessment of each paper's significance, including evaluation of novelty, experimental rigor, potential for field impact, and relevance to industrial applications. Commentary is written to be useful for both specialists and adjacent-field researchers.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Coverage Stats -->
-    <section class="pb-20 animate-fade-in" style="animation-delay: 0.2s">
-      <div class="flex items-center gap-4 mb-10">
-        <h2 class="text-xl font-semibold text-[var(--color-text-primary)] tracking-tight">Coverage</h2>
-        <div class="flex-1 h-px bg-[var(--color-border-subtle)]"></div>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6 text-center">
-          <div class="text-3xl font-bold text-[var(--color-text-primary)] tabular-nums mb-2">{catalog.length}</div>
-          <div class="text-xs text-[var(--color-text-tertiary)] uppercase tracking-wider font-medium">Papers Cataloged</div>
-        </div>
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6 text-center">
-          <div class="text-3xl font-bold text-[var(--color-text-primary)] tabular-nums mb-2">{journals.size}</div>
-          <div class="text-xs text-[var(--color-text-tertiary)] uppercase tracking-wider font-medium">Journals Covered</div>
-        </div>
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6 text-center">
-          <div class="text-3xl font-bold text-[var(--color-text-primary)] tabular-nums mb-2">{categories.size}</div>
-          <div class="text-xs text-[var(--color-text-tertiary)] uppercase tracking-wider font-medium">Research Areas</div>
-        </div>
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6 text-center">
-          <div class="text-3xl font-bold text-[var(--color-accent-hover)] tabular-nums mb-2">{allArticles.length}</div>
-          <div class="text-xs text-[var(--color-text-tertiary)] uppercase tracking-wider font-medium">Discussion Editions</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research Categories -->
-    <section class="pb-20 animate-fade-in" style="animation-delay: 0.25s">
-      <div class="flex items-center gap-4 mb-10">
-        <h2 class="text-xl font-semibold text-[var(--color-text-primary)] tracking-tight">Research Categories</h2>
-        <div class="flex-1 h-px bg-[var(--color-border-subtle)]"></div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-lg">🔬</span>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Fundamental Mechanism</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Core photophysical processes: triplet energy transfer, triplet-triplet annihilation kinetics, spin dynamics, and the mechanistic underpinnings that govern upconversion efficiency.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-lg">🧪</span>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Materials Design</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            New sensitizers, annihilators, and host matrices. Includes molecular design strategies, nanostructured platforms (COFs, MOFs, nanocrystals), and polymer-based systems for solid-state upconversion.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-lg">⚡</span>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Application</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Practical implementations of TTA-UC in solar energy, bioimaging, photocatalysis, display technology, and sensing. Papers that demonstrate device-level integration or application-specific optimization.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-surface-1)] p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-lg">📖</span>
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)]">Review & Perspective</h3>
-          </div>
-          <p class="text-sm text-[var(--color-text-tertiary)] leading-relaxed">
-            Comprehensive reviews, perspective articles, and roadmap documents that survey the field, identify open challenges, and chart future directions for TTA-UC research and development.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / CTA -->
-    <section class="pb-24 animate-fade-in" style="animation-delay: 0.3s">
-      <div class="rounded-2xl border border-[var(--color-border-subtle)] bg-gradient-to-b from-[var(--color-surface-2)] to-[var(--color-surface-1)] p-10 sm:p-12 text-center">
-        <h2 class="text-2xl font-bold text-[var(--color-text-primary)] tracking-tight mb-4">Explore Our Research</h2>
-        <p class="text-[var(--color-text-tertiary)] leading-relaxed max-w-lg mx-auto mb-8">
-          Browse the full catalog of curated TTA-UC research or read our latest expert discussion on emerging developments in the field.
+    <section class="pb-12 border-t border-[var(--color-border-subtle)] pt-10">
+      <h2 class="text-xl font-semibold text-[var(--color-text-primary)] mb-6">Why this exists</h2>
+      <div class="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
+        <p>
+          Triplet-Triplet Annihilation Upconversion sits at the intersection of photochemistry, materials science, and optoelectronics. The field moves quickly, publications are scattered across dozens of journals, and significant developments often appear without the context needed to evaluate their true importance.
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="/catalog" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-accent)] text-white text-sm font-semibold hover:bg-[var(--color-accent-hover)] transition-all duration-200 hover:shadow-[0_0_24px_var(--color-accent-muted)]">
-            Browse Catalog
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </a>
-          <a href="/discussion" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[var(--color-border-default)] text-[var(--color-text-secondary)] text-sm font-semibold hover:border-[var(--color-accent)] hover:text-[var(--color-text-primary)] transition-all duration-200">
-            Read Discussion
-          </a>
-        </div>
+        <p>
+          We solve this by systematically monitoring the literature, curating significant publications, and providing structured analysis that helps researchers stay current without spending hours on literature searches.
+        </p>
+        <p>
+          Every paper in our catalog is evaluated for scientific significance, placed in context relative to the broader field, and annotated with commentary on why it matters and what it means for the trajectory of TTA-UC research.
+        </p>
       </div>
+    </section>
+
+    <section class="pb-12 border-t border-[var(--color-border-subtle)] pt-10">
+      <h2 class="text-xl font-semibold text-[var(--color-text-primary)] mb-6">Methodology</h2>
+      <div class="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
+        <p>
+          We continuously monitor major chemistry, materials science, and photonics journals, including Nature, Science, ACS, RSC, Wiley, and Elsevier imprints, as well as preprint servers and conference proceedings.
+        </p>
+        <p>
+          Papers are screened for relevance and quality. Those that advance the field, introduce novel materials or mechanisms, or provide significant review coverage are selected for the catalog. Each receives structured metadata, categorization, and a significance assessment.
+        </p>
+        <p>
+          Significance evaluations go beyond citation metrics. We assess novelty, experimental rigor, potential for field impact, and relevance to both academic and industrial applications. Commentary is written for specialists and adjacent-field researchers alike.
+        </p>
+      </div>
+    </section>
+
+    <section class="pb-12 border-t border-[var(--color-border-subtle)] pt-10">
+      <h2 class="text-xl font-semibold text-[var(--color-text-primary)] mb-6">Coverage</h2>
+      <div class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6">
+        <p>
+          The tracker currently covers {catalog.length} papers across {journals.size} journals and {categories.size} research areas, with {allArticles.length} discussion {allArticles.length === 1 ? 'edition' : 'editions'} published.
+        </p>
+      </div>
+
+      <h3 class="text-sm font-medium text-[var(--color-text-primary)] mb-4">Research areas</h3>
+      <table class="w-full text-sm">
+        <tbody class="divide-y divide-[var(--color-border-subtle)]">
+          <tr>
+            <td class="py-2 text-[var(--color-text-secondary)]">Fundamental Mechanism</td>
+            <td class="py-2 text-[var(--color-text-tertiary)] text-right">Core photophysics, triplet energy transfer, spin dynamics</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-[var(--color-text-secondary)]">Materials Design</td>
+            <td class="py-2 text-[var(--color-text-tertiary)] text-right">Sensitizers, annihilators, host matrices, nanostructures</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-[var(--color-text-secondary)]">Application</td>
+            <td class="py-2 text-[var(--color-text-tertiary)] text-right">Solar energy, bioimaging, photocatalysis, sensing</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-[var(--color-text-secondary)]">Review and Perspective</td>
+            <td class="py-2 text-[var(--color-text-tertiary)] text-right">Surveys, roadmaps, open challenges</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-[var(--color-text-secondary)]">Computational</td>
+            <td class="py-2 text-[var(--color-text-tertiary)] text-right">Theoretical modeling and simulation</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
   </div>
