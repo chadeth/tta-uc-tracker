@@ -37,6 +37,7 @@ function isActive(href: string, current: string): boolean {
   <meta name="description" content={description}>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="alternate" type="application/rss+xml" title="TTA-UC Research Tracker" href="/rss.xml">
   <link rel="canonical" href={`https://tta-uc-tracker.pages.dev${currentPath}`}>
 
   <meta property="og:type" content="website">
@@ -114,6 +115,10 @@ function isActive(href: string, current: string): boolean {
         <a href="/catalog" class="hover:text-[var(--color-text-secondary)] transition-colors">Catalog</a>
         <a href="/discussion" class="hover:text-[var(--color-text-secondary)] transition-colors">Discussion</a>
         <a href="/about" class="hover:text-[var(--color-text-secondary)] transition-colors">About</a>
+        <a href="/rss.xml" class="hover:text-[var(--color-text-secondary)] transition-colors flex items-center gap-1" title="RSS Feed">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+          RSS
+        </a>
       </div>
     </div>
   </footer>
