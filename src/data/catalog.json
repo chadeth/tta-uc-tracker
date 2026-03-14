@@ -674,5 +674,169 @@
     "date": "2026-03-10",
     "one_paragraph_summary": "This paper demonstrates a novel application of sensitized TTA-UC for direct laser writing of ferromagnetic nickel microstructures under ambient conditions. The authors designed a photoresist system that combines three photochemical processes: (1) in-situ photochemical deoxygenation to address oxygen quenching, (2) sensitized triplet-triplet annihilation upconversion to generate higher-energy photons from lower-energy excitation, and (3) photoreduction of Ni2+ ions to metallic nickel. SEM and EDX confirm spatially confined nickel deposition, while vibrating sample magnetometry and scanning NV magnetometry verify ferromagnetic behavior of the printed structures.",
     "why_its_promising": "This represents a genuinely new application domain for TTA-UC - additive manufacturing of metallic and ferromagnetic materials. The in-situ deoxygenation strategy is particularly interesting because oxygen quenching of triplet states is one of the central challenges in TTA-UC. By building oxygen scavenging directly into the photoresist formulation, the authors solve two problems at once: enabling TTA-UC under ambient conditions and creating a reducing environment for metal deposition. This could inspire new approaches to oxygen-tolerant TTA-UC systems beyond the direct laser writing context."
+  },
+  {
+    "id": "narayanan_2026_arxiv_1200nm_imaging",
+    "title": "Visible Imaging of Incoherent 1200-nm Light via Triplet-Triplet Annihilation Upconversion",
+    "authors": [
+      "Pournima Narayanan",
+      "Rabeeya Hamid",
+      "Linda Pucurimay",
+      "Ona Segura Lecina",
+      "Ben P. Carwithen",
+      "Jacob Schopp",
+      "Justin S. Edwards",
+      "Oluwaseun Noah Adeyeye",
+      "Demeng Feng",
+      "Diptarka Hait",
+      "Todd J. Martinez",
+      "Timothy W. Schmidt",
+      "Michael P. Nielsen",
+      "Murad J. Y. Tayebjee",
+      "Mikhail A. Kats",
+      "Daniel N. Congreve"
+    ],
+    "journal": "arXiv preprint (updated March 2, 2026)",
+    "date": "2026-03-02",
+    "doi": null,
+    "arxiv_id": "2510.15184",
+    "url": "https://arxiv.org/abs/2510.15184",
+    "category": "application",
+    "subcategory": "NIR-imaging",
+    "application_areas": [
+      "solar",
+      "imaging",
+      "3D-printing",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Demonstrates visible imaging of incoherent 1200-nm NIR light using thin-film TTA-UC. A single-layer bulk heterojunction integrates PbS quantum dots as tunable NIR absorbers with a TES-ADT organic semiconductor matrix. Achieves anti-Stokes shifts up to 500 nm and high internal quantum efficiencies across the NIR-I and NIR-II windows (800-1200 nm). 5-tetracene carboxylic acid ligands on PbS QD surfaces boost sensitized triplet yield, yielding a 15-fold improvement in UC efficiency. Images formed at intensities as low as 20 mW/cm^2.",
+    "significance": "high",
+    "significance_notes": "From the Congreve lab (Stanford) and collaborators at Wisconsin-Madison, UNSW, and SLAC. Pushes TTA-UC into practical NIR imaging territory with 1200 nm excitation. The bulk heterojunction architecture and ligand engineering (5-tetracene carboxylic acid) for enhanced triplet yield are broadly applicable design strategies. Preprint updated March 2026.",
+    "pdf_downloaded": true,
+    "pdf_filename": "narayanan_2026_1200nm_imaging_TTA_UC.pdf",
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-13",
+    "tags": [
+      "NIR-imaging",
+      "PbS-QD",
+      "bulk-heterojunction",
+      "TES-ADT",
+      "1200nm",
+      "ligand-engineering",
+      "Congreve-group",
+      "preprint"
+    ]
+  },
+  {
+    "id": "klein_2025_arxiv_CT_states_BHJ_sensitizer",
+    "title": "Charge Transfer States in Donor Acceptor Bulk Heterojunctions as Triplet Triplet Annihilation Sensitizer for Solid-State Photon Upconversion",
+    "authors": [
+      "Maciej Klein",
+      "Alexander R. Ireland",
+      "Evan G. Moore",
+      "Dennis Delic",
+      "Ajay K. Pandey"
+    ],
+    "journal": "arXiv preprint",
+    "date": "2025-09-30",
+    "doi": null,
+    "arxiv_id": "2509.25679",
+    "url": "https://arxiv.org/abs/2509.25679",
+    "category": "fundamental-mechanism",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "solar",
+      "imaging",
+      "quantum-sensing"
+    ],
+    "abstract_summary": "Presents a multilayer molecular system where charge transfer (CT) states in a squaraine (DIB-SQ):PCBM donor-acceptor bulk heterojunction serve as NIR photosensitizer for solid-state TTA-UC. Fine-tuning PCBM loading engineers charge transfer states of triplet character (3CT) that facilitate triplet generation. At optimized 1:3 blend ratio with a rubrene/DBP annihilator layer, achieves 1.36% upconversion quantum yield at 690 nm excitation with a significantly low intensity threshold for the linear regime.",
+    "significance": "medium-high",
+    "significance_notes": "Introduces charge transfer states as a new sensitization pathway for solid-state TTA-UC, distinct from conventional molecular or QD sensitizers. The squaraine:PCBM architecture leverages organic photovoltaic device physics for upconversion. Time-resolved spectroscopy and magnetic field-dependent PL provide mechanistic detail. Preprint from University of Queensland.",
+    "pdf_downloaded": true,
+    "pdf_filename": "klein_2025_CT_states_BHJ_TTA_sensitizer.pdf",
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-13",
+    "tags": [
+      "charge-transfer-states",
+      "bulk-heterojunction",
+      "squaraine",
+      "PCBM",
+      "NIR-sensitizer",
+      "solid-state",
+      "preprint"
+    ]
+  },
+  {
+    "id": "odea_2026_adfm_tta_3d_printing",
+    "title": "Triplet-Triplet Annihilation Enhances Photochemical Curing Contrast for Vat-Based 3D Printing",
+    "authors": [
+      "C. J. O'Dea",
+      "E. P. Scruggs",
+      "Z. A. Page"
+    ],
+    "journal": "Advanced Functional Materials",
+    "date": "2026-03-11",
+    "doi": "10.1002/adfm.202530758",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202530758",
+    "category": "application",
+    "subcategory": "3D-printing",
+    "application_areas": [
+      "3D-printing",
+      "photopolymerization",
+      "manufacturing"
+    ],
+    "abstract_summary": "Demonstrates triplet-triplet annihilation photopolymerization (TTAP) for vat-based 3D printing using PtOEP as sensitizer and DPA as annihilator. DPA serves a dual role as both annihilator and auxiliary oxygen scavenger, reducing inhibition time. The super-linear intensity dependence of TTA provides enhanced photochemical curing contrast compared to conventional single-photon polymerization, enabling higher resolution 3D printing at lower light intensities.",
+    "significance": "medium-high",
+    "significance_notes": "First demonstration of TTA-enhanced curing contrast specifically for DLP 3D printing. The dual-role DPA strategy (annihilator + O2 scavenger) addresses the oxygen quenching problem elegantly. Published in Adv. Funct. Mater. just 2 days ago. Extends TTA-UC applications beyond energy/sensing into additive manufacturing.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-13",
+    "tags": [
+      "3D-printing",
+      "photopolymerization",
+      "PtOEP",
+      "DPA",
+      "oxygen-scavenging",
+      "DLP",
+      "curing-contrast"
+    ]
+  },
+  {
+    "id": "wang_2026_small_qd_ketone_triplet",
+    "title": "Sensitizing Ketone Triplets Using Low-Toxicity Blue Quantum Dots for Multifunctional Energy-Demanding Applications",
+    "authors": [
+      "Zhaolong Wang",
+      "Xiaoheng Chen",
+      "Kaifeng Wu"
+    ],
+    "journal": "Small",
+    "date": "2026-02-14",
+    "doi": "10.1002/smll.202514174",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.202514174",
+    "category": "adjacent-field",
+    "subcategory": "QD-sensitized-triplets",
+    "application_areas": [
+      "photocatalysis",
+      "energy-conversion",
+      "photochemistry"
+    ],
+    "abstract_summary": "Low-toxicity (Cd-free, Pb-free) blue ZnSe-based quantum dots efficiently sensitize the triplet states of surface-anchored thioxanthone (ketone) molecules. This hybrid QD-ketone sensitizer enables three challenging photochemical applications: (i) visible-to-ultraviolet B photon upconversion via TTA with a large anti-Stokes shift of 0.8 eV, (ii) energy transfer photocatalysis (disulfide-ene reaction), and (iii) reductive aryl dechlorination and C-N coupling driven by thioxanthone triplet hydrogen abstraction.",
+    "significance": "high",
+    "significance_notes": "From the Kaifeng Wu group (same team behind the Nature Materials proton shuttle paper). Opens a new class of low-toxicity QD sensitizers for TTA-UC - ZnSe QDs are non-toxic unlike PbS/CdSe. Vis-to-UVB upconversion is an underexplored spectral direction. The ketone triplet sensitization mechanism is novel and could expand the sensitizer toolkit for TTA-UC. Published in Small.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-13",
+    "tags": [
+      "ZnSe-QD",
+      "low-toxicity",
+      "ketone-triplet",
+      "thioxanthone",
+      "vis-to-UVB",
+      "Kaifeng-Wu",
+      "photocatalysis",
+      "anti-Stokes-0.8eV"
+    ]
   }
 ]
