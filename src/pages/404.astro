@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Base.astro';
+---
+
+<Layout title="Page Not Found" currentPath="/404">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <section class="pt-24 sm:pt-32 pb-24 max-w-xl mx-auto text-center">
+
+      <!-- Stylized 404 with photon/upconversion motif -->
+      <div class="mb-10 relative inline-block">
+        <span class="text-8xl sm:text-9xl font-bold tracking-tighter text-[var(--color-border-subtle)] select-none">
+          404
+        </span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <svg class="w-16 h-16 text-[var(--color-accent)] opacity-60" viewBox="0 0 64 64" fill="none" stroke="currentColor">
+            <!-- Two incoming photons converging -->
+            <line x1="8" y1="56" x2="28" y2="36" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+            <line x1="56" y1="56" x2="36" y2="36" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+            <!-- Upconverted photon shooting up -->
+            <line x1="32" y1="32" x2="32" y2="10" stroke-width="2.5" stroke-linecap="round" />
+            <polyline points="26,16 32,10 38,16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Annihilation point glow -->
+            <circle cx="32" cy="34" r="3" fill="currentColor" opacity="0.3" />
+          </svg>
+        </div>
+      </div>
+
+      <h1 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-3">
+        Photon not found
+      </h1>
+      <p class="text-[var(--color-text-secondary)] leading-relaxed mb-8">
+        This page didn't make it through the upconversion process. The triplet state decayed before reaching its destination.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a
+          href="/"
+          class="px-5 py-2.5 bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white text-sm font-medium rounded-lg transition-colors"
+        >
+          Back to home
+        </a>
+        <a
+          href="/catalog"
+          class="px-5 py-2.5 bg-[var(--color-surface-2)] hover:bg-[var(--color-border-subtle)] text-[var(--color-text-secondary)] text-sm font-medium rounded-lg transition-colors border border-[var(--color-border-subtle)]"
+        >
+          Browse catalog
+        </a>
+      </div>
+
+    </section>
+
+  </div>
+
+</Layout>
