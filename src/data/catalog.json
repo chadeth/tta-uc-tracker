@@ -838,5 +838,283 @@
       "photocatalysis",
       "anti-Stokes-0.8eV"
     ]
+  },
+  {
+    "id": "naimovicius_2026_jacs_bulky_annihilators",
+    "title": "Activating Solid-State Triplet-Triplet Annihilation Upconversion via Bulky Annihilators",
+    "authors": [
+      "Lukas Naimovicius",
+      "Liwia Wolek",
+      "Simon K. Zhang",
+      "Judy E. Kim",
+      "Michael J. Tauber",
+      "Andrew B. Pun"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2026-01-22",
+    "doi": "10.1021/jacs.5c21298",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c21298",
+    "category": "materials-design",
+    "subcategory": "solid-state-annihilators",
+    "application_areas": [
+      "energy-conversion",
+      "optoelectronics",
+      "solar"
+    ],
+    "abstract_summary": "Develops a strategy to activate solid-state TTA-UC in materials previously known only for singlet fission, specifically diketopyrrolopyrroles (DPPs) and dipyrrolonaphthyridinediones (DPNDs). Demonstrates a general approach to progressively enhancing UC quantum yields by appending bulky alkyl moieties to annihilator chromophores, suppressing aggregation-induced quenching. Achieves solid-state TTA-UC quantum yields up to 1.5% in thin films. Establishes that careful molecular design of annihilators is a powerful strategy for efficient solid-state upconversion.",
+    "significance": "high",
+    "significance_notes": "Published in JACS. Bridges singlet fission and TTA-UC communities by showing SF-active chromophores (DPPs, DPNDs) can be repurposed as TTA-UC annihilators with bulky substituents. The general design principle (steric bulk to suppress quenching) is broadly applicable. From the Pun group.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-14",
+    "tags": [
+      "solid-state",
+      "DPP",
+      "DPND",
+      "bulky-substituents",
+      "singlet-fission-crossover",
+      "annihilator-design",
+      "JACS"
+    ]
+  },
+  {
+    "id": "guo_2026_jacs_830nm_se_cyanine",
+    "title": "830 nm-Excitable Triplet-Triplet Annihilation Upconversion Achieved by a Selenium-Integrated Heptamethine Cyanine Sensitizer",
+    "authors": [
+      "Da-Xin Guo",
+      "Lin-Han Jiang",
+      "S. Chu",
+      "Y. Sha",
+      "Yu-Zhe Li",
+      "Zhang",
+      "Ling Huang"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2026-01-22",
+    "doi": "10.1021/jacs.5c15902",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c15902",
+    "category": "fundamental-mechanism",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "NIR-applications"
+    ],
+    "abstract_summary": "Demonstrates that a selenium-integrated heptamethine cyanine dye acts as an effective NIR photosensitizer for TTA-UC, achieving 830 nm excitation with 557 nm emission and an upconversion quantum yield of up to 1.0% (out of 50%) when paired with rubrene as the annihilator. The selenium atom promotes intersystem crossing via the heavy-atom effect while maintaining good absorption in the NIR. Also demonstrates a single-layer 830 nm-responsive TTA-UC film with excellent transmittance, promoting practical photon upconversion applications in solar energy harvesting.",
+    "significance": "high",
+    "significance_notes": "Published in JACS (same issue as Huang group's Accounts review - suggests this is from the same lab). 830 nm excitation using an all-organic (no precious metals) selenium-cyanine sensitizer is significant for practical NIR TTA-UC. The film demonstration adds device relevance. Complements the Mitsui Au42 nanocluster approach for NIR excitation.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-14",
+    "tags": [
+      "selenium",
+      "cyanine",
+      "heptamethine",
+      "830nm",
+      "NIR",
+      "organic-sensitizer",
+      "heavy-atom-effect",
+      "rubrene",
+      "film",
+      "JACS"
+    ]
+  },
+  {
+    "id": "kandappa_2026_jacs_triplet_mediator",
+    "title": "Improving Triplet-Triplet Annihilation Upconversion Output by a Triplet Mediator Approach: Mechanistic Insights on Homo and Hetero-Annihilation in Three-Component Systems",
+    "authors": [
+      "Sunil Kumar Kandappa",
+      "Victor Gray"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2026-01-02",
+    "doi": "10.1021/jacs.5c09906",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c09906",
+    "category": "fundamental-mechanism",
+    "subcategory": "efficiency-optimization",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "bioimaging"
+    ],
+    "abstract_summary": "Introduces a mediator-assisted TTA-UC approach using a neutral, noncovalently linked mediator molecule to facilitate upconversion in the UV and visible regions while minimizing reabsorption losses from the annihilator. Through detailed kinetic modeling, elucidates the underlying mechanism and highlights the role of hetero-TTA (triplet-triplet annihilation between mediator and annihilator). Reports the first estimation of a hetero-TTA rate constant, finding it exceeds the homo-TTA rate by a factor of 2. Broadens the design space for TTA-UC systems beyond conventional two-component sensitizer-annihilator pairs.",
+    "significance": "high",
+    "significance_notes": "Published in JACS. First quantification of hetero-TTA rate constants. The three-component mediator approach is a new design paradigm that addresses the fundamental reabsorption problem in TTA-UC. Already cited by 1 paper. Open access via PMC (PMC12593377).",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-14",
+    "tags": [
+      "mediator",
+      "three-component",
+      "hetero-TTA",
+      "reabsorption",
+      "kinetic-modeling",
+      "UV-upconversion",
+      "open-access",
+      "JACS"
+    ]
+  },
+  {
+    "id": "moghtader_2026_acsphyschemau_tips_biphenyl_uv",
+    "title": "At the 'Peak' of Vis-to-UV Upconversion: Clear Advantages of TIPS Substituents for a Biphenyl Annihilator",
+    "authors": [
+      "Julian A. Moghtader",
+      "Masanori Uji",
+      "Till J. B. Zahringer",
+      "Matthias Schmitz",
+      "Luca M. Carrella",
+      "Alexander Heckel",
+      "Eva Rentschler",
+      "Nobuhiro Yanai",
+      "Christoph Kerzig"
+    ],
+    "journal": "ACS Physical Chemistry Au",
+    "date": "2026-01-15",
+    "doi": "10.1021/acsphyschemau.5c00084",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12648284/",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "photocatalysis",
+      "photochemistry",
+      "bond-activation"
+    ],
+    "abstract_summary": "Develops a series of novel symmetrical biphenyls bearing silylethynyl substituents of varying sizes as annihilators for visible-to-UV upconversion. TIPS-ethynyl and trimethylsilylethynyl groups yield UC quantum yields up to ~12%, while larger triphenylsilylethynyl substituents halve performance due to nonradiative loss channels from altered higher triplet state energies. The best annihilator (bTIPS-BP) extends efficient UV emission to ~350 nm (onset ~325 nm), hypsochromically shifted 20 nm relative to the TIPS-naphthalene benchmark. Demonstrated blue-to-UV UC-driven release of fluorescein from a photocage.",
+    "significance": "high",
+    "significance_notes": "From the Yanai (Kyushu) and Kerzig (Mainz) groups, both leaders in TTA-UC. Pushes efficient UV upconversion (>10% QY) to 350 nm - the shortest wavelength at this efficiency level. The substituent size-activity relationship provides practical design rules. Open access via PMC.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-14",
+    "tags": [
+      "UV-upconversion",
+      "biphenyl-annihilator",
+      "TIPS",
+      "vis-to-UV",
+      "photocage",
+      "Yanai-group",
+      "Kerzig-group",
+      "open-access"
+    ]
+  },
+  {
+    "id": "lekavicius_2026_chemsci_tesadt_aggregation_f_factor",
+    "title": "Aggregation favors singlet formation in TES-ADT triplet annihilator for photon upconversion",
+    "authors": [
+      "J. Lekavicius",
+      "E. Radiunas",
+      "G. Kreiza",
+      "A. Jozeliunaite",
+      "E. Orentas",
+      "K. Kazlauskas"
+    ],
+    "journal": "Chemical Science",
+    "date": "2026-01-28",
+    "doi": "10.1039/D5SC07013A",
+    "url": "https://pubs.rsc.org/en/content/articlelanding/2026/sc/d5sc07013a",
+    "category": "fundamental-mechanism",
+    "subcategory": "spin-statistics",
+    "application_areas": [
+      "photovoltaics",
+      "bioimaging",
+      "3D-printing"
+    ],
+    "abstract_summary": "Discovers that controlled aggregation of the TES-ADT annihilator can boost the spin-statistical factor (f) from ~20% to ~60%, a 3-fold enhancement. DFT calculations show dimerization-induced energy level shifts make higher triplet states (up to T6) accessible, facilitating spin-conversion processes that favor singlet formation after TTA. This overturns the conventional view that aggregation is always detrimental and provides a new design handle for improving UC efficiency through molecular packing.",
+    "significance": "high",
+    "significance_notes": "The spin-statistical factor f is a fundamental bottleneck in TTA-UC. A 3-fold enhancement via controlled aggregation is a paradigm shift - previously, aggregation was assumed to be harmful. From Vilnius University. Open access (Chem. Sci. Edge Article). TES-ADT is the same annihilator used in the Congreve group's NIR imaging work, making this directly synergistic.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-14",
+    "tags": [
+      "TES-ADT",
+      "aggregation",
+      "spin-statistical-factor",
+      "f-factor",
+      "DFT",
+      "molecular-packing",
+      "paradigm-shift",
+      "open-access"
+    ]
+  },
+  {
+    "id": "han_2025_jacs_ct_cocrystal_sensitization",
+    "title": "Interface-Confined Triplet Sensitization and Photon Upconversion in Pyrene-Tetracyanobenzene Charge-Transfer Cocrystals",
+    "authors": [
+      "Jianlei Han",
+      "Zhiying Bai",
+      "Jiao Mu",
+      "Xue Jin",
+      "Xuefeng Yang",
+      "Tonghan Zhao",
+      "Yonghong Shi",
+      "Pengfei Duan",
+      "Zihao Xu"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-12-31",
+    "doi": "10.1021/jacs.5c17410",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c17410",
+    "category": "adjacent-field",
+    "subcategory": "charge-transfer-sensitization",
+    "application_areas": [
+      "solid-state-UC",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Demonstrates that micro-cocrystals of the intermolecular charge-transfer complex formed from pyrene and tetracyanobenzene undergo ISC of the directly excited CT exciton, yielding triplet CT states. These triplets efficiently transfer to a DPA-based acceptor at the cocrystal interface, enabling solid-state TTA-UC without any heavy-atom-containing sensitizer. This establishes a new heavy-atom-free sensitization paradigm using organic donor-acceptor cocrystals.",
+    "significance": "high",
+    "significance_notes": "Published in JACS (vol. 147, issue 52). First demonstration of TTA-UC sensitized by intermolecular charge-transfer cocrystal ISC. Completely heavy-atom-free. Complements the Klein et al. BHJ CT-state sensitization approach with a crystalline, well-defined counterpart. Opens a new class of ordered solid-state sensitizers for TTA-UC.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-14",
+    "tags": [
+      "charge-transfer",
+      "cocrystal",
+      "heavy-atom-free",
+      "pyrene",
+      "tetracyanobenzene",
+      "solid-state",
+      "interface-sensitization",
+      "JACS"
+    ]
+  },
+  {
+    "id": "kobori_2025_angew_vibronic_trimer_tta",
+    "title": "Vibronic Trimer Design Enhancing Intramolecular Triplet-Exciton Hopping to Accelerate Triplet-Triplet Annihilation for Photon Upconversion",
+    "authors": [
+      "Yasuhiro Kobori"
+    ],
+    "journal": "Angewandte Chemie International Edition",
+    "date": "2025-06-16",
+    "doi": "10.1002/anie.202503846",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202503846",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Designs a trimeric annihilator with three anthracene units arranged around a central boron atom. The vibronic coupling in this architecture accelerates intramolecular triplet-exciton hopping, yielding a 20% faster TTA rate compared to dimeric analogs. The rapid hopping increases the effective interaction volume for TTA during molecular collisions, improving the probability of productive annihilation events. Viscosity-dependent luminescence tunability opens applications in cellular microenvironment sensing.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Angewandte Chemie (Kobe University). Intramolecular TTA circumvents the diffusion bottleneck of intermolecular TTA. The trimer-around-boron architecture is a new molecular topology for intramolecular UC. The 20% TTA rate enhancement is modest but the design principle (vibronic hopping acceleration) is generalizable.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-14",
+    "tags": [
+      "intramolecular-TTA",
+      "trimer",
+      "anthracene",
+      "boron-center",
+      "vibronic-coupling",
+      "triplet-hopping",
+      "viscosity-sensing",
+      "Angewandte"
+    ]
   }
 ]
