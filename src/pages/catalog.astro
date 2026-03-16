@@ -42,7 +42,7 @@ const sortedPapers = [...catalog].sort((a, b) =>
     </section>
 
     <!-- Search and filter -->
-    <section class="pb-8">
+    <section class="pb-8" role="search" aria-label="Filter papers">
       <div class="flex flex-col sm:flex-row gap-3">
         <div class="relative flex-1">
           <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-tertiary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,11 +52,13 @@ const sortedPapers = [...catalog].sort((a, b) =>
             type="text"
             id="searchBox"
             placeholder="Search by title, author, journal..."
+            aria-label="Search papers by title, author, or journal"
             class="w-full pl-10 pr-4 py-2.5 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-lg text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)]"
           />
         </div>
         <select
           id="categoryFilter"
+          aria-label="Filter by category"
           class="px-4 py-2.5 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-lg text-sm text-[var(--color-text-secondary)] appearance-none cursor-pointer min-w-[180px]"
         >
           <option value="all">All categories</option>
