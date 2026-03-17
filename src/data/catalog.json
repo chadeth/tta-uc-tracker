@@ -1274,5 +1274,384 @@
       "solid-state",
       "AIST"
     ]
+  },
+  {
+    "id": "wisch_2026_natphoton_plasmon_tta",
+    "title": "Plasmon-enhanced ultralow-threshold solid-state triplet fusion upconversion",
+    "authors": [
+      "Jesse A. Wisch",
+      "Kelvin A. Green",
+      "Amelie C. Lemay",
+      "Yiling Q. Li",
+      "Tersoo Upaa Jr",
+      "Evgeny O. Danilov",
+      "Hui Taou Kok",
+      "Seamus S. Lowe",
+      "Felix N. Castellano",
+      "Barry P. Rand"
+    ],
+    "journal": "Nature Photonics",
+    "date": "2026-01-01",
+    "doi": "10.1038/s41566-025-01783-1",
+    "url": "https://www.nature.com/articles/s41566-025-01783-1",
+    "category": "fundamental-mechanism",
+    "subcategory": "plasmon-enhanced-UC",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "bioimaging",
+      "3D-printing"
+    ],
+    "abstract_summary": "Demonstrates plasmon-enhanced solid-state triplet fusion (TTA) upconversion with an ultralow excitation threshold. Uses plasmonic nanostructures to concentrate electromagnetic fields and enhance both the absorption and the triplet-triplet annihilation processes in solid-state upconversion films. Addresses one of the central challenges in solid-state TTA-UC: the high intensity thresholds required for efficient operation. The plasmonic enhancement brings the threshold down to levels compatible with unconcentrated sunlight.",
+    "significance": "very-high",
+    "significance_notes": "Published in Nature Photonics (vol 20, pp 24-30). From Princeton (Rand group) and NC State (Castellano group), two leading labs in photon management and TTA-UC respectively. Solving the threshold problem for solid-state TTA-UC is critical for real-world solar and photocatalysis applications. The plasmon-enhanced approach is a fundamentally different strategy from molecular engineering.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-16",
+    "tags": [
+      "plasmon-enhanced",
+      "solid-state",
+      "ultralow-threshold",
+      "Nature-Photonics",
+      "Princeton",
+      "Castellano-group",
+      "solar-intensity"
+    ]
+  },
+  {
+    "id": "li_2026_chemsci_bodipy_ligand_qd",
+    "title": "Efficient near-infrared-excitable quantum dot-based triplet-triplet annihilation upconversion with a record anti-Stokes shift via low coverage of mono-styryl-BODIPY ligands",
+    "authors": [
+      "R. Li",
+      "L.-H. Jiang",
+      "L. Xi",
+      "M.-Y. Zhang",
+      "H.-J. Feng",
+      "D.-X. Guo",
+      "Ling Huang"
+    ],
+    "journal": "Chemical Science",
+    "date": "2026-03-05",
+    "doi": "10.1039/D6SC00714G",
+    "url": "https://pubs.rsc.org/en/content/articlehtml/2026/sc/d6sc00714g",
+    "category": "fundamental-mechanism",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Reports a novel mono-styryl-BODIPY surface ligand on PbS quantum dots that achieves 65.4% triplet exciton transfer efficiency with only seven ligands per QD (low coverage). Using rubrene as annihilator, achieves 16.8% upconversion quantum yield (normalized to 100%). The BODIPY ligand is more stable than tetracene-based alternatives. Coupling with BPEA annihilator achieves 808 nm to 480 nm upconversion (record anti-Stokes shift for NIR QD-based TTA-UC into the cyan-blue region), with 6.5% efficiency.",
+    "significance": "high",
+    "significance_notes": "Published as Chem. Sci. Edge Article (open access, March 5, 2026). From the Ling Huang group (same lab as the 830 nm selenium-cyanine JACS paper). BODIPY ligands are a new class for QD-based TTA-UC, offering stability advantages over tetracene. Record anti-Stokes shift into cyan-blue from 808 nm NIR excitation. Low ligand coverage (7 per QD vs 25 for InAs) addresses processability challenges.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-16",
+    "tags": [
+      "BODIPY-ligand",
+      "PbS-QD",
+      "low-coverage",
+      "record-anti-Stokes",
+      "808nm-to-480nm",
+      "cyan-blue",
+      "stability",
+      "Huang-group",
+      "open-access"
+    ]
+  },
+  {
+    "id": "lan_2026_mathoriz_tta_uc_heterojunction",
+    "title": "Nano energy amplifier - the proposal and demonstration of triplet-triplet annihilation upconversion heterojunctions for photocatalysis using low-energy photons",
+    "authors": [
+      "Y. Lan",
+      "X. Luo",
+      "Z. Yu",
+      "W. Han",
+      "X. Zhou"
+    ],
+    "journal": "Materials Horizons",
+    "date": "2026-01-01",
+    "doi": "10.1039/D5MH01718A",
+    "url": "https://pubs.rsc.org/en/content/articlehtml/2026/mh/d5mh01718a",
+    "category": "application",
+    "subcategory": "photocatalysis",
+    "application_areas": [
+      "photocatalysis",
+      "environmental-remediation",
+      "NIR-photocatalysis"
+    ],
+    "abstract_summary": "Proposes and demonstrates a TTA-UC heterojunction constructed from MoS2 and ZIF-FL (a zeolitic imidazolate framework with fluorescein linkers). Achieves NIR-to-blue-violet upconversion with 0.86 eV anti-Stokes shift and excellent stability. Resonance energy transfer and interfacial migration bridges (Mo-N, Fe-S) facilitate triplet-triplet energy transfer from 3MoS2* to 3ZIF-FL*. Energy from TTA-generated singlets transfers in situ to pollutant reactants rather than emitting photons, avoiding reabsorption loss. Tetracycline removal reaches 85.4% even at 5-10 C, demonstrating genuine NIR-driven photocatalysis.",
+    "significance": "high",
+    "significance_notes": "Published in Materials Horizons (vol 13, pp 1375-1392). Novel concept of TTA-UC heterojunction using inorganic/MOF materials rather than molecular sensitizer-annihilator pairs. The in-situ energy transfer to reactants (bypassing photon emission and reabsorption) is an elegant approach. Practical pollutant degradation at low temperatures demonstrates real-world applicability.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-16",
+    "tags": [
+      "heterojunction",
+      "MoS2",
+      "ZIF",
+      "photocatalysis",
+      "NIR-driven",
+      "in-situ-energy-transfer",
+      "pollutant-degradation",
+      "Materials-Horizons"
+    ]
+  },
+  {
+    "id": "li_2026_smallmethods_nanoconfinement_temp_sensing",
+    "title": "Nanoconfinement-Mediated Concentration Decoupling Enabled Efficient Triplet-Triplet Annihilation Upconversion for Time-Resolved Temperature Sensing",
+    "authors": [
+      "J.-Y. Li",
+      "H.-J. Feng",
+      "J.-M. Wang",
+      "L.-H. Jiang",
+      "M.-Y. Zhang",
+      "Ling Huang"
+    ],
+    "journal": "Small Methods",
+    "date": "2026-01-01",
+    "doi": "10.1002/smtd.202501667",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/smtd.202501667",
+    "category": "application",
+    "subcategory": "temperature-sensing",
+    "application_areas": [
+      "bioimaging",
+      "temperature-sensing",
+      "diagnostics"
+    ],
+    "abstract_summary": "Presents a strategy to decouple the concentration dependence of TTA-UC by encapsulating ultralow-concentration sensitizer/annihilator pairs (244 nM/6.5 uM) in solid micellar nanoparticles. Achieves an exceptional 15.9% upconversion quantum efficiency (normalized to 100%) in aqueous media, surpassing reported NIR upconversion nanomaterials by two orders of magnitude. Demonstrates time-resolved temperature sensing as a practical application.",
+    "significance": "high",
+    "significance_notes": "From the Ling Huang group. 15.9% QY in aqueous media at ultralow concentrations is remarkable - two orders of magnitude better than other NIR UC nanomaterials in water. The nanoconfinement strategy solves the fundamental concentration-efficiency tradeoff in TTA-UC. Published in Small Methods. Directly relevant to bioimaging and clinical diagnostics.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-16",
+    "tags": [
+      "nanoconfinement",
+      "micellar-NP",
+      "aqueous",
+      "ultralow-concentration",
+      "15.9%-QY",
+      "temperature-sensing",
+      "Huang-group",
+      "Small-Methods"
+    ]
+  },
+  {
+    "id": "nishimura_2026_jpcc_aliphatic_ligands_pbs",
+    "title": "Key Roles of Aliphatic Ligands over PbS Quantum Dots for Efficient Triplet Energy Transfer in a Hybrid TES-ADT/PbS System for Triplet-Triplet Annihilation Photon Upconversion",
+    "authors": [
+      "N. Nishimura",
+      "Z. Zhang",
+      "V. Gray",
+      "J. Xiao"
+    ],
+    "journal": "The Journal of Physical Chemistry C",
+    "date": "2026-02-01",
+    "doi": "10.1021/acs.jpcc.5c07155",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.5c07155",
+    "category": "fundamental-mechanism",
+    "subcategory": "ligand-engineering",
+    "application_areas": [
+      "solar",
+      "photovoltaics"
+    ],
+    "abstract_summary": "Investigates how aliphatic surface ligands on PbS quantum dots influence triplet energy transfer efficiency in QD-sensitized TTA-UC using TES-ADT as the annihilator. Reveals that the native oleic acid ligand shell structure plays critical roles in mediating triplet energy transfer from QD to annihilator. Provides design guidelines for optimizing ligand shells in QD-based TTA-UC systems.",
+    "significance": "medium",
+    "significance_notes": "From Victor Gray's group. Cited by 1 already. Addresses the understudied role of native aliphatic ligands (not chromophoric transmitter ligands) in QD-based TTA-UC. TES-ADT is the same annihilator used in the Congreve and Lekavicius aggregation studies, making this synergistic with those works. JPCC vol 130, issue 7, pp 2616-2624.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-16",
+    "tags": [
+      "PbS-QD",
+      "aliphatic-ligands",
+      "oleic-acid",
+      "TES-ADT",
+      "triplet-energy-transfer",
+      "ligand-shell",
+      "Gray-group"
+    ]
+  },
+  {
+    "id": "li_2026_jpcc_color_tunable_solvatochromic",
+    "title": "Color-Tunable Triplet-Triplet Annihilation Upconversion under Single Wavelength Excitation via Solvatochromic Annihilators",
+    "authors": [
+      "Jia-Yao Li",
+      "Hong-Juan Feng",
+      "Juan-Mei Wang",
+      "Min-Yue Zhang",
+      "Ling Huang"
+    ],
+    "journal": "The Journal of Physical Chemistry C",
+    "date": "2026-01-16",
+    "doi": "10.1021/acs.jpcc.5c07494",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.5c07494",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "sensing",
+      "displays",
+      "anti-counterfeiting"
+    ],
+    "abstract_summary": "Demonstrates color-tunable TTA-UC emission under a single excitation wavelength by exploiting the solvatochromism of specially designed annihilators. Solvent polarity shifts the upconverted emission color without changing the excitation source or the sensitizer. Establishes a new design paradigm for intelligent photon upconversion systems where the emission color responds to the local chemical environment.",
+    "significance": "medium",
+    "significance_notes": "From the Ling Huang group (Central China Normal University), one of the most prolific TTA-UC labs in 2026. Color tunability via solvent polarity is a neat concept for sensing and smart materials. JPCC vol 130, issue 2, pp 1088-1095.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-16",
+    "tags": [
+      "color-tunable",
+      "solvatochromic",
+      "annihilator",
+      "environment-responsive",
+      "Huang-group"
+    ]
+  },
+  {
+    "id": "liu_2026_ccr_molecular_design_strategies_review",
+    "title": "Molecular design strategies for application-oriented triplet-triplet annihilation upconversion",
+    "authors": [
+      "Shanshan Liu",
+      "Heyuan Liu",
+      "Zuoxu Xiao",
+      "Tingting Gou",
+      "Riming Hu",
+      "Jiachen Ma",
+      "Xiyou Li",
+      "Xuchuan Jiang"
+    ],
+    "journal": "Coordination Chemistry Reviews",
+    "date": "2026-01-01",
+    "doi": "10.1016/j.ccr.2025.216160",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0010854525006605",
+    "category": "review",
+    "subcategory": "molecular-design",
+    "application_areas": [
+      "photovoltaics",
+      "photocatalysis",
+      "bioimaging",
+      "sensing"
+    ],
+    "abstract_summary": "Comprehensive review bridging the gap between molecular design optimization and practical TTA-UC applications. Discusses application-specific requirements for designing sensitizer-annihilator pairs and provides a library of sensitizers and annihilators organized by application domain. Addresses why most applied research still relies on classical pairs (PtOEP/DPA, PdTPTBP/perylene, PdPc(OBu)8/rubrene) despite extensive optimization literature, and proposes strategies to close this gap.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Coordination Chemistry Reviews (vol 548). Already cited by 4 papers within months, indicating strong community uptake. The application-oriented framing and sensitizer/annihilator library are practical reference tools for the field. From China University of Petroleum (East China).",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-16",
+    "tags": [
+      "review",
+      "molecular-design",
+      "application-oriented",
+      "sensitizer-library",
+      "annihilator-library",
+      "Coord-Chem-Rev"
+    ]
+  },
+  {
+    "id": "aydemir_2026_jlumin_ml_anthracene_tta",
+    "title": "Integrating Photophysics and Machine Learning to Decode Triplet-Triplet Annihilation in Anthracene Systems",
+    "authors": [
+      "Murat Aydemir"
+    ],
+    "journal": "Journal of Luminescence",
+    "date": "2026-01-01",
+    "doi": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0022231326000967",
+    "category": "computational",
+    "subcategory": "machine-learning",
+    "application_areas": [
+      "materials-discovery",
+      "molecular-design"
+    ],
+    "abstract_summary": "Integrates machine learning with photophysical analysis to decode the factors governing TTA efficiency in anthracene-based systems. Maps molecular descriptors to upconversion quantum yield, enabling data-driven prediction of TTA-UC performance for new annihilator candidates. Addresses the challenge of rational molecular design by replacing trial-and-error synthesis with computational screening.",
+    "significance": "medium",
+    "significance_notes": "ML-driven approaches to TTA-UC design are still rare. Anthracene derivatives are the most widely used annihilator class, making this directly applicable. Aligns with the data-driven direction advocated by the Isokuortti/Nienhaus perspective in Chem. Sci. Published in J. Luminescence.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-16",
+    "tags": [
+      "machine-learning",
+      "anthracene",
+      "molecular-descriptors",
+      "computational-screening",
+      "data-driven"
+    ]
+  },
+  {
+    "id": "yamagishi_2026_pccp_chiral_ir_limonene",
+    "title": "Application of chiral cationic iridium(III) complexes for triplet-triplet annihilation up-conversion of photon energy in R-limonene",
+    "authors": [
+      "Akihiko Yamagishi",
+      "Jun Yoshida",
+      "Hisako Sato"
+    ],
+    "journal": "Physical Chemistry Chemical Physics",
+    "date": "2026-01-07",
+    "doi": "10.1039/D5CP03773E",
+    "url": "https://pubs.rsc.org/en/content/articlelanding/2026/cp/d5cp03773e",
+    "category": "materials-design",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "green-chemistry",
+      "chiroptical-materials"
+    ],
+    "abstract_summary": "First use of cationic chiral iridium(III) complexes as triplet sensitizers for TTA-UC, operating in R-limonene as a bio-derived green solvent. Chiral Ir(piq)2(dmbpy)+ enantiomers are soluble in R-limonene while the racemic form is not (due to higher crystallinity). Achieves 4.5% quantum yield under air with DPA as annihilator at 445 nm excitation. No stereoselectivity observed in TTA-UC despite solubility differences between enantiomers. Long alkyl chain modifications (C9, C19) on bipyridine ligands tune solubility and UC efficiency.",
+    "significance": "medium",
+    "significance_notes": "Three notable aspects: (1) chiral selectivity in solubility but not in TTA-UC is a curious finding, (2) R-limonene as green solvent for TTA-UC is environmentally relevant, (3) 4.5% QY under air (no deoxygenation) is practically useful. From Toho/Nihon/Ehime Universities. PCCP vol 28, pp 2806-2810.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-16",
+    "tags": [
+      "chiral-sensitizer",
+      "iridium-III",
+      "cationic-complex",
+      "R-limonene",
+      "green-solvent",
+      "air-tolerant",
+      "DPA"
+    ]
+  },
+  {
+    "id": "nagaoka_2026_chemrxiv_tetrahydropentalene_annihilator",
+    "title": "A Symmetric and Rigid Tetrahydropentalene Derivative as an Ideal Acceptor for Efficient Triplet-Triplet Annihilation-Assisted Photon Upconversion",
+    "authors": [
+      "Takashi Nagaoka",
+      "Yasunori Matsui",
+      "Takuya Ogaki",
+      "Hideki Ikeda"
+    ],
+    "journal": "ChemRxiv preprint",
+    "date": "2026-03-01",
+    "doi": "10.26434/chemrxiv.10001697",
+    "url": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv.10001697",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "energy-conversion",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Introduces di(p-anisyl)tetrahydropentalene (TP-Ans) as a new symmetric, rigid annihilator for TTA-UC. The tetrahydropentalene core provides structural rigidity that suppresses nonradiative decay, while the p-anisyl substituents tune the electronic properties. Demonstrates efficient TTA-assisted photon upconversion with this previously unexplored chromophore class. Expands the annihilator design space beyond the established anthracene, perylene, and rubrene families.",
+    "significance": "medium-high",
+    "significance_notes": "New chromophore class for TTA-UC annihilators. Tetrahydropentalene derivatives are structurally distinct from established annihilators (DPA, perylene, rubrene, TIPS-naphthalene). The same group has prior publications on tetrahydropentalene luminescence properties (Asian J. Org. Chem. 2025). ChemRxiv preprint from Osaka Metropolitan University.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-16",
+    "tags": [
+      "tetrahydropentalene",
+      "new-chromophore-class",
+      "rigid-annihilator",
+      "symmetric",
+      "preprint",
+      "ChemRxiv"
+    ]
   }
 ]
