@@ -1653,5 +1653,256 @@
       "preprint",
       "ChemRxiv"
     ]
+  },
+  {
+    "id": "ho_2026_advmater_pseudo_solid_state_qd_uc",
+    "title": "Pseudo-Solid-State Polymer Materials for QD-Sensitized NIR-I and NIR-II Upconversion Beyond the Silicon Bandgap",
+    "authors": [
+      "D. Ho"
+    ],
+    "journal": "Advanced Materials",
+    "date": "2026-01-01",
+    "doi": "10.1002/adma.202512741",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202512741",
+    "category": "application",
+    "subcategory": "solid-state-solar",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "infrared-photodetectors"
+    ],
+    "abstract_summary": "Reports a hybrid approach that encapsulates QD-sensitized TTA-UC mixtures into mesoscale droplets within a rigid acrylate matrix, preserving liquid-like dynamics in a pseudo-solid form. Using PbS quantum dot sensitizer, carboxytetracene mediator, and TES-ADT annihilator, achieves upconversion of NIR-I and NIR-II photons beyond the silicon bandgap (>1100 nm). A key advance is the rational design of a chemically compatible polymer system enabling spontaneous phase separation of QDs into nanodroplets while preserving QD surface chemistry, preventing an over 1000-fold drop in upconversion efficiency typically seen in solid-state systems.",
+    "significance": "high",
+    "significance_notes": "Published in Advanced Materials. Addresses the critical solution-to-solid translation challenge for QD-sensitized TTA-UC. The pseudo-solid-state approach with polymer encapsulation is a practical route toward integration with silicon photovoltaics. Harvesting sub-bandgap photons beyond 1100 nm is directly relevant to exceeding the Shockley-Queisser limit.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-17",
+    "tags": [
+      "PbS-QD",
+      "TES-ADT",
+      "carboxytetracene",
+      "polymer-matrix",
+      "pseudo-solid-state",
+      "sub-bandgap",
+      "silicon-PV",
+      "NIR-II",
+      "Advanced-Materials"
+    ]
+  },
+  {
+    "id": "zhu_2026_dyespigm_high_conc_annihilators_oh_radicals",
+    "title": "High-concentration annihilators for efficient green-to-blue photon upconversion and photocatalytic production of hydroxyl radicals",
+    "authors": [
+      "Zece Zhu",
+      "Runjing Yang",
+      "Ruiqi Mo",
+      "Ze-Yu Zhang",
+      "Di Tian",
+      "Ai-Guo Shen"
+    ],
+    "journal": "Dyes and Pigments",
+    "date": "2026-01-01",
+    "doi": "10.1016/j.dyepig.2025.113618",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0143720826001530",
+    "category": "application",
+    "subcategory": "photocatalysis",
+    "application_areas": [
+      "photocatalysis",
+      "environmental-remediation",
+      "water-treatment"
+    ],
+    "abstract_summary": "Develops high-concentration annihilator systems for efficient green-to-blue TTA-UC and demonstrates their application in photocatalytic production of hydroxyl radicals. Addresses the concentration-quenching problem that typically limits annihilator loading, enabling higher UC efficiency at practical concentrations. The upconverted blue light drives photocatalytic generation of reactive oxygen species (hydroxyl radicals) for environmental applications.",
+    "significance": "medium",
+    "significance_notes": "Published in Dyes and Pigments (vol 249, 2026). Connects TTA-UC to practical environmental photocatalysis via hydroxyl radical production. The high-concentration annihilator strategy addresses a practical limitation. From the Ai-Guo Shen group.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-17",
+    "tags": [
+      "high-concentration",
+      "annihilator",
+      "green-to-blue",
+      "hydroxyl-radicals",
+      "photocatalysis",
+      "environmental",
+      "Dyes-Pigments"
+    ]
+  },
+  {
+    "id": "venkatesan_2026_jlumin_bivo4_photoelectrochemical",
+    "title": "Harvesting sub bandgap energy from Mo-doped BiVO4 photoanode for the enhanced photoelectrochemical reaction via triplet-triplet annihilation upconversion",
+    "authors": [
+      "Prashanth Venkatesan",
+      "Jui-Yen Lin",
+      "Muchammad Tamyiz",
+      "Deblina Roy",
+      "Parthivi Aloni",
+      "Zhi-Fu Lin",
+      "Ruey-An Doong"
+    ],
+    "journal": "Journal of Luminescence",
+    "date": "2026-01-01",
+    "doi": null,
+    "url": "https://www.sciencedirect.com/journal/journal-of-luminescence",
+    "category": "application",
+    "subcategory": "photoelectrochemistry",
+    "application_areas": [
+      "solar",
+      "water-splitting",
+      "hydrogen-production",
+      "photoelectrochemistry"
+    ],
+    "abstract_summary": "Demonstrates TTA-UC as a sub-bandgap photon harvesting strategy for enhancing photoelectrochemical reactions using Mo-doped BiVO4 photoanodes. The TTA-UC film (PtOEP/DPA) converts green photons below the BiVO4 bandgap into blue photons that can be absorbed by the photoanode, boosting the photoelectrochemical water splitting performance. Extends the authors prior work on TTA-UC-enhanced photoelectrocatalytic water treatment.",
+    "significance": "medium",
+    "significance_notes": "Published in J. Luminescence (vol 293, 2026). Direct application of TTA-UC to photoelectrochemical solar fuel production. Practical demonstration of sub-bandgap harvesting for water splitting on BiVO4 photoanodes. From National Tsing Hua University (Taiwan).",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-17",
+    "tags": [
+      "BiVO4",
+      "Mo-doped",
+      "photoelectrochemistry",
+      "water-splitting",
+      "sub-bandgap",
+      "PtOEP-DPA",
+      "photoanode"
+    ]
+  },
+  {
+    "id": "kohata_2025_angew_risc_tadf_upconversion",
+    "title": "Anti-Stokes Emission Utilizing Reverse Intersystem Crossing",
+    "authors": [
+      "Shintaro Kohata",
+      "Hajime Nakanotani",
+      "Youichi Chitose",
+      "Takuji Yasuda",
+      "Youichi Tsuchiya",
+      "Chihaya Adachi"
+    ],
+    "journal": "Angewandte Chemie International Edition",
+    "date": "2025-02-10",
+    "doi": "10.1002/anie.202419323",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202419323",
+    "category": "adjacent-field",
+    "subcategory": "TADF-based-upconversion",
+    "application_areas": [
+      "energy-conversion",
+      "optical-cooling",
+      "photon-management"
+    ],
+    "abstract_summary": "Proposes an alternative photon upconversion mechanism using reverse intersystem crossing (RISC) in thermally activated delayed fluorescence (TADF) molecules. Combines the triplet sensitizer Ir(ppy)3 with the TADF molecule CzBSe: the sensitizer absorbs light, generates a triplet, and transfers it to the TADF molecule via Dexter-type triplet energy transfer. The TADF molecule then undergoes RISC to convert the triplet back to a singlet, emitting anti-Stokes photons with 0.18 eV upshift. This is a fundamentally different PUC mechanism from TTA-UC but shares the same triplet sensitization step.",
+    "significance": "medium-high",
+    "significance_notes": "From the Adachi group (Kyushu University), pioneers of TADF and organic electronics. Demonstrates a new single-molecule photon upconversion pathway that bypasses the need for bimolecular TTA entirely. The triplet energy transfer rate depends strongly on the TADF molecule's triplet radiative decay rate and Gibbs energy difference between donor and acceptor. Published in Angew. Chem. (vol 64, issue 7). Key implication for TTA-UC: TADF molecules with efficient RISC could serve dual roles as both TTA-UC annihilators AND standalone RISC-based upconverters.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-17",
+    "tags": [
+      "TADF",
+      "RISC",
+      "reverse-ISC",
+      "anti-Stokes",
+      "Ir(ppy)3",
+      "CzBSe",
+      "Adachi-group",
+      "Kyushu",
+      "alternative-PUC",
+      "Angewandte"
+    ]
+  },
+  {
+    "id": "li_2026_sbe_oxygen_tolerant_tta_uc_review",
+    "title": "Construction and Applications of Efficient, Oxygen-Tolerant Triplet-Triplet Annihilation Upconversion Materials",
+    "authors": [
+      "Zi-Wei Li",
+      "Fang Qi",
+      "Jia-Yao Li",
+      "Min-Yue Zhang",
+      "Yu Peng",
+      "Xin Pei",
+      "Others"
+    ],
+    "journal": "Synthetic Biology and Engineering",
+    "date": "2025-12-18",
+    "doi": "10.70322/sbe.2025.10021",
+    "url": "https://www.sciepublish.com/article/pii/802",
+    "category": "review",
+    "subcategory": "oxygen-tolerance",
+    "application_areas": [
+      "bioimaging",
+      "photodynamic-therapy",
+      "optogenetics",
+      "sensing"
+    ],
+    "abstract_summary": "Comprehensive review on strategies for constructing oxygen-tolerant TTA-UC materials, addressing the critical challenge of molecular oxygen quenching triplet states. Covers three main approaches: (1) molecular engineering with electron-deficient groups and conformational control to improve chromophore photostability, (2) fabrication of oxygen-resistant TTA-UC nanoparticles using reductive oil droplets as soft templates, and (3) nanostructure-mediated optimization of intermolecular triplet energy transfer dynamics for enhanced oxygen resilience. Also discusses future integration of TTA-UC with synthetic biology to design biosynthetic upconversion proteins.",
+    "significance": "medium-high",
+    "significance_notes": "From Nankai University (Research Center for Analytical Sciences). Oxygen quenching is arguably the single biggest practical barrier to real-world TTA-UC applications. This review consolidates the rapidly growing toolkit for oxygen tolerance. The synthetic biology angle (biosynthetic upconversion proteins) is forward-looking. Open access. Published in Synth. Biol. Eng. 2026, 4(1), 10021. 222 downloads, 2289 views already.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-17",
+    "tags": [
+      "review",
+      "oxygen-tolerant",
+      "nanoparticles",
+      "molecular-engineering",
+      "bioimaging",
+      "synthetic-biology",
+      "Nankai",
+      "open-access"
+    ]
+  },
+  {
+    "id": "zhou_2025_arxiv_nanofabrication_tta_uc",
+    "title": "Low Power, Scalable Nanofabrication via Photon Upconversion",
+    "authors": [
+      "Qi Zhou",
+      "Hao-Chi Yen",
+      "Qizhen Lan",
+      "Arynn O. Gallegos",
+      "Manchen Hu",
+      "Kyle Frohna",
+      "Hannah Niese",
+      "Da Lin",
+      "Natalia Murrietta",
+      "Pournima Narayanan",
+      "Tracy H. Schloemer",
+      "Linda Pucurimay",
+      "Sebastian Fernandez",
+      "Michael Seitz",
+      "Daniel N. Congreve"
+    ],
+    "journal": "arXiv preprint",
+    "date": "2025-08-20",
+    "doi": null,
+    "arxiv_id": "2508.16668",
+    "url": "https://arxiv.org/abs/2508.16668",
+    "category": "application",
+    "subcategory": "nanofabrication",
+    "application_areas": [
+      "nanofabrication",
+      "plasmonics",
+      "nanophotonics",
+      "biomedical"
+    ],
+    "abstract_summary": "Demonstrates that triplet-triplet annihilation upconversion (TTA-UC) offers a scalable, low-power alternative to ultrafast laser-based two-photon lithography for nanofabrication. The quadratic intensity dependence of TTA-UC provides inherent optical confinement similar to two-photon absorption but at orders-of-magnitude lower power and with CW excitation. Achieves sub-wavelength feature resolution relevant to plasmonics, nanophotonics, and biomedical applications. Addresses the scaling bottleneck of conventional two-photon approaches by replacing expensive femtosecond lasers with simple CW sources.",
+    "significance": "medium-high",
+    "significance_notes": "From the Congreve lab (Stanford), leaders in TTA-UC applications. Extends TTA-UC into precision nanofabrication, complementing the O'Dea et al. vat-based 3D printing and the Kuhl et al. direct laser writing papers already in the catalog. The low-power, CW-excitation advantage directly addresses manufacturing scalability. Preprint on arxiv, not yet journal-published.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-17",
+    "tags": [
+      "nanofabrication",
+      "scalable",
+      "low-power",
+      "CW-excitation",
+      "two-photon-analog",
+      "Congreve-group",
+      "Stanford",
+      "preprint"
+    ]
   }
 ]
