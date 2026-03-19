@@ -144,3 +144,116 @@ button:focus:not(:focus-visible),
 [role="button"]:focus:not(:focus-visible) {
   outline: none;
 }
+
+/* ---- Print stylesheet ---- */
+@media print {
+  /* Reset colors for paper */
+  html, body {
+    background: white !important;
+    color: #1a1a1a !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Hide non-content elements */
+  nav,
+  footer,
+  .skip-to-content,
+  #mobileMenuBtn,
+  #mobileMenu,
+  #searchBox,
+  #categoryFilter,
+  [role="search"] {
+    display: none !important;
+  }
+
+  /* Reset surface colors */
+  * {
+    background: transparent !important;
+    color: #1a1a1a !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #ccc !important;
+  }
+
+  /* Make links visible on paper */
+  a[href] {
+    color: #1a1a1a !important;
+    text-decoration: underline !important;
+  }
+
+  /* Show URLs after external links in articles */
+  .prose a[href^="http"]::after,
+  .paper-item a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555 !important;
+    word-break: break-all;
+  }
+
+  /* Don't show URL for internal nav links */
+  nav a::after,
+  footer a::after {
+    content: none !important;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 2cm 1.5cm;
+  }
+
+  /* Prevent orphans and widows */
+  p, li, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Avoid breaking inside cards and headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .paper-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep headings with their content */
+  h2 + *, h3 + * {
+    page-break-before: avoid;
+    break-before: avoid;
+  }
+
+  /* Prose adjustments for print */
+  .prose {
+    max-width: 100% !important;
+  }
+
+  .prose h2 {
+    border-bottom-color: #ccc !important;
+  }
+
+  /* Make significance labels stand out */
+  .paper-item span:last-child {
+    font-weight: 600 !important;
+  }
+
+  /* Remove transitions and animations */
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Ensure images print well */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Remove custom scrollbar in print */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
