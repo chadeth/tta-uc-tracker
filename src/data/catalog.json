@@ -1904,5 +1904,44 @@
       "Stanford",
       "preprint"
     ]
+  },
+  {
+    "id": "baronas_2025_acscentsci_automated_platform",
+    "title": "Automated Research Platform for Development of Triplet-Triplet Annihilation Photon Upconversion Systems",
+    "authors": [
+      "Paulius Baronas",
+      "Justas Lekavicius",
+      "Others"
+    ],
+    "journal": "ACS Central Science",
+    "date": "2025-03-26",
+    "doi": "10.1021/acscentsci.4c02059",
+    "url": "https://pubs.acs.org/doi/10.1021/acscentsci.4c02059",
+    "category": "adjacent-field",
+    "subcategory": "methodology-automation",
+    "application_areas": [
+      "high-throughput-screening",
+      "materials-discovery",
+      "energy",
+      "3D-printing",
+      "photopharmacology"
+    ],
+    "abstract_summary": "Presents an automated, high-throughput platform for discovery and optimization of TTA-UC systems. Performs 100 concentration scans in two hours under oxygen-free conditions, generating comprehensive concentration maps of quantum yield, triplet energy transfer efficiency, and threshold intensity. Identifies key loss mechanisms: sensitizer triplet self-quenching via aggregation, sensitizer-TTA at high porphyrin concentrations, and reverse triplet energy transfer (RTET) increasing losses and thresholds at elevated sensitizer levels. Tests novel sensitizer-annihilator pairs confirming these loss mechanisms. A powerful tool for advancing TTA-UC research methodology.",
+    "significance": "high",
+    "significance_notes": "Published in ACS Central Science (vol 11, issue 3, pp 413-421). First self-driving laboratory platform specifically for TTA-UC optimization. Aligns with the data-driven/ML direction advocated by the Isokuortti/Nienhaus perspective and the Aydemir ML paper. From Universitat Politecnica de Catalunya, Vilnius University, and ICMAB-CSIC Barcelona. Open access via PMC (PMC11950846). Identifies fundamental loss mechanisms that inform molecular design strategies.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-18",
+    "tags": [
+      "automated-platform",
+      "self-driving-lab",
+      "high-throughput",
+      "loss-mechanisms",
+      "concentration-optimization",
+      "methodology",
+      "open-access",
+      "ACS-Central-Science"
+    ]
   }
 ]
