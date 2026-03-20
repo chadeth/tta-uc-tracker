@@ -1943,5 +1943,407 @@
       "open-access",
       "ACS-Central-Science"
     ]
+  },
+  {
+    "id": "kinoshita_2026_jpcl_ru_sensitizer_1um",
+    "title": "Spin-Forbidden Ru Sensitizers Enable 1 um Excitation for Solid-State Triplet-Triplet Annihilation Photon Upconversion",
+    "authors": [
+      "Taku Kinoshita",
+      "Takuya Mori",
+      "Takao Mori",
+      "Hiroshi Segawa"
+    ],
+    "journal": "The Journal of Physical Chemistry Letters",
+    "date": "2026-03-16",
+    "doi": "10.1021/acs.jpclett.6c00275",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.6c00275",
+    "category": "fundamental-mechanism",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "NIR-applications",
+      "deep-tissue-photonics"
+    ],
+    "abstract_summary": "Demonstrates solid-state NIR-to-visible TTA-UC at the 1 um edge using ruthenium sensitizers with spin-forbidden S0-to-T1 absorption. By exploiting the direct spin-forbidden excitation pathway, the Ru sensitizer series bypasses the large ISC energy loss inherent to conventional S1-mediated sensitization, enabling excitation at and beyond 1000 nm in solid-state films. Addresses the molecular tunability advantage of Ru complexes while tackling the threshold intensity challenge that spin-forbidden absorption faces compared to semiconductor sensitizers like PbS QDs.",
+    "significance": "high",
+    "significance_notes": "Published in JPCL just 3 days ago. From the Segawa group (University of Tokyo), leaders in TTA-UC for photovoltaics. Pushing solid-state molecular TTA-UC to the 1 um edge is extremely significant for silicon photovoltaic applications - this is exactly the spectral region where sub-bandgap photon harvesting would boost efficiency beyond the Shockley-Queisser limit. Complements the computational Vitillo telecom band paper and the Ho pseudo-solid-state QD paper already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-19",
+    "tags": [
+      "ruthenium",
+      "spin-forbidden",
+      "S0-T1",
+      "1um-excitation",
+      "solid-state",
+      "molecular-sensitizer",
+      "Segawa-group",
+      "Tokyo",
+      "JPCL"
+    ]
+  },
+  {
+    "id": "dominguez_2026_mattodchem_aqueous_tta_uc_review",
+    "title": "Strategies for aqueous triplet-triplet annihilation upconversion using nanostructured materials",
+    "authors": [
+      "P. D. Dominguez",
+      "S. Bonardd",
+      "N. M. Perez"
+    ],
+    "journal": "Materials Today Chemistry",
+    "date": "2026-03-16",
+    "doi": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S246851942600159X",
+    "category": "review",
+    "subcategory": "aqueous-TTA-UC",
+    "application_areas": [
+      "bioimaging",
+      "photocatalysis",
+      "optogenetics",
+      "sensing",
+      "photomedicine"
+    ],
+    "abstract_summary": "Comprehensive review examining recent progress in aqueous TTA-UC from a nanostructured materials design perspective. Rather than focusing solely on photophysics, discusses how different material architectures - nanocapsules, micelles, liposomes, microemulsions, hydrogels, nanoparticles, supramolecular assemblies, and metal-organic frameworks - have been engineered to enable efficient upconversion in water by controlling molecular confinement, interfacial environments, and oxygen accessibility. Critically compares structure-property relationships that determine triplet energy transfer, annihilation efficiency, and operational stability in aqueous media.",
+    "significance": "medium-high",
+    "significance_notes": "Published 3 days ago in Materials Today Chemistry. Aqueous TTA-UC is a critical frontier for biomedical applications. The materials-oriented framework comparing different nanostructured platforms (nanocapsules vs micelles vs liposomes vs hydrogels vs MOFs) provides practical design guidance that complements the oxygen-tolerance review from Li et al. already in the catalog. Open access.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-19",
+    "tags": [
+      "review",
+      "aqueous",
+      "nanostructured",
+      "nanocapsules",
+      "micelles",
+      "liposomes",
+      "hydrogels",
+      "MOF",
+      "oxygen-tolerance",
+      "open-access"
+    ]
+  },
+  {
+    "id": "kamada_2026_optexpress_snapshot_threshold",
+    "title": "Snapshot measurement of the threshold excitation intensity of TTA-UC systems",
+    "authors": [
+      "Kenji Kamada",
+      "Christian Heck"
+    ],
+    "journal": "Optics Express",
+    "date": "2026-02-28",
+    "doi": null,
+    "url": "https://opg.optica.org/abstract.cfm?uri=oe-34-5-8362",
+    "category": "methodology",
+    "subcategory": "characterization-techniques",
+    "application_areas": [
+      "solar",
+      "materials-characterization",
+      "high-throughput-screening"
+    ],
+    "abstract_summary": "Proposes a simple and rapid method for determining the threshold excitation intensity of TTA-UC systems from a single snapshot of the emission image. The threshold intensity is a key parameter characterizing TTA-UC performance - it marks the transition from quadratic to linear intensity dependence and dictates practical applicability under solar illumination. The snapshot method reduces measurement time from minutes (conventional intensity-by-intensity scanning) to under one second, with accuracy comparable to the conventional approach.",
+    "significance": "medium",
+    "significance_notes": "Published in Optics Express vol 34, issue 5. Methodology advance rather than new materials, but the practical impact is significant - fast threshold measurements enable high-throughput screening of TTA-UC systems. Synergistic with the Baronas automated platform paper (ACS Central Science) already in the catalog. From AIST Japan.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-19",
+    "tags": [
+      "methodology",
+      "threshold-intensity",
+      "snapshot-measurement",
+      "rapid-characterization",
+      "AIST",
+      "Optics-Express"
+    ]
+  },
+  {
+    "id": "hamid_2025_adfm_all_passive_uc_imaging",
+    "title": "Photonic Engineering Enables All-Passive Upconversion Imaging with Low-Intensity Near-Infrared Light",
+    "authors": [
+      "Rabeeya Hamid",
+      "Demeng Feng",
+      "Pournima Narayanan",
+      "Justin S. Edwards",
+      "Manchen Hu",
+      "Emma Belliveau",
+      "Minjeong Kim",
+      "Seoyoung Yin",
+      "Sanket Deshpande",
+      "Chenghao Wan",
+      "Linda Pucurimay",
+      "David A. Czaplewski",
+      "Daniel N. Congreve",
+      "Mikhail A. Kats"
+    ],
+    "journal": "Advanced Functional Materials",
+    "date": "2025-11-16",
+    "doi": "10.1002/adfm.202515334",
+    "arxiv_id": "2411.18707",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202515334",
+    "category": "application",
+    "subcategory": "NIR-imaging",
+    "application_areas": [
+      "imaging",
+      "night-vision",
+      "sensing",
+      "defense"
+    ],
+    "abstract_summary": "Demonstrates an all-passive upconversion imaging system that converts low-intensity incoherent NIR light (down to ~10^-6 W/cm^2 across a 23 mm aperture) into visible light perceptible by the human eye, with no external power input. Three key innovations: (1) TTA-UC via a Y6/rubrene bulk heterojunction, (2) plasmonic enhancement of absorption and field intensity, (3) collection enhancement using a dichroic thin-film assembly. Integrated into a dual-wavelength telescope for high-resolution imaging, preserving ray directionality between NIR input and visible output.",
+    "significance": "very-high",
+    "significance_notes": "Published in Adv. Funct. Mater. From the Congreve (Stanford) and Kats (Wisconsin-Madison) groups. All-passive operation at 10^-6 W/cm^2 is extraordinary - orders of magnitude below solar intensity. The combination of TTA-UC + plasmonics + photonic engineering is a tour de force. Directly synergistic with the Wisch et al. Nature Photonics plasmon-enhanced paper already in the catalog. Practical implications for night vision, low-light sensing, and defense.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-19",
+    "tags": [
+      "all-passive",
+      "NIR-imaging",
+      "Y6-rubrene",
+      "plasmonic-enhancement",
+      "dichroic-assembly",
+      "ultra-low-intensity",
+      "Congreve-group",
+      "Kats-group",
+      "Adv-Funct-Mater"
+    ]
+  },
+  {
+    "id": "narayanan_2025_advoptmater_back_energy_transfer",
+    "title": "Alleviating Parasitic Back Energy Transfer Enhances Thin Film Upconversion",
+    "authors": [
+      "Pournima Narayanan",
+      "Manchen Hu",
+      "Linda Pucurimay",
+      "Arynn O. Gallegos",
+      "Qi Zhou",
+      "Emma Belliveau",
+      "Ghada H. Ahmed",
+      "Sebastian Fernandez",
+      "William Michaels",
+      "Natalia Murrietta",
+      "Vongaishe E. Mutatu",
+      "Demeng Feng",
+      "Rabeeya Hamid",
+      "Kyra M. K. Yap",
+      "Tracy H. Schloemer",
+      "Thomas F. Jaramillo",
+      "Mikhail A. Kats",
+      "Daniel N. Congreve"
+    ],
+    "journal": "Advanced Optical Materials",
+    "date": "2025-05-27",
+    "doi": "10.1002/adom.202500252",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202500252",
+    "category": "fundamental-mechanism",
+    "subcategory": "efficiency-optimization",
+    "application_areas": [
+      "solar",
+      "imaging",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Addresses the parasitic back energy transfer problem in thin-film TTA-UC bulk heterojunctions. Back energy transfer from the annihilator singlet state to the sensitizer acts as a fundamental loss channel in solid-state TTA-UC devices. The authors demonstrate strategies to alleviate this parasitic process, enhancing overall thin film upconversion efficiency. Complements the Gou et al. (solution-phase) and Sloane et al. (perovskite spacer) approaches to addressing back transfer.",
+    "significance": "medium-high",
+    "significance_notes": "From the Congreve lab (Stanford) with Kats and Jaramillo collaborators. Published in Adv. Opt. Mater. vol 13, issue 17. Directly tackles the back energy transfer problem that is one of the key efficiency-limiting mechanisms in solid-state TTA-UC. Synergistic with the Sloane et al. 2D perovskite spacer paper already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-19",
+    "tags": [
+      "back-energy-transfer",
+      "thin-film",
+      "BHJ",
+      "efficiency",
+      "Congreve-group",
+      "solid-state",
+      "Adv-Opt-Mater"
+    ]
+  },
+  {
+    "id": "wang_2025_acsnano_large_antistokes_review",
+    "title": "Triplet-Triplet Annihilation Upconversion with Large Anti-Stokes Shift",
+    "authors": [
+      "Zhijia Wang",
+      "Others"
+    ],
+    "journal": "ACS Nano",
+    "date": "2025-07-22",
+    "doi": "10.1021/acsnano.5c07915",
+    "url": "https://pubs.acs.org/doi/10.1021/acsnano.5c07915",
+    "category": "review",
+    "subcategory": "large-anti-Stokes-shift",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis",
+      "3D-printing"
+    ],
+    "abstract_summary": "Comprehensive review systematically summarizing three roads to large anti-Stokes shifts in TTA-UC: (i) reduce ISC energy loss using photosensitizers with small S1/T1 gaps (charge-transfer TADF, multi-resonance, direct S0-T1 excitation, minimal exchange splitting in inorganics), (ii) reduce triplet energy transfer loss by energy-matched sensitizer-annihilator selection, and (iii) reduce TTA process energy loss by regulating singlet/triplet energy levels of the annihilator. Also covers representative applications in life science, photocatalysis, and 3D printing.",
+    "significance": "medium-high",
+    "significance_notes": "Published in ACS Nano (vol 19, issue 28, pp 25596-25616). Comprehensive review that provides a systematic framework for understanding and optimizing anti-Stokes shifts. Covers TADF, multi-resonance, direct S0-T1, and inorganic sensitizer strategies. Complements the Liu et al. Coord. Chem. Rev. molecular design review already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-19",
+    "tags": [
+      "review",
+      "anti-Stokes-shift",
+      "ISC-optimization",
+      "TADF",
+      "multi-resonance",
+      "ACS-Nano"
+    ]
+  },
+  {
+    "id": "oshea_2025_jacs_doublet_radical_dyad_uc",
+    "title": "Doublet Spin State Mediated Photoluminescence Upconversion in Organic Radical Donor-Triplet Acceptor Dyads",
+    "authors": [
+      "Joseph M. O'Shea",
+      "Others"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-01-08",
+    "doi": "10.1021/jacs.4c14303",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.4c14303",
+    "category": "adjacent-field",
+    "subcategory": "radical-sensitizers",
+    "application_areas": [
+      "energy-conversion",
+      "optoelectronics"
+    ],
+    "abstract_summary": "Proposes a novel organic radical donor-triplet acceptor dyad (TTM-Cz-Per) for photon upconversion via doublet spin states. The stable organic radical TTM-Cz serves as donor, linked to a perylene (Per) acceptor. Upon red excitation, doublet-to-triplet energy transfer (DTET) occurs from the radical donor to the acceptor, generating the perylene triplet state (97 ns lifetime) which then undergoes TTA to produce upconverted 490 nm emission. The CT character is confined within the donor moiety, circumventing competing charge transfer dynamics. Computational results confirm intramolecular DTET via quartet state analysis.",
+    "significance": "high",
+    "significance_notes": "Published in JACS (vol 147, issue 1, pp 1017-1027). First demonstration of doublet-mediated TTA-UC in a radical-acceptor dyad. This represents a paradigm shift: organic radicals with doublet ground states bypass the ISC bottleneck entirely since the radical already has an unpaired electron. Opens a new class of heavy-atom-free sensitizers for TTA-UC. The TTM-Cz radical is well-characterized and commercially relevant.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-20",
+    "tags": [
+      "organic-radical",
+      "doublet-state",
+      "DTET",
+      "TTM-Cz",
+      "perylene",
+      "dyad",
+      "heavy-atom-free",
+      "paradigm-shift",
+      "JACS"
+    ]
+  },
+  {
+    "id": "wellauer_2025_jacs_fe3_luminescent_100ns",
+    "title": "Iron(III) Complexes with Luminescence Lifetimes of up to 100 ns to Enhance Upconversion and Photocatalysis",
+    "authors": [
+      "Jonas Wellauer",
+      "Benjamin Pfund",
+      "Isabelle Becker",
+      "Franc Meyer",
+      "Alessandro Prescimone",
+      "Oliver S. Wenger"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-03-12",
+    "doi": "10.1021/jacs.4c18603",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.4c18603",
+    "category": "adjacent-field",
+    "subcategory": "earth-abundant-sensitizers",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "sustainability"
+    ],
+    "abstract_summary": "Reports iron(III) complexes with luminescence lifetimes up to 100 ns, specifically designed to enhance photon upconversion and photocatalysis. Iron is earth-abundant and non-toxic, making these complexes a sustainable alternative to precious-metal (Ru, Ir, Pt, Pd) sensitizers. The 100 ns lifetime is exceptional for Fe(III) complexes and enables efficient triplet energy transfer to acceptors for TTA-UC and driving challenging photocatalytic transformations.",
+    "significance": "very-high",
+    "significance_notes": "Published in JACS (vol 147, issue 10, pp 8760-8768) from the Wenger group (Basel). Earth-abundant iron sensitizers with 100 ns lifetimes are a major breakthrough for sustainable TTA-UC. Complements the Jin et al. ACS Catal. iron sensitizer paper already in the catalog. The Wenger group is the leading lab in iron-based photochemistry for upconversion. This paper lays the groundwork for the homomolecular Fe(III)-perylene UC paper also from the same group.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-20",
+    "tags": [
+      "iron-III",
+      "earth-abundant",
+      "100ns-lifetime",
+      "luminescent",
+      "Wenger-group",
+      "sustainability",
+      "JACS"
+    ]
+  },
+  {
+    "id": "doettinger_2025_jacs_homomolecular_fe3_perylene_uc",
+    "title": "Homomolecular Photon Upconversion in a Perylene-Decorated Iron(III) Complex",
+    "authors": [
+      "Florian Doettinger",
+      "Jonathan Sagaya",
+      "Giacomo Morselli",
+      "Oliver S. Wenger"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-11-19",
+    "doi": "10.1021/jacs.5c16091",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c16091",
+    "category": "adjacent-field",
+    "subcategory": "earth-abundant-sensitizers",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "sustainability"
+    ],
+    "abstract_summary": "Demonstrates homomolecular photon upconversion in a perylene-decorated iron(III) complex, where the Fe(III) center acts as both triplet sensitizer and the perylene moieties serve as annihilators in the same molecular construct. This self-contained TTA-UC system eliminates the need for separate sensitizer and annihilator components, simplifying device design. Builds on the group's prior work on Fe(III) complexes with 100 ns lifetimes. Homomolecular TTA-UC avoids the diffusion limitations of bimolecular solution-phase systems.",
+    "significance": "high",
+    "significance_notes": "Published in JACS (vol 147, issue 46, pp 43013-43028) from the Wenger group. The self-contained Fe(III)-perylene architecture is elegant: earth-abundant sensitizer + well-known annihilator in a single molecule. Homomolecular UC eliminates the sensitizer-annihilator encounter problem. Extends the earth-abundant iron paradigm to practical TTA-UC demonstration.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-20",
+    "tags": [
+      "iron-III",
+      "homomolecular-UC",
+      "perylene",
+      "earth-abundant",
+      "self-contained",
+      "Wenger-group",
+      "JACS"
+    ]
+  },
+  {
+    "id": "feng_2025_acr_tta_uc_molecules_materials_review",
+    "title": "Triplet-Triplet Annihilation Upconversion: From Molecules to Materials",
+    "authors": [
+      "Hong-Juan Feng",
+      "Ming-Yu Zhang",
+      "Lin-Han Jiang",
+      "Ling Huang",
+      "Dai-Wen Pang"
+    ],
+    "journal": "Accounts of Chemical Research",
+    "date": "2025-12-15",
+    "doi": "10.1021/acs.accounts.5c00403",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.accounts.5c00403",
+    "category": "review",
+    "subcategory": "comprehensive-review",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis",
+      "sensing"
+    ],
+    "abstract_summary": "Comprehensive Accounts of Chemical Research review covering the evolution of TTA-UC from molecular systems to functional materials. Covers nanoparticle-based platforms, soft core-shell nanostructures for water-dispersible TTA-UC, and protein-integrated assembly processes. Provides a roadmap for translating molecular-level TTA-UC understanding into practical materials for applications in solar energy, bioimaging, photocatalysis, and sensing.",
+    "significance": "high",
+    "significance_notes": "Published in Accounts of Chemical Research (vol 58, issue 24, pp 3543-3557) from the Ling Huang group (Central China Normal University), one of the most prolific TTA-UC labs globally. Accounts reviews are invitation-only and represent the definitive summary of a group's research program. The Huang group has multiple papers in our catalog (Se-cyanine sensitizer, BODIPY ligand QD, nanoconfinement, color-tunable) - this review provides the unifying framework.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-20",
+    "tags": [
+      "review",
+      "Accounts-Chem-Res",
+      "Huang-group",
+      "molecules-to-materials",
+      "nanoparticles",
+      "comprehensive"
+    ]
   }
 ]
