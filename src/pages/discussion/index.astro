@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { getReadingTime } from '../../utils/reading-time';
 
 const allArticles = await getCollection('articles');
 const sortedArticles = allArticles.sort((a, b) =>
@@ -38,6 +39,8 @@ const sortedArticles = allArticles.sort((a, b) =>
               day: 'numeric'
             });
 
+            const readTime = getReadingTime(article.body || '');
+
             return (
               <div class="py-5 first:pt-0">
                 <a href={`/discussion/${article.id}`} class="group">
@@ -53,6 +56,8 @@ const sortedArticles = allArticles.sort((a, b) =>
                       <span>{article.data.edition}</span>
                     </>
                   )}
+                  <span class="text-[var(--color-border-default)]">/</span>
+                  <span>{readTime}</span>
                 </div>
               </div>
             );

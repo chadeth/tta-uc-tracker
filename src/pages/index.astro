@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { getReadingTime } from '../utils/reading-time';
 import catalog from '../data/catalog.json';
 
 const allArticles = await getCollection('articles');
@@ -56,6 +57,8 @@ const recentPapers = [...catalog]
                 <span>{latestArticle.data.edition}</span>
               </>
             )}
+            <span class="text-[var(--color-border-default)]">/</span>
+            <span>{getReadingTime(latestArticle.body || '')}</span>
           </div>
           <p class="text-[var(--color-text-secondary)] leading-relaxed mb-4">
             In-depth analysis covering the latest TTA-UC publications, with commentary on significance, emerging patterns, and implications for researchers.
