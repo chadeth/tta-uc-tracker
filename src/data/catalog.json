@@ -2345,5 +2345,88 @@
       "nanoparticles",
       "comprehensive"
     ]
+  },
+  {
+    "id": "lowe_2026_nanolett_plasmon_2d_tmd_sensitizer",
+    "title": "Plasmons Enable Ultralow Threshold Solid-State Triplet Fusion Upconversion with a 2D Sensitizer",
+    "authors": [
+      "Seamus S. Lowe",
+      "Samuel P. Butler",
+      "John E. Anthony",
+      "Shen Xie",
+      "Barry P. Rand"
+    ],
+    "journal": "Nano Letters",
+    "date": "2026-03-18",
+    "doi": "10.1021/acs.nanolett.6c00279",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.6c00279",
+    "category": "fundamental-mechanism",
+    "subcategory": "plasmon-enhanced-UC",
+    "application_areas": [
+      "solar",
+      "optoelectronics",
+      "bioimaging"
+    ],
+    "abstract_summary": "Demonstrates plasmon-enhanced NIR-to-blue TTA upconversion using a monolayer WSe2 (2D transition-metal dichalcogenide) as the sensitizer in a WSe2/organic heterojunction. Under far-field excitation the device reaches a threshold of 19 mW/cm2 and an external quantum efficiency (EQE) of 0.17% with a 1.1 eV anti-Stokes shift. Surface plasmon polariton (SPP) excitation lowers the threshold to 0.9 mW/cm2 and boosts EQE to 3.6%. The plasmon enhancement is attributed to SPP near-field enhancement and dark-exciton absorption in WSe2. Optimization of the WSe2 transfer process is identified as a key performance factor.",
+    "significance": "high",
+    "significance_notes": "From the Rand group (Princeton), authors of the Nature Photonics plasmon-enhanced TTA-UC paper already in the catalog. This companion study introduces 2D TMD monolayers as a fundamentally new class of sensitizer for solid-state TTA-UC. The 0.9 mW/cm2 threshold under plasmon excitation is among the lowest reported for solid-state upconversion. WSe2 dark excitons as a triplet source is a novel mechanism. Published in Nano Letters, March 2026.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-20",
+    "tags": [
+      "WSe2",
+      "2D-TMD",
+      "monolayer-sensitizer",
+      "plasmon-enhanced",
+      "dark-exciton",
+      "ultralow-threshold",
+      "NIR-to-blue",
+      "Rand-group",
+      "Princeton",
+      "Nano-Letters"
+    ]
+  },
+  {
+    "id": "vanorman_2025_chemrev_perovskite_sensitizers_review",
+    "title": "Lead the Way: Halide Perovskites as Next-Generation Triplet Sensitizers for Photon Upconversion",
+    "authors": [
+      "Zachary A. VanOrman",
+      "Colette M. Sullivan",
+      "Charles W. Yang",
+      "Jussi Isokuortti",
+      "Lea Nienhaus"
+    ],
+    "journal": "Chemical Reviews",
+    "date": "2025-12-01",
+    "doi": "10.1021/acs.chemrev.5c00569",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.chemrev.5c00569",
+    "category": "review",
+    "subcategory": "perovskite-sensitizers",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis",
+      "sensing"
+    ],
+    "abstract_summary": "Comprehensive Chemical Reviews article on the emergence of halide perovskite materials (both nanocrystal and bulk forms) as a new class of triplet sensitizers for TTA-based photon upconversion. Covers CsPbX3 nanocrystals, MAPbI3 and mixed-halide bulk perovskites, 2D Ruddlesden-Popper perovskites, and lead-free alternatives. Discusses triplet generation mechanisms at the perovskite-organic interface (Dexter-type triplet transfer vs charge-transfer-mediated sensitization), the role of surface chemistry and passivation in triplet transfer efficiency, and applications in solar energy harvesting, photocatalysis, and bioimaging. Provides a roadmap for overcoming current limitations including oxygen sensitivity, interfacial engineering challenges, and the need for lead-free compositions.",
+    "significance": "very-high",
+    "significance_notes": "Published in Chemical Reviews (vol 125, issue 23, pp 11426-11460), the highest-impact review journal in chemistry. Co-authored by Isokuortti and Nienhaus (Rice University), who also authored the solid-state annihilator design perspective already in the catalog. This is the definitive review on perovskite-sensitized TTA-UC, consolidating a rapidly growing subfield. Directly complements the Sloane et al. 2D perovskite spacer paper and the Klein et al. BHJ CT-state sensitizer paper in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-20",
+    "tags": [
+      "review",
+      "Chemical-Reviews",
+      "perovskite-sensitizer",
+      "CsPbX3",
+      "MAPbI3",
+      "2D-perovskite",
+      "lead-free",
+      "Nienhaus-group",
+      "Rice-University",
+      "comprehensive"
+    ]
   }
 ]
