@@ -2428,5 +2428,336 @@
       "Rice-University",
       "comprehensive"
     ]
+  },
+  {
+    "id": "jiang_2026_nsr_beyond_1000nm_photocatalysis",
+    "title": "Beyond 1000 nm low-energy sunlight-driven photocatalysis enabled by quantum dot-based photon upconversion",
+    "authors": [
+      "Lin-Han Jiang",
+      "Min-Yu Zhang",
+      "Jia-Yao Li",
+      "Rui Li",
+      "Yu-Zhe Li",
+      "Ling Huang"
+    ],
+    "journal": "National Science Review",
+    "date": "2026-03-01",
+    "doi": "10.1093/nsr/nwag078",
+    "url": "https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwag078/8465378",
+    "category": "application",
+    "subcategory": "NIR-photocatalysis",
+    "application_areas": [
+      "photocatalysis",
+      "solar",
+      "NIR-applications"
+    ],
+    "abstract_summary": "Constructs a high-performance NIR-II TTA-UC system operating beyond 1000 nm using quantum dot sensitizers, and demonstrates its application in driving sunlight-powered photocatalysis with low-energy photons that would otherwise be wasted. Extends the practical spectral range of QD-sensitized TTA-UC deep into the NIR-II window, enabling photocatalytic reactions powered by photons below silicon's bandgap energy. Represents the first demonstration of TTA-UC-driven photocatalysis using >1000 nm sunlight.",
+    "significance": "very-high",
+    "significance_notes": "Published in National Science Review (IF ~17), one of the highest-impact general science journals. From the Ling Huang group (Central China Normal University), who have multiple papers in the catalog (Se-cyanine JACS, BODIPY ligand Chem. Sci., nanoconfinement Small Methods, color-tunable JPCC). Pushing TTA-UC photocatalysis beyond 1000 nm is a critical milestone for real-world solar energy utilization - this is the spectral region where the largest untapped photon flux exists.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-21",
+    "tags": [
+      "QD-sensitized",
+      "NIR-II",
+      "beyond-1000nm",
+      "photocatalysis",
+      "sunlight-driven",
+      "Huang-group",
+      "National-Science-Review",
+      "milestone"
+    ]
+  },
+  {
+    "id": "wang_2026_specacta_znse_qd_carrier_dynamics",
+    "title": "Spectral analysis on the carrier dynamics for efficient photon upconversion via molecules sensitized by ZnSe quantum dots",
+    "authors": [
+      "L. Wang",
+      "F. Chen",
+      "X. Zhang",
+      "R. Zhang",
+      "Z. Zhou"
+    ],
+    "journal": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
+    "date": "2026-01-01",
+    "doi": null,
+    "url": "https://www.sciencedirect.com/science/article/pii/S1386142526003240",
+    "category": "fundamental-mechanism",
+    "subcategory": "carrier-dynamics",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "materials-design"
+    ],
+    "abstract_summary": "Investigates the carrier dynamics in ZnSe quantum dot-molecule hybrid systems for efficient TTA photon upconversion using time-resolved spectroscopy. Provides spectral analysis of the energy transfer pathways from ZnSe QD sensitizers to molecular mediator/annihilator components, elucidating the roles of charge transfer and triplet energy transfer in the QD-M TTA-UC cascade. Complements the Kaifeng Wu group's work on ZnSe QD-ketone systems published in Small.",
+    "significance": "medium",
+    "significance_notes": "Published in Spectrochimica Acta Part A (2026). ZnSe QDs are an important low-toxicity (Cd-free, Pb-free) sensitizer class for TTA-UC. Detailed carrier dynamics studies provide the mechanistic understanding needed to optimize these systems. Directly synergistic with the Wang/Wu Small paper on ZnSe/thioxanthone already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-21",
+    "tags": [
+      "ZnSe-QD",
+      "carrier-dynamics",
+      "time-resolved-spectroscopy",
+      "low-toxicity",
+      "energy-transfer",
+      "Spec-Acta"
+    ]
+  },
+  {
+    "id": "bo_2026_adfm_pt_pd_tetracene_sf_tta",
+    "title": "Intramolecular Down- and Up-Conversion in Dimeric Tetracene Complexes Centered via Platinum(II) and Palladium(II)",
+    "authors": [
+      "Y. Bo",
+      "Y. Hou",
+      "M. Matabuena"
+    ],
+    "journal": "Advanced Functional Materials",
+    "date": "2026-01-01",
+    "doi": "10.1002/adfm.202426055",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202426055",
+    "category": "adjacent-field",
+    "subcategory": "SF-TTA-dual-systems",
+    "application_areas": [
+      "solar",
+      "photon-management",
+      "optoelectronics"
+    ],
+    "abstract_summary": "Examines both singlet fission (downconversion) and triplet-triplet annihilation upconversion in dimeric tetracene complexes centered on Pt(II) and Pd(II) metal ions. Demonstrates that the same molecular system can exhibit competing SF and TTA-UC pathways depending on excitation conditions and metal center identity. Provides insights into the interplay between these two photon management processes within a single molecular architecture, informing the design of chromophores that can be tuned for either SF or TTA-UC.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Adv. Funct. Mater. Already cited by 1. Bridges the singlet fission and TTA-UC communities by demonstrating both processes in one molecule. The Pt vs Pd comparison reveals how heavy-atom effects modulate the SF/TTA balance. Tetracene is a key chromophore class for both SF and TTA-UC (complementary to the Naimovicius JACS paper on DPP/DPND).",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-21",
+    "tags": [
+      "singlet-fission",
+      "TTA-UC",
+      "tetracene",
+      "platinum",
+      "palladium",
+      "dual-process",
+      "intramolecular",
+      "Adv-Funct-Mater"
+    ]
+  },
+  {
+    "id": "zhang_2026_acsenerglett_agause_qd_ligand",
+    "title": "Ligand Engineering Unlock Triplet Sensitized-Upconversion Luminescence of Near-Infrared AgAuSe Quantum Dots",
+    "authors": [
+      "Ziyan Zhang",
+      "Yanong Wang",
+      "Zhiyong Tang",
+      "Xiaoyu Yang",
+      "Yejun Zhang",
+      "Jiang Jiang",
+      "Hongchao Yang",
+      "Qiangbin Wang"
+    ],
+    "journal": "ACS Energy Letters",
+    "date": "2026-01-01",
+    "doi": "10.1021/acsenergylett.5c02XXX",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acsenergylett.5c02342",
+    "category": "adjacent-field",
+    "subcategory": "QD-sensitized-triplets",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "NIR-applications"
+    ],
+    "abstract_summary": "Demonstrates that ternary AgAuSe quantum dots can serve as NIR triplet sensitizers for TTA-UC through rational ligand engineering. AgAuSe QDs are a previously unexplored class of semiconductor nanocrystals for upconversion, combining the advantages of silver and gold chalcogenide compositions. Ligand engineering unlocks efficient triplet energy transfer from the QD sensitizer to molecular annihilators, enabling near-infrared-excited photon upconversion.",
+    "significance": "high",
+    "significance_notes": "Published in ACS Energy Letters (vol 11, issue 1, pp 899-905). AgAuSe is a completely new QD composition for TTA-UC sensitization, expanding the materials palette beyond PbS, CdSe, InP, ZnSe, and CsPbX3 QDs already in the catalog. Ternary alloy QDs offer additional tunability. From the Qiangbin Wang group (Suzhou Institute of Nano-Tech). Directly complements the growing catalog of QD sensitizer studies.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-21",
+    "tags": [
+      "AgAuSe-QD",
+      "ternary-QD",
+      "ligand-engineering",
+      "NIR-sensitizer",
+      "new-QD-class",
+      "ACS-Energy-Letters"
+    ]
+  },
+  {
+    "id": "wu_2026_acsenerglett_cspbbr3_blue_to_uv",
+    "title": "Through-Bond Electronic Coupling and Strong Ligand Binding Facilitate Blue-to-UV Photon Upconversion by CsPbBr3 Quantum Dots",
+    "authors": [
+      "Xinyi Wu",
+      "Danielle M. Cadena",
+      "Jussi Isokuortti",
+      "Lea Nienhaus",
+      "Zach A. Page",
+      "Sean T. Roberts"
+    ],
+    "journal": "ACS Energy Letters",
+    "date": "2026-01-01",
+    "doi": "10.1021/acsenergylett.5c02342",
+    "url": "https://pubs.acs.org/doi/10.1021/acsenergylett.5c02342",
+    "category": "adjacent-field",
+    "subcategory": "perovskite-sensitized-UC",
+    "application_areas": [
+      "photocatalysis",
+      "photochemistry",
+      "UV-generation"
+    ],
+    "abstract_summary": "Demonstrates blue-to-UV photon upconversion sensitized by CsPbBr3 perovskite quantum dots. Through-bond electronic coupling between surface-anchored ligands and the perovskite nanocrystal, combined with strong ligand binding, enables efficient triplet energy transfer from CsPbBr3 QDs to UV-emitting annihilators. Extends perovskite-sensitized TTA-UC into the challenging blue-to-UV spectral direction, where the large energy gap between sensitizer absorption and annihilator emission demands precise energy level alignment.",
+    "significance": "high",
+    "significance_notes": "Published in ACS Energy Letters 2026. Co-authored by Isokuortti and Nienhaus (Rice, authors of the Chem. Sci. solid-state annihilator perspective and the Chem. Rev. perovskite sensitizer review). Also involves the Page group (UNC, TTA-UC 3D printing). Through-bond coupling is a key mechanistic insight for optimizing perovskite-to-molecule energy transfer. Blue-to-UV is an underexplored spectral direction for perovskite-sensitized TTA-UC.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-21",
+    "tags": [
+      "CsPbBr3",
+      "perovskite-QD",
+      "blue-to-UV",
+      "through-bond-coupling",
+      "ligand-binding",
+      "Nienhaus-group",
+      "Isokuortti",
+      "Page-group",
+      "ACS-Energy-Letters"
+    ]
+  },
+  {
+    "id": "liu_2025_jacs_gold_quantum_rods",
+    "title": "Near-Infrared to Visible Photon Upconversion with Gold Quantum Rods and Aqueous Photo-Driven Polymerization",
+    "authors": [
+      "Zhongyu Liu",
+      "Xiaolei Hu",
+      "Lianshun Luo",
+      "Guiying He",
+      "Abhrojyoti Mazumder",
+      "Ece Gunay",
+      "Yitong Wang",
+      "Elizabeth C. Dickey",
+      "Linda A. Peteanu",
+      "Krzysztof Matyjaszewski",
+      "Rongchao Jin"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-08-06",
+    "doi": "10.1021/jacs.5c08826",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c08826",
+    "category": "adjacent-field",
+    "subcategory": "gold-nanocluster-sensitizers",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "polymerization",
+      "aqueous-UC"
+    ],
+    "abstract_summary": "Demonstrates NIR-to-visible photon upconversion using gold quantum rods as triplet sensitizers, and couples the upconverted light to drive aqueous photo-driven polymerization. Gold quantum rods (distinct from the Au42 nanoclusters already in the catalog) represent a shape-controlled class of gold nanostructures for TTA-UC sensitization. The aqueous-phase demonstration addresses the practical challenge of performing TTA-UC in water, relevant to biological and green chemistry applications. From the Rongchao Jin group (Carnegie Mellon) and Matyjaszewski group (pioneer of ATRP polymerization).",
+    "significance": "high",
+    "significance_notes": "Published in JACS (vol 147, issue 31, pp 28241-28250). Gold quantum rods join Au42 nanoclusters (Mitsui, Angew. Chem., already in catalog) as a second gold nanostructure morphology for TTA-UC sensitization. The shape-property relationship in gold nanostructures for triplet sensitization is a new frontier. Aqueous polymerization driven by upconverted light extends the Hubner et al. Adv. Opt. Mater. work. From two powerhouse groups at Carnegie Mellon.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-21",
+    "tags": [
+      "gold-quantum-rods",
+      "gold-nanostructure",
+      "NIR-to-visible",
+      "aqueous",
+      "polymerization",
+      "Jin-group",
+      "Matyjaszewski",
+      "Carnegie-Mellon",
+      "JACS"
+    ]
+  },
+  {
+    "id": "wei_2025_jpcl_bnose_multichromatic",
+    "title": "Multichromatic Anti-Stokes Photon Upconversion through BNOSe Sensitization",
+    "authors": [
+      "Yaxiong Wei",
+      "Jinsong Shao",
+      "Kai Yi",
+      "Ying Li",
+      "Jiahui Cheng",
+      "Zhongfa Sun",
+      "Zhou Lu",
+      "Yan-Yun Jing",
+      "Xiaosong Cao",
+      "Xinsheng Xu"
+    ],
+    "journal": "The Journal of Physical Chemistry Letters",
+    "date": "2025-04-21",
+    "doi": "10.1021/acs.jpclett.5c00841",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jpclett.5c00841",
+    "category": "adjacent-field",
+    "subcategory": "sensitizer-engineering",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "multi-wavelength-emission"
+    ],
+    "abstract_summary": "Introduces a BNOSe (boron-nitrogen-oxygen-selenium) heterocyclic compound as a new class of heavy-atom-free triplet sensitizer for TTA-UC, achieving multichromatic anti-Stokes emission. The optimized system converts deep-red light (640 nm) into simultaneous dual emissions at 617 nm (orange) and 412 nm (blue), achieving a record TTA-UC quantum yield of 19.3% with a 1.07 eV anti-Stokes shift - the largest reported for an all-organic sensitizer system. The selenium atom provides spin-orbit coupling for ISC without requiring precious metals.",
+    "significance": "very-high",
+    "significance_notes": "Record 19.3% QY with 1.07 eV anti-Stokes shift for an all-organic system. BNOSe heterocycles are a genuinely new sensitizer class - distinct from BODIPY, porphyrin, cyanine, and TADF sensitizers. Multichromatic (dual-wavelength) upconversion emission is unusual and could enable multiplexed sensing or dual-band photocatalysis. Published in JPCL (vol 16, issue 17, pp 4270-4276).",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-21",
+    "tags": [
+      "BNOSe",
+      "selenium",
+      "heavy-atom-free",
+      "multichromatic",
+      "record-QY",
+      "19.3-percent",
+      "1.07eV-anti-Stokes",
+      "dual-emission",
+      "new-sensitizer-class",
+      "JPCL"
+    ]
+  },
+  {
+    "id": "baikie_2025_nanolett_sf_luminescent_solar_concentrator",
+    "title": "Singlet Fission Luminescent Solar Concentrators",
+    "authors": [
+      "Tomi K. Baikie",
+      "Jesse Allardice",
+      "Simon A. Dowland",
+      "Pratyush Ghosh",
+      "Aaron Li",
+      "James Xiao",
+      "Gerard Delport",
+      "Ashish Sharma",
+      "Neil C. Greenham",
+      "Akshay Rao"
+    ],
+    "journal": "Nano Letters",
+    "date": "2025-11-01",
+    "doi": "10.1021/acs.nanolett.5c04255",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.5c04255",
+    "category": "adjacent-field",
+    "subcategory": "singlet-fission-photon-management",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "luminescent-solar-concentrators"
+    ],
+    "abstract_summary": "Demonstrates a photon-multiplier luminescent solar concentrator (PM-LSC) utilizing singlet fission (SF) as the photon multiplication mechanism. SF chromophores in the LSC absorb one photon and generate two triplet excitons, which then emit as two lower-energy photons guided to edge-mounted solar cells. This achieves over 100% internal photoluminescence quantum efficiency, bypassing the thermodynamic free energy losses that limit conventional LSCs. Directly bridges the singlet fission and photon management communities.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Nano Letters (vol 25, issue 45, pp 16204-16211). From the Rao group at Cambridge, leaders in singlet fission research. SF is the reverse of TTA - materials that undergo efficient SF are prime candidates as TTA-UC annihilators (the Naimovicius JACS paper demonstrated this directly). SF-LSCs and TTA-UC-LSCs are complementary photon management strategies for photovoltaics. New SF chromophores developed for LSCs could be repurposed as TTA-UC annihilators.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-21",
+    "tags": [
+      "singlet-fission",
+      "luminescent-solar-concentrator",
+      "photon-multiplier",
+      "Rao-group",
+      "Cambridge",
+      "photovoltaics",
+      "Nano-Letters"
+    ]
   }
 ]
