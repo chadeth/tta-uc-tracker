@@ -127,6 +127,17 @@ function isActive(href: string, current: string): boolean {
     </div>
   </footer>
 
+  <!-- Back to top button -->
+  <button
+    id="backToTop"
+    class="fixed bottom-6 right-6 z-50 p-2.5 rounded-full bg-[var(--color-surface-2)] border border-[var(--color-border-subtle)] text-[var(--color-text-tertiary)] hover:text-[var(--color-text-secondary)] hover:border-[var(--color-border-default)] transition-all duration-200 opacity-0 translate-y-4 pointer-events-none"
+    aria-label="Back to top"
+  >
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
   <script is:inline>
     const menuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -134,6 +145,31 @@ function isActive(href: string, current: string): boolean {
       menuBtn.addEventListener('click', () => {
         const isOpen = !mobileMenu.classList.toggle('hidden');
         menuBtn.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            if (window.scrollY > 400) {
+              backToTop.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+              backToTop.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            } else {
+              backToTop.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+              backToTop.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
   </script>
