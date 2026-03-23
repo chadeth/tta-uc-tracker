@@ -2759,5 +2759,136 @@
       "photovoltaics",
       "Nano-Letters"
     ]
+  },
+  {
+    "id": "fan_2026_acsnano_ligand_proximity_tet",
+    "title": "Remotely Tuned Triplet Transfer via Ligand Proximity in Quantum Dot-Organic Spectral Converters",
+    "authors": [
+      "Yanhong Fan",
+      "Jia Luo",
+      "Ziqi Wang",
+      "Yanchao Zhao",
+      "Shuangke Wu",
+      "Yuqi Sun",
+      "Peng Zhang",
+      "Haoyu Song",
+      "Xianggui Zhou",
+      "Zhiqiang Hu",
+      "Jiajie Wu",
+      "Yaqi Gu",
+      "Lu Qiu",
+      "Zhuang Miao",
+      "Sanyang Han",
+      "Xing Jiang",
+      "Victor Gray",
+      "Jiajia Zhou",
+      "Akshay Rao",
+      "Zhilong Zhang"
+    ],
+    "journal": "ACS Nano",
+    "date": "2026-03-13",
+    "doi": "10.1021/acsnano.5c22144",
+    "url": "https://pubs.acs.org/doi/abs/10.1021/acsnano.5c22144",
+    "category": "fundamental-mechanism",
+    "subcategory": "ligand-engineering",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "3D-printing",
+      "bioimaging"
+    ],
+    "abstract_summary": "Reveals that hydrocarbon ligands on nanoparticles can remotely govern secondary triplet energy transfer (TET2) from triplet mediators to annihilators, which occurs entirely outside the QD core. By shrinking the native oleate ligand shell on PbSe QD sensitizers before attaching triplet mediator ligands, NIR-to-visible upconversion performance improves dramatically. Transient absorption spectroscopy confirms the compact ligand shell boosts TET2 efficiency from 59.4% to 93.5%. Molecular dynamics simulations attribute the enhancement to shortened mediator-annihilator distances from reduced steric hindrance. The strategy is versatile across multiple systems: PbSe NIR-to-visible, CdSe green-to-blue, solid-state films, and even lanthanide-doped nanoparticle hybrids. The same principle applies to singlet fission downconversion, boosting photon-multiplication efficiency from 132% to 163%.",
+    "significance": "high",
+    "significance_notes": "Published in ACS Nano, March 13, 2026. Features Victor Gray and Akshay Rao (Cambridge) as co-authors, both leading figures in QD-based triplet photophysics. The finding that native hydrocarbon ligands remotely control energy transfer occurring outside the QD core is a new mechanistic insight with broad implications. The 59.4% to 93.5% TET2 efficiency boost is dramatic. Versatility across PbSe, CdSe, solid-state, and lanthanide systems demonstrates generality. Directly complements the Nishimura/Gray JPCC paper on aliphatic ligand roles and the Luo et al. JPCL alloyed QD paper (same research group) already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-22",
+    "tags": [
+      "PbSe-QD",
+      "ligand-proximity",
+      "oleate-shell",
+      "TET2",
+      "molecular-dynamics",
+      "versatile-strategy",
+      "Victor-Gray",
+      "Akshay-Rao",
+      "ACS-Nano"
+    ]
+  },
+  {
+    "id": "mizokuro_2026_jpoc_dpa_substituents",
+    "title": "Solution-Phase Photon Upconversion With Sensitizer/4,4-Substituted 9,10-Diphenylanthracene Mixtures",
+    "authors": [
+      "Toshiko Mizokuro",
+      "Emiko Koyama",
+      "Shotaro Ito",
+      "Yoshihiro Kikkawa"
+    ],
+    "journal": "Journal of Physical Organic Chemistry",
+    "date": "2026-02-16",
+    "doi": "10.1002/poc.70066",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/poc.70066",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "energy-conversion",
+      "molecular-design"
+    ],
+    "abstract_summary": "Systematic study of how chemical substitutions at the 4-positions of diphenylanthracene (DPA) affect TTA-UC efficiency. Synthesized DPA derivatives with electron-donating and electron-accepting substituents at both 4-positions. DCl-DPA showed the highest fluorescence quantum yield, followed by DCN-DPA. However, unsubstituted DPA still achieved the highest UC quantum efficiency, followed by DCl-DPA and DCN-DPA. Analysis of saturated UC quantum efficiency, triplet-triplet energy transfer quantum yield, and TTA quantum yield revealed that the TTA quantum yield (phi_TTA) primarily governs the overall UC performance, providing design rules for annihilator optimization.",
+    "significance": "medium",
+    "significance_notes": "From the AIST Japan group (same group as the Horino polynorbornene paper in the catalog). Systematic substituent study on the most widely used TTA-UC annihilator (DPA). The finding that phi_TTA is the dominant factor governing UC efficiency is a useful design insight, though the conclusion that unsubstituted DPA remains optimal is a somewhat sobering result for the annihilator engineering community. Published in J. Phys. Org. Chem.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-22",
+    "tags": [
+      "DPA",
+      "annihilator-substituents",
+      "systematic-study",
+      "phi-TTA",
+      "design-rules",
+      "AIST",
+      "JPOC"
+    ]
+  },
+  {
+    "id": "pollice_2026_adfm_polymer_scintillator_tta",
+    "title": "Sensitized Triplet Exciton Generation in Nanostructured Polymer Scintillators: Toward Improved Gamma/Neutron Discrimination",
+    "authors": [
+      "Luca Pollice",
+      "Xueqian Hu",
+      "Letizia G. Tedoldi",
+      "Angelo Monguzzi"
+    ],
+    "journal": "Advanced Functional Materials",
+    "date": "2026-03-15",
+    "doi": "10.1002/adfm.74937",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74937",
+    "category": "adjacent-field",
+    "subcategory": "radiation-detection",
+    "application_areas": [
+      "nuclear-detection",
+      "security",
+      "medical-imaging",
+      "high-energy-physics"
+    ],
+    "abstract_summary": "Develops nanostructured polymer scintillators that exploit sensitized triplet-triplet annihilation for improved gamma-ray vs neutron discrimination via pulse shape discrimination (PSD). Extends the Monguzzi/Weder groups prior work (Adv. Mater. 2024) on TTA-based polymeric scintillators by engineering the nanostructured polymer matrix to enhance sensitized triplet exciton generation, enabling faster and more reliable PSD. The nanodomains within the polymer preserve liquid-like chromophore dynamics needed for efficient TTA while maintaining a solid macroscopic form factor. Demonstrates a completely new application domain for TTA photophysics beyond energy conversion and photocatalysis.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Adv. Funct. Mater. (March 2026). From the Monguzzi group (Milano-Bicocca) and collaborators at the Adolphe Merkle Institute (Fribourg, Weder group). Nuclear radiation detection is a novel and high-impact application domain for TTA - the spin-dependent dynamics that govern TTA also encode information about the type of ionizing radiation. Builds on the groups 2024 Adv. Mater. proof of concept. The nanostructured polymer matrix design is directly relevant to solid-state TTA-UC more broadly.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-22",
+    "tags": [
+      "scintillator",
+      "polymer-nanostructure",
+      "gamma-neutron-PSD",
+      "radiation-detection",
+      "Monguzzi-group",
+      "Weder-group",
+      "Adv-Funct-Mater",
+      "new-application-domain"
+    ]
   }
 ]
