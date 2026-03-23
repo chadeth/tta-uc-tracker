@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tta-uc-tracker.pages.dev/sitemap-index.xml
