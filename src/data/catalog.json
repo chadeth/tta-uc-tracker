@@ -2890,5 +2890,167 @@
       "Adv-Funct-Mater",
       "new-application-domain"
     ]
+  },
+  {
+    "id": "zhang_2026_small_porous_framework_tta_uc_review",
+    "title": "Research Progress of Porous Framework-Based Triplet-Triplet Annihilation Upconversion Materials",
+    "authors": [
+      "Ming-Yu Zhang",
+      "Ling Huang"
+    ],
+    "journal": "Small",
+    "date": "2026-03-20",
+    "doi": "10.1002/smll.202510706",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.202510706",
+    "category": "review",
+    "subcategory": "porous-frameworks",
+    "application_areas": [
+      "solar",
+      "photocatalysis",
+      "bioimaging",
+      "sensing"
+    ],
+    "abstract_summary": "Comprehensive review examining porous framework materials - including metal-organic frameworks (MOFs) and porous aromatic frameworks (PAFs) - as platforms for TTA-UC. Provides detailed analysis of the intrinsic structure-performance relationships in these materials, highlighting how their diverse functional and structural characteristics enable efficient, oxygen-resistant, solid-state TTA-UC systems. Summarizes recent advances and applications in bioimaging, sensing, and photocatalysis. Discusses prevailing challenges and proposes prospective solutions for the field.",
+    "significance": "medium-high",
+    "significance_notes": "Published in Small (online March 20, 2026, ahead of print). From Ming-Yu Zhang and Ling Huang, now at Nankai University (Research Center for Analytical Sciences). Zhang is a prolific contributor to TTA-UC framework research (co-author of the COF TTA-UC paper in Chem and the BODIPY ligand Chem Sci paper in the catalog). This review consolidates the rapidly growing subfield of framework-based TTA-UC, complementing the Isokuortti/Nienhaus solid-state annihilator perspective and the Li et al. oxygen-tolerance review already cataloged. MOFs and PAFs address both the oxygen quenching and solid-state translation challenges simultaneously.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job2-journal-scout",
+    "added_date": "2026-03-23",
+    "tags": [
+      "review",
+      "MOF",
+      "PAF",
+      "porous-framework",
+      "oxygen-resistant",
+      "solid-state",
+      "structure-performance",
+      "Huang-group",
+      "Nankai",
+      "Small"
+    ]
+  },
+  {
+    "id": "tao_2025_jacs_ct_transition_2d_perovskite_uc",
+    "title": "Direct Charge-Transfer Transition Drives Triplet Generation and Photon Upconversion in 2D Hybrid Perovskites",
+    "authors": [
+      "Weijian Tao",
+      "Guohua He",
+      "Qingjie Feng",
+      "Yiyang Wang",
+      "Tianjing Li",
+      "Yahui Li",
+      "Enzheng Shi",
+      "Guangjun Nan",
+      "Haiming Zhu"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2025-12-24",
+    "doi": "10.1021/jacs.5c14867",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c14867",
+    "category": "adjacent-field",
+    "subcategory": "perovskite-sensitized-UC",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "photon-management"
+    ],
+    "abstract_summary": "Demonstrates that direct charge-transfer (CT) transitions in 2D organic-inorganic hybrid perovskites can drive triplet generation and photon upconversion, bypassing conventional energy transfer pathways. The below-gap CT transition at the organic-inorganic interface directly populates triplet states on the organic chromophore spacers, enabling TTA-based upconversion. This mechanism is fundamentally different from the Dexter-type triplet energy transfer or charge-separation-mediated sensitization previously observed in perovskite-sensitized systems.",
+    "significance": "high",
+    "significance_notes": "Published in JACS (vol 147, issue 51, pp 47280-47288). From the Haiming Zhu group (Zhejiang University). Establishes a new mechanistic pathway for perovskite-sensitized TTA-UC via direct CT transitions, distinct from Dexter transfer. Complements the VanOrman Chemical Reviews perovskite sensitizer review, the Sloane 2D perovskite spacer paper, and the Wu CsPbBr3 paper already in the catalog. The below-gap excitation capability could extend the spectral range accessible to perovskite-sensitized upconversion.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-23",
+    "tags": [
+      "2D-perovskite",
+      "charge-transfer-transition",
+      "below-gap-excitation",
+      "triplet-generation",
+      "new-mechanism",
+      "Zhu-group",
+      "Zhejiang",
+      "JACS"
+    ]
+  },
+  {
+    "id": "uji_2025_advoptmater_tips_benzene_uvc",
+    "title": "Triplet-Triplet Annihilation Photon Upconversion Toward UVC Energy Generation Using TIPS-Benzene and a Heptazine Derivative",
+    "authors": [
+      "Masanori Uji",
+      "Shunsuke Nakagawa",
+      "Akira Nihonyanagi",
+      "Daigo Miyajima",
+      "Noriaki Aizawa",
+      "Nobuhiro Yanai"
+    ],
+    "journal": "Advanced Optical Materials",
+    "date": "2025-07-14",
+    "doi": "10.1002/adom.202501279",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202501279",
+    "category": "materials-design",
+    "subcategory": "annihilator-engineering",
+    "application_areas": [
+      "photocatalysis",
+      "sterilization",
+      "UV-generation",
+      "photochemistry"
+    ],
+    "abstract_summary": "Achieves TTA-UC into the UVC spectral region using TIPS-benzene derivatives as annihilators paired with a heptazine derivative as the triplet sensitizer. The heptazine absorbs in the visible/UVA region and has a triplet energy level high enough to sensitize the TIPS-benzene emitters. Bulky TIPS substituents suppress aggregation-induced deactivation of the benzene-based annihilators, maintaining high emission efficiency. Pushes the frontier of TTA-UC emission wavelengths into the germicidal UVC range (200-280 nm), relevant to sterilization and surface decontamination applications.",
+    "significance": "high",
+    "significance_notes": "From the Yanai group (Kyushu University), world leaders in TTA-UC. UVC generation via TTA-UC is an extreme spectral challenge requiring very high triplet energies and precise energy alignment. TIPS-benzene is a new annihilator class for UVC emission, and heptazine derivatives are a new sensitizer class. Complements the Moghtader TIPS-biphenyl paper (UV, ~350 nm) by pushing deeper into the UV. Published in Adv. Opt. Mater. vol 13, 2025.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-23",
+    "tags": [
+      "UVC",
+      "TIPS-benzene",
+      "heptazine",
+      "deep-UV",
+      "new-annihilator-class",
+      "new-sensitizer-class",
+      "Yanai-group",
+      "Kyushu",
+      "Adv-Opt-Mater"
+    ]
+  },
+  {
+    "id": "lee_2025_adfm_dithienyl_tetracene_sf",
+    "title": "5,11-Di(thiophen-2-yl)Tetracene: A Novel Tetracene Derivative for Efficient Singlet Fission with Enhanced Physical and Chemical Stability in Thin Films",
+    "authors": [
+      "Junhyeok Lee",
+      "Jaehyeon Yi",
+      "Hyunhwa Hong",
+      "Woojae Kim"
+    ],
+    "journal": "Advanced Functional Materials",
+    "date": "2025-06-01",
+    "doi": "10.1002/adfm.202423223",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202423223",
+    "category": "adjacent-field",
+    "subcategory": "singlet-fission",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "photon-management"
+    ],
+    "abstract_summary": "Introduces 5,11-di(thiophen-2-yl)tetracene (DTTc) as a novel tetracene derivative optimized for efficient singlet fission in thin films with significantly enhanced physical and chemical stability compared to parent tetracene. The thienyl groups at the 5,11-positions provide electronic tuning while improving processability and ambient stability. As a singlet fission chromophore, DTTc is a prime candidate for repurposing as a TTA-UC annihilator, since SF and TTA are reverse processes operating on the same energetic landscape.",
+    "significance": "medium",
+    "significance_notes": "Published in Adv. Funct. Mater. vol 35, issue 42, 2025. From Seoul National University. Tetracene derivatives are already established TTA-UC annihilators (e.g., TES-ADT, carboxytetracene in the Congreve group's work). A more stable tetracene derivative with tuned electronic properties expands the annihilator toolkit. The enhanced ambient stability directly addresses the degradation challenge in solid-state TTA-UC devices. SF efficiency indicates favorable triplet energetics for TTA.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-23",
+    "tags": [
+      "singlet-fission",
+      "tetracene-derivative",
+      "thienyl",
+      "enhanced-stability",
+      "thin-film",
+      "potential-annihilator",
+      "Seoul-National",
+      "Adv-Funct-Mater"
+    ]
   }
 ]
