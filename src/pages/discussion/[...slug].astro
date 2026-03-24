@@ -58,6 +58,11 @@ const readingTime = getReadingTime(article.body || '');
       </div>
     </header>
 
+    <!-- Table of Contents (auto-generated from h2 headings) -->
+    <nav id="toc" class="hidden mb-12 py-5 px-6 rounded-lg bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)]" aria-label="Table of contents">
+      <p class="text-xs font-medium text-[var(--color-text-tertiary)] uppercase tracking-wider mb-3">Contents</p>
+    </nav>
+
     <div class="prose prose-lg max-w-none">
       <Content />
     </div>
@@ -106,5 +111,42 @@ const readingTime = getReadingTime(article.body || '');
     )}
 
   </article>
+
+  <script is:inline>
+    // Auto-generate table of contents from h2 headings
+    const prose = document.querySelector('.prose');
+    const tocContainer = document.getElementById('toc');
+    if (prose && tocContainer) {
+      const headings = prose.querySelectorAll('h2');
+      if (headings.length >= 2) {
+        headings.forEach(function(h, i) {
+          if (!h.id) {
+            h.id = h.textContent
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '') || ('section-' + i);
+          }
+        });
+
+        const list = document.createElement('ol');
+        list.className = 'space-y-1.5 text-sm list-decimal list-inside';
+        headings.forEach(function(h) {
+          const li = document.createElement('li');
+          li.className = 'text-[var(--color-text-tertiary)]';
+          const a = document.createElement('a');
+          a.href = '#' + h.id;
+          a.textContent = h.textContent.trim();
+          a.className = 'hover:text-[var(--color-accent-hover)] transition-colors';
+          a.style.color = 'inherit';
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+
+        tocContainer.appendChild(list);
+        tocContainer.classList.remove('hidden');
+      }
+    }
+  </script>
 
 </Layout>
