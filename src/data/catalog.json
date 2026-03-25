@@ -3052,5 +3052,40 @@
       "Seoul-National",
       "Adv-Funct-Mater"
     ]
+  },
+  {
+    "id": "gish_2025_chemrxiv_hof_tta_uc",
+    "title": "Upconverting Green Light to Blue via Solid-State Triplet-Triplet Annihilation in Hydrogen-Bonded Organic Frameworks",
+    "authors": [
+      "(Authors from ChemRxiv preprint)"
+    ],
+    "journal": "ChemRxiv preprint",
+    "date": "2025-01-02",
+    "doi": null,
+    "url": "https://chemrxiv.org/engage/chemrxiv/article-details/67747eebfa469535b966aa4f",
+    "category": "materials-design",
+    "subcategory": "hydrogen-bonded-organic-frameworks",
+    "application_areas": [
+      "solar",
+      "energy-conversion"
+    ],
+    "abstract_summary": "Demonstrates green-to-blue solid-state TTA-UC in hydrogen-bonded organic frameworks (HOFs), a new class of porous crystalline materials distinct from MOFs and COFs. Uses zinc tetrakis(4-carboxyphenyl)porphyrin (Zn-TCPP) as sensitizer and dipyridyl thiazolothiazole (TzBIPY) as annihilator, co-assembled via hydrogen bonding. HOFs offer advantages over MOFs and COFs including mild synthesis conditions, solution processability, self-healing capability, and reversible assembly. Addresses the efficiency gap between solution-phase and solid-state TTA-UC by leveraging the ordered chromophore arrangement within the HOF lattice.",
+    "significance": "medium",
+    "significance_notes": "HOFs are a genuinely new framework class for TTA-UC, complementing the MOF, COF, zeolite, and PAF approaches already in the catalog. The hydrogen-bonding assembly strategy offers milder conditions than the covalent (COF) or coordination (MOF) approaches. ChemRxiv preprint - not yet journal-published as of March 2026. Less impact than the COF papers in Chem and Angew. Chem. but expands the materials palette.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-24",
+    "tags": [
+      "HOF",
+      "hydrogen-bonded-organic-framework",
+      "Zn-TCPP",
+      "TzBIPY",
+      "solid-state",
+      "green-to-blue",
+      "porous-framework",
+      "preprint",
+      "ChemRxiv"
+    ]
   }
 ]
