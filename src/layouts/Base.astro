@@ -56,6 +56,11 @@ function isActive(href: string, current: string): boolean {
 
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
+  <!-- Reading progress bar (only visible on article pages with .prose content) -->
+  <div id="readingProgress" class="fixed top-0 left-0 w-full h-[3px] z-[60] pointer-events-none opacity-0 transition-opacity duration-300">
+    <div id="readingProgressBar" class="h-full bg-[var(--color-accent)] origin-left" style="transform: scaleX(0); transition: transform 0.1s linear;"></div>
+  </div>
+
   <nav class="border-b border-[var(--color-border-subtle)]" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
       <a href="/" class="text-sm font-semibold text-[var(--color-text-primary)] tracking-tight">
@@ -148,6 +153,38 @@ function isActive(href: string, current: string): boolean {
         const isOpen = !mobileMenu.classList.toggle('hidden');
         menuBtn.setAttribute('aria-expanded', String(isOpen));
       });
+    }
+
+    // Reading progress bar
+    const progressContainer = document.getElementById('readingProgress');
+    const progressBar = document.getElementById('readingProgressBar');
+    const proseElement = document.querySelector('.prose');
+    if (progressContainer && progressBar && proseElement) {
+      progressContainer.classList.remove('opacity-0');
+      progressContainer.classList.add('opacity-100');
+
+      let progressTicking = false;
+      function updateProgress() {
+        const rect = proseElement.getBoundingClientRect();
+        const articleTop = rect.top + window.scrollY;
+        const articleHeight = rect.height;
+        const viewportHeight = window.innerHeight;
+        const scrolled = window.scrollY - articleTop;
+        const total = articleHeight - viewportHeight;
+        const ratio = Math.max(0, Math.min(1, total > 0 ? scrolled / total : 0));
+        progressBar.style.transform = 'scaleX(' + ratio + ')';
+      }
+
+      window.addEventListener('scroll', function() {
+        if (!progressTicking) {
+          window.requestAnimationFrame(function() {
+            updateProgress();
+            progressTicking = false;
+          });
+          progressTicking = true;
+        }
+      });
+      updateProgress();
     }
 
     // Back to top button

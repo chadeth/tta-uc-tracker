@@ -163,6 +163,8 @@ button:focus:not(:focus-visible),
   #mobileMenu,
   #searchBox,
   #categoryFilter,
+  #readingProgress,
+  #backToTop,
   [role="search"] {
     display: none !important;
   }
