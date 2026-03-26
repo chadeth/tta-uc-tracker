@@ -28,6 +28,41 @@ const formattedDate = dateObj.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 const readingTime = getReadingTime(article.body || '');
+const isoDate = dateObj.toISOString().split('T')[0];
+
+// Word count for structured data
+const wordCount = (article.body || '').replace(/[#*_\[\]()>-]/g, '').split(/\s+/).filter(Boolean).length;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.data.title,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  description: `${article.data.title}. Commentary on TTA-UC research developments.`,
+  wordCount: wordCount,
+  url: `https://tta-uc-tracker.pages.dev/discussion/${article.id}`,
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `https://tta-uc-tracker.pages.dev/discussion/${article.id}`,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'TTA-UC Research Tracker',
+    url: 'https://tta-uc-tracker.pages.dev',
+  },
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'TTA-UC Research Tracker',
+    url: 'https://tta-uc-tracker.pages.dev',
+  },
+  about: {
+    '@type': 'Thing',
+    name: 'Triplet-Triplet Annihilation Upconversion',
+    sameAs: 'https://en.wikipedia.org/wiki/Photon_upconversion',
+  },
+  inLanguage: 'en',
+};
 ---
 
 <Layout
@@ -35,6 +70,7 @@ const readingTime = getReadingTime(article.body || '');
   description={`${article.data.title}. Commentary on TTA-UC research developments.`}
   currentPath={`/discussion/${article.id}`}
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <article class="max-w-[65ch] mx-auto px-6 pt-16 sm:pt-20 pb-24">
 

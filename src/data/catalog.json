@@ -3087,5 +3087,53 @@
       "preprint",
       "ChemRxiv"
     ]
+  },
+  {
+    "id": "sifuentes_2026_jacs_spinflip_sf_harvesting",
+    "title": "Exploring Spin-State Selective Harvesting Pathways from Singlet Fission Dimers to a Near-Infrared Emissive Spin-Flip Emitter",
+    "authors": [
+      "Percy Gonzalo Sifuentes-Samanamud",
+      "Adrian Sauer",
+      "Aki Masaoka",
+      "Yuta Sawada",
+      "Yuya Watanabe",
+      "Ilias Papadopoulos",
+      "Katja Heinze",
+      "Yoichi Sasaki",
+      "Nobuo Kimizuka"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "date": "2026-03-25",
+    "doi": "10.1021/jacs.5c20500",
+    "url": "https://pubs.acs.org/doi/10.1021/jacs.5c20500",
+    "category": "adjacent-field",
+    "subcategory": "singlet-fission-triplet-harvesting",
+    "application_areas": [
+      "solar",
+      "photovoltaics",
+      "LEDs",
+      "quantum-technologies"
+    ],
+    "abstract_summary": "Demonstrates that a molybdenum-based near-infrared spin-flip emitter serves as a triplet-selective energy acceptor from tetracene-based singlet fission (SF) dimers. The large energy gap between spin-allowed transitions and the luminescent spin-flip transition of the Mo complex enables efficient exothermic triplet energy transfer (TET) to the spin-flip excited doublet state while circumventing the competing Forster resonance energy transfer (FRET) from the initially formed tetracene singlet. Quantum yields of Mo complex doublet state formation by tetracene SF dimers with phenylene, 2,5-methylphenylene, and p-terphenylene bridging units were 112 +/- 6%, 132 +/- 2%, and 128 +/- 4%, respectively, in solution. The drop of fluorescence lifetimes at high Mo complex concentrations implies energy transfer from exchange-coupled triplet pairs.",
+    "significance": "very-high",
+    "significance_notes": "Published in JACS today (March 25, 2026) from the Kimizuka/Sasaki group at Kyushu University (a world-leading TTA-UC lab) with Heinze group at JGU Mainz. 132% quantum yield demonstrates photon multiplication via SF + selective triplet harvesting. The spin-flip emitter concept is directly relevant to TTA-UC: (1) Sasaki/Kimizuka are major TTA-UC researchers, (2) tetracene dimers are key TTA-UC annihilator scaffolds, (3) the selective TET mechanism (avoiding FRET loss) informs sensitizer-to-annihilator energy transfer design, (4) Mo spin-flip emitters could serve as novel triplet acceptors/mediators in TTA-UC systems. The reverse engineering principle applies: understanding selective triplet harvesting from SF dimers improves selective triplet injection into TTA annihilators.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-25",
+    "tags": [
+      "singlet-fission",
+      "spin-flip-emitter",
+      "molybdenum",
+      "tetracene-dimers",
+      "triplet-selective",
+      "130-percent-QY",
+      "FRET-suppression",
+      "Kimizuka-group",
+      "Kyushu",
+      "Heinze-group",
+      "Mainz",
+      "JACS"
+    ]
   }
 ]

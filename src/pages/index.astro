@@ -17,9 +17,24 @@ const recentPapers = [...catalog]
   .sort((a, b) => new Date(b.date + 'T12:00:00').getTime() - new Date(a.date + 'T12:00:00').getTime())
   .filter(p => p.significance === 'very-high' || p.significance === 'high')
   .slice(0, 5);
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'TTA-UC Research Tracker',
+  url: 'https://tta-uc-tracker.pages.dev',
+  description: 'A curated catalog and commentary service tracking research on Triplet-Triplet Annihilation Upconversion.',
+  about: {
+    '@type': 'Thing',
+    name: 'Triplet-Triplet Annihilation Upconversion',
+    sameAs: 'https://en.wikipedia.org/wiki/Photon_upconversion',
+  },
+  inLanguage: 'en',
+};
 ---
 
 <Layout title="TTA-UC Research Tracker" currentPath="/">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
 
   <div class="max-w-7xl mx-auto px-6">
 

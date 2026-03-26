@@ -49,6 +49,8 @@ function isActive(href: string, current: string): boolean {
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content={fullTitle}>
   <meta name="twitter:description" content={description}>
+
+  <slot name="head" />
 </head>
 <body class="bg-[var(--color-surface-0)] text-[var(--color-text-secondary)] font-sans antialiased min-h-screen flex flex-col">
 
