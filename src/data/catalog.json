@@ -3135,5 +3135,75 @@
       "Mainz",
       "JACS"
     ]
+  },
+  {
+    "id": "he_2025_jpcl_intramolecular_tta_far_red",
+    "title": "Intramolecular Triplet-Triplet Annihilation Enhanced the Photon Upconversion Performance under Far-Red Light Excitation",
+    "authors": [
+      "Qiu-ting He",
+      "Ling Huang"
+    ],
+    "journal": "The Journal of Physical Chemistry Letters",
+    "date": "2025-12-18",
+    "doi": "10.1021/acs.jpclett.5c03314",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jpclett.5c03314",
+    "category": "materials-design",
+    "subcategory": "intramolecular-TTA",
+    "application_areas": [
+      "solar",
+      "bioimaging",
+      "photocatalysis"
+    ],
+    "abstract_summary": "Demonstrates that intramolecular triplet-triplet annihilation in appropriately designed annihilator dimers or oligomers significantly enhances photon upconversion performance under far-red light excitation. By covalently linking annihilator units, the intramolecular TTA pathway circumvents the diffusion bottleneck that limits bimolecular TTA, particularly important at the far-red excitation wavelengths where sensitizer triplet lifetimes are shorter. Extends the Ling Huang group's systematic work on TTA-UC efficiency optimization and far-red/NIR photon harvesting.",
+    "significance": "medium-high",
+    "significance_notes": "Published in JPCL vol 16, issue 51, pp 13182-13189 (December 2025). From the Ling Huang group (CCNU), one of the most prolific TTA-UC labs. Intramolecular TTA is a key strategy for solid-state and diffusion-limited systems. Far-red excitation is practically important for biological and solar applications. Complements the Kobori vibronic trimer paper (intramolecular hopping) already in the catalog.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-26",
+    "tags": [
+      "intramolecular-TTA",
+      "far-red-excitation",
+      "annihilator-dimer",
+      "diffusion-free",
+      "Huang-group",
+      "JPCL"
+    ]
+  },
+  {
+    "id": "haraguchi_2025_jpcl_double_sensitization_iTTA",
+    "title": "Investigation of Intramolecular Triplet-Triplet Annihilation Upconversion by Double Sensitization",
+    "authors": [
+      "Aoi Haraguchi",
+      "Kenichi Goushi",
+      "Shoma Sasaki",
+      "Chihaya Adachi"
+    ],
+    "journal": "The Journal of Physical Chemistry Letters",
+    "date": "2025-05-15",
+    "doi": "10.1021/acs.jpclett.5c00606",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jpclett.5c00606",
+    "category": "fundamental-mechanism",
+    "subcategory": "intramolecular-TTA",
+    "application_areas": [
+      "energy-conversion",
+      "optoelectronics"
+    ],
+    "abstract_summary": "Investigates intramolecular triplet-triplet annihilation upconversion facilitated by double sensitization, where two sensitizer molecules simultaneously provide triplet excitons to a single annihilator dimer/oligomer. From the Chihaya Adachi group at Kyushu University (TADF pioneers). Establishes that double sensitization of intramolecular TTA dimers provides a pathway to overcome the statistical limitation of requiring two triplet excitons on a single annihilator scaffold. Mechanistic insights on how the double sensitization rate depends on sensitizer concentration and excited state dynamics.",
+    "significance": "medium-high",
+    "significance_notes": "Published in JPCL vol 16, issue 20, pp 5173-5179 (May 2025). From the Adachi group at Kyushu University, pioneers of TADF and contributors to the RISC-based upconversion approach (Kohata et al. Angew. Chem. already in catalog). Double sensitization of intramolecular TTA is a novel mechanistic study that informs the design of self-contained TTA-UC molecular systems.",
+    "pdf_downloaded": false,
+    "pdf_filename": null,
+    "added_by": "job3-adjacent-fields",
+    "added_date": "2026-03-26",
+    "tags": [
+      "intramolecular-TTA",
+      "double-sensitization",
+      "Adachi-group",
+      "Kyushu",
+      "TADF-crossover",
+      "mechanism",
+      "JPCL"
+    ]
   }
 ]
