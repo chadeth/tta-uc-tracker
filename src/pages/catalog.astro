@@ -52,9 +52,10 @@ const sortedPapers = [...catalog].sort((a, b) =>
             type="text"
             id="searchBox"
             placeholder="Search by title, author, journal..."
-            aria-label="Search papers by title, author, or journal"
-            class="w-full pl-10 pr-4 py-2.5 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-lg text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)]"
+            aria-label="Search papers by title, author, or journal. Press / to focus."
+            class="w-full pl-10 pr-12 py-2.5 bg-[var(--color-surface-1)] border border-[var(--color-border-subtle)] rounded-lg text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)]"
           />
+          <kbd id="searchHint" class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-mono text-[var(--color-text-tertiary)] border border-[var(--color-border-subtle)] rounded px-1.5 py-0.5 pointer-events-none select-none">/</kbd>
         </div>
         <select
           id="categoryFilter"
@@ -68,6 +69,10 @@ const sortedPapers = [...catalog].sort((a, b) =>
         </select>
       </div>
     </section>
+
+    <!-- Results count -->
+    <div id="resultsCount" class="pb-4 text-xs text-[var(--color-text-tertiary)] transition-opacity duration-150" aria-live="polite" aria-atomic="true">
+    </div>
 
     <!-- Papers list -->
     <section class="pb-24">
@@ -143,12 +148,25 @@ const sortedPapers = [...catalog].sort((a, b) =>
   <script is:inline define:vars={{ categoryNames }}>
     const searchBox = document.getElementById('searchBox');
     const categoryFilter = document.getElementById('categoryFilter');
+    const resultsCount = document.getElementById('resultsCount');
+    const searchHint = document.getElementById('searchHint');
+    const totalPapers = document.querySelectorAll('.paper-item').length;
 
     const urlParams = new URLSearchParams(window.location.search);
     const initialCategory = urlParams.get('category');
     if (initialCategory) {
       categoryFilter.value = initialCategory;
-      filterPapers();
+    }
+
+    function updateResultsCount(visible) {
+      const isFiltered = searchBox.value || categoryFilter.value !== 'all';
+      if (isFiltered) {
+        resultsCount.textContent = 'Showing ' + visible + ' of ' + totalPapers + ' papers';
+        resultsCount.style.opacity = '1';
+      } else {
+        resultsCount.textContent = '';
+        resultsCount.style.opacity = '0';
+      }
     }
 
     function filterPapers() {
@@ -180,9 +198,40 @@ const sortedPapers = [...catalog].sort((a, b) =>
 
       const noResults = document.getElementById('noResults');
       noResults.classList.toggle('hidden', visibleCount > 0);
+      updateResultsCount(visibleCount);
     }
 
     searchBox.addEventListener('input', filterPapers);
     categoryFilter.addEventListener('change', filterPapers);
+
+    // Show/hide the / hint when search is focused
+    searchBox.addEventListener('focus', function() {
+      if (searchHint) searchHint.style.display = 'none';
+    });
+    searchBox.addEventListener('blur', function() {
+      if (searchHint && !searchBox.value) searchHint.style.display = '';
+    });
+
+    // Keyboard shortcuts: / to focus search, Escape to clear and blur
+    document.addEventListener('keydown', function(e) {
+      // Don't trigger shortcuts when typing in an input or textarea
+      var tag = document.activeElement && document.activeElement.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
+        // Escape clears search and blurs
+        if (e.key === 'Escape') {
+          searchBox.value = '';
+          searchBox.blur();
+          filterPapers();
+        }
+        return;
+      }
+      if (e.key === '/') {
+        e.preventDefault();
+        searchBox.focus();
+      }
+    });
+
+    // Run initial filter in case URL params are set
+    filterPapers();
   </script>
 </Layout>
